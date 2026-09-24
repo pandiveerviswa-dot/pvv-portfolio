@@ -1,0 +1,13 @@
+===================================================================
+RESUME INSTRUCTIONS FOR PANDI VEER VISWA
+===================================================================
+
+Please place your original resume PDF into this exact folder:
+public/Pandi-Veer-Viswa-Resume.pdf
+
+The website has been configured to serve and download this file directly:
+Download link target: /Pandi-Veer-Viswa-Resume.pdf
+
+Once you copy your file here, the "Download Resume" and "Open in Tab"
+buttons across the website will immediately download and view your
+official resume PDF.

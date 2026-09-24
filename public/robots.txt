@@ -1,0 +1,5 @@
+# Robots.txt for Pandi Veer Viswa Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://pandiveerviswa.com/sitemap.xml

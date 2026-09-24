@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" fill="#0A0A0A"/>
+  <rect x="20" y="20" width="1160" height="710" stroke="#262626" stroke-width="2"/>
+  
+  <!-- Header Bar -->
+  <rect x="24" y="24" width="1152" height="60" fill="#141414"/>
+  <circle cx="65" cy="54" r="7" fill="#333333"/>
+  <circle cx="95" cy="54" r="7" fill="#333333"/>
+  <circle cx="125" cy="54" r="7" fill="#333333"/>
+  <text x="160" y="60" font-family="'Space Mono', monospace" font-size="14" fill="#888888" letter-spacing="2">GOOGLE SEARCH CONSOLE // AUDIT RUNNER</text>
+  <rect x="1000" y="38" width="150" height="32" fill="#CCFF00"/>
+  <text x="1015" y="59" font-family="'Space Mono', monospace" font-size="12" font-weight="bold" fill="#0A0A0A" letter-spacing="1">15+ WEBPAGES</text>
+
+  <!-- Content Structure -->
+  <rect x="60" y="120" width="510" height="260" fill="#141414" stroke="#262626" stroke-width="1.5"/>
+  <text x="90" y="170" font-family="'Syne', sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">ON-PAGE &amp; TECHNICAL SEO</text>
+  <text x="90" y="215" font-family="'Space Mono', monospace" font-size="14" fill="#888888">• Keyword Mapping &amp; Intent Alignment</text>
+  <text x="90" y="250" font-family="'Space Mono', monospace" font-size="14" fill="#888888">• Meta Tags, Header Structures (H1-H4)</text>
+  <text x="90" y="285" font-family="'Space Mono', monospace" font-size="14" fill="#888888">• Rank Math Schema Configuration</text>
+  <text x="90" y="320" font-family="'Space Mono', monospace" font-size="14" fill="#888888">• XML Sitemap Generation &amp; Submission</text>
+
+  <rect x="630" y="120" width="510" height="260" fill="#141414" stroke="#262626" stroke-width="1.5"/>
+  <text x="660" y="170" font-family="'Syne', sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">CRAWLABILITY &amp; INDEXING</text>
+  <text x="660" y="215" font-family="'Space Mono', monospace" font-size="14" fill="#888888">• GSC URL Inspection &amp; Coverage</text>
+  <text x="660" y="250" font-family="'Space Mono', monospace" font-size="14" fill="#888888">• Robots.txt Directives Configured</text>
+  <text x="660" y="285" font-family="'Space Mono', monospace" font-size="14" fill="#888888">• Crawl Error Diagnostics Resolved</text>
+  <text x="660" y="320" font-family="'Space Mono', monospace" font-size="14" fill="#888888">• GA4 Traffic Telemetry Connected</text>
+
+  <!-- Lower Architecture Console -->
+  <rect x="60" y="420" width="1080" height="270" fill="#000000" stroke="#262626" stroke-width="1.5"/>
+  <text x="95" y="470" font-family="'Space Mono', monospace" font-size="16" font-weight="bold" fill="#CCFF00" letter-spacing="2">VERIFIED SEARCH ARCHITECTURE TELEMETRY</text>
+  <line x1="95" y1="495" x2="1105" y2="495" stroke="#222222" stroke-width="1"/>
+  <text x="95" y="540" font-family="'Space Mono', monospace" font-size="14" fill="#CCCCCC">├── 15+ Core business webpages systematically audited and re-indexed</text>
+  <text x="95" y="585" font-family="'Space Mono', monospace" font-size="14" fill="#CCCCCC">├── Target keyword clusters embedded across title tags and meta descriptions</text>
+  <text x="95" y="630" font-family="'Space Mono', monospace" font-size="14" fill="#CCCCCC">└── Google Search Console &amp; Google Analytics 4 connected for traffic monitoring</text>
+</svg>

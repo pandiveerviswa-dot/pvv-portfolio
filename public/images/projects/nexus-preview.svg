@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <!-- Canvas Background -->
+  <rect width="1200" height="750" fill="#0A0B10"/>
+  <rect x="20" y="20" width="1160" height="710" stroke="#222530" stroke-width="1.5"/>
+
+  <!-- Top App Window Bar -->
+  <rect x="24" y="24" width="1152" height="54" fill="#11131B"/>
+  <circle cx="55" cy="51" r="6" fill="#333745"/>
+  <circle cx="75" cy="51" r="6" fill="#333745"/>
+  <circle cx="95" cy="51" r="6" fill="#333745"/>
+  <text x="125" y="56" font-family="'Space Mono', monospace" font-size="12" fill="#8E95A5" letter-spacing="1.5">NEXUS // ENTERPRISE WORKFLOW &amp; KNOWLEDGE ARCHITECTURE</text>
+  
+  <!-- Conceptual Badge -->
+  <rect x="940" y="36" width="215" height="30" fill="#1A1E29" stroke="#CCFF00" stroke-width="1"/>
+  <text x="955" y="55" font-family="'Space Mono', monospace" font-size="10.5" font-weight="bold" fill="#CCFF00" letter-spacing="1">SELF-INITIATED CONCEPT</text>
+
+  <!-- Left Sidebar Navigation -->
+  <rect x="40" y="95" width="220" height="615" fill="#10121A" stroke="#222530" stroke-width="1"/>
+  <text x="60" y="130" font-family="'Syne', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">NEXUS<tspan fill="#CCFF00">.</tspan></text>
+  <text x="60" y="150" font-family="'Space Mono', monospace" font-size="10" fill="#5E6577" letter-spacing="1">WORKSPACE V1.0</text>
+
+  <!-- Nav Items -->
+  <rect x="50" y="175" width="200" height="34" fill="#1C212E" stroke="#343C52" stroke-width="1"/>
+  <text x="75" y="196" font-family="'Space Mono', monospace" font-size="11" font-weight="bold" fill="#CCFF00">01 DASHBOARD</text>
+  <circle cx="62" cy="192" r="3" fill="#CCFF00"/>
+
+  <text x="75" y="235" font-family="'Space Mono', monospace" font-size="11" fill="#8E95A5">02 PROJECTS (04)</text>
+  <text x="75" y="270" font-family="'Space Mono', monospace" font-size="11" fill="#8E95A5">03 TASKS BOARD</text>
+  <text x="75" y="305" font-family="'Space Mono', monospace" font-size="11" fill="#8E95A5">04 KNOWLEDGE BASE</text>
+  <text x="75" y="340" font-family="'Space Mono', monospace" font-size="11" fill="#8E95A5">05 APPROVALS (02)</text>
+  <text x="75" y="375" font-family="'Space Mono', monospace" font-size="11" fill="#8E95A5">06 TEAM ACTIVITY</text>
+
+  <!-- Left Nav Architecture Box -->
+  <rect x="52" y="490" width="196" height="200" fill="#0C0E14" stroke="#1F232F" stroke-width="1"/>
+  <text x="64" y="515" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#CCFF00">PROJECT NODES</text>
+  <text x="64" y="542" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">├── 01 Overview</text>
+  <text x="64" y="565" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">├── 02 Tasks &amp; Milestones</text>
+  <text x="64" y="588" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">├── 03 Linked Docs</text>
+  <text x="64" y="611" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">├── 04 Team Flow</text>
+  <text x="64" y="634" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">└── 05 Sign-off Engine</text>
+
+  <!-- Center Workspace Board -->
+  <rect x="280" y="95" width="560" height="615" fill="#0D0F16" stroke="#222530" stroke-width="1"/>
+  
+  <!-- Breadcrumb & Workspace Header -->
+  <text x="305" y="130" font-family="'Space Mono', monospace" font-size="11" fill="#CCFF00">PROJECTS / DESIGN-SYSTEM-V2</text>
+  <text x="305" y="165" font-family="'Syne', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">ENTERPRISE COMPONENT LIBRARY</text>
+
+  <!-- Status Cards Row -->
+  <rect x="305" y="185" width="160" height="70" fill="#131620" stroke="#262B3A" stroke-width="1"/>
+  <text x="320" y="208" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">ACTIVE SPRINT</text>
+  <text x="320" y="235" font-family="'Syne', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">SPRINT 08</text>
+  <rect x="420" y="195" width="35" height="18" fill="#1A2E1A" stroke="#10B981" stroke-width="1"/>
+  <text x="426" y="208" font-family="'Space Mono', monospace" font-size="9" fill="#10B981">LIVE</text>
+
+  <rect x="480" y="185" width="160" height="70" fill="#131620" stroke="#262B3A" stroke-width="1"/>
+  <text x="495" y="208" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">TASKS STATUS</text>
+  <text x="495" y="235" font-family="'Syne', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">18 / 24 DONE</text>
+
+  <rect x="655" y="185" width="160" height="70" fill="#131620" stroke="#262B3A" stroke-width="1"/>
+  <text x="670" y="208" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">PENDING APPROVAL</text>
+  <text x="670" y="235" font-family="'Syne', sans-serif" font-size="18" font-weight="bold" fill="#CCFF00">02 REVIEWS</text>
+
+  <!-- Interactive Task Board -->
+  <text x="305" y="290" font-family="'Space Mono', monospace" font-size="11" font-weight="bold" fill="#8E95A5">CONNECTED WORKFLOW STREAM</text>
+  
+  <rect x="305" y="305" width="510" height="60" fill="#12151F" stroke="#252A39" stroke-width="1"/>
+  <circle cx="325" cy="335" r="5" fill="#CCFF00"/>
+  <text x="345" y="330" font-family="'Syne', sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">Refactor Modular Design Tokens &amp; Dark Theme Scale</text>
+  <text x="345" y="348" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">LINKED: docs/tokens.md • ASSIGNED: ARCHITECTURE LEAD</text>
+  <rect x="745" y="322" width="60" height="22" fill="#172218" stroke="#CCFF00" stroke-width="1"/>
+  <text x="755" y="337" font-family="'Space Mono', monospace" font-size="9" font-weight="bold" fill="#CCFF00">REVIEW</text>
+
+  <rect x="305" y="375" width="510" height="60" fill="#12151F" stroke="#252A39" stroke-width="1"/>
+  <circle cx="325" cy="405" r="5" fill="#10B981"/>
+  <text x="345" y="400" font-family="'Syne', sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">Accessible Focus State &amp; Keyboard Trap Audit</text>
+  <text x="345" y="418" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">LINKED: spec/a11y-checklist.md • VERIFIED ON DESKTOP</text>
+  <rect x="755" y="392" width="50" height="22" fill="#16221D" stroke="#10B981" stroke-width="1"/>
+  <text x="765" y="407" font-family="'Space Mono', monospace" font-size="9" font-weight="bold" fill="#10B981">DONE</text>
+
+  <rect x="305" y="445" width="510" height="60" fill="#12151F" stroke="#252A39" stroke-width="1"/>
+  <circle cx="325" cy="475" r="5" fill="#5E6577"/>
+  <text x="345" y="470" font-family="'Syne', sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">Responsive Breakpoints Reflow Simulation (375px - 1440px)</text>
+  <text x="345" y="488" font-family="'Space Mono', monospace" font-size="9.5" fill="#757E94">LINKED: layouts/responsive-matrix.md</text>
+  <rect x="740" y="462" width="65" height="22" fill="#1E2330" stroke="#3A435A" stroke-width="1"/>
+  <text x="750" y="477" font-family="'Space Mono', monospace" font-size="9" fill="#8E95A5">PLANNED</text>
+
+  <!-- Architecture Flow Preview Inside Board -->
+  <rect x="305" y="525" width="510" height="160" fill="#0C0E14" stroke="#1F232F" stroke-width="1"/>
+  <text x="325" y="555" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#CCFF00">CONCEPTUAL USER JOURNEY INTEGRATION</text>
+  
+  <g transform="translate(325, 580)">
+    <rect x="0" y="0" width="85" height="40" fill="#161924" stroke="#2E3547" stroke-width="1"/>
+    <text x="18" y="24" font-family="'Space Mono', monospace" font-size="9" font-weight="bold" fill="#FFFFFF">DISCOVER</text>
+    <path d="M92 20 L108 20" stroke="#CCFF00" stroke-width="1.5"/>
+
+    <rect x="115" y="0" width="85" height="40" fill="#161924" stroke="#2E3547" stroke-width="1"/>
+    <text x="14" y="24" font-family="'Space Mono', monospace" font-size="9" font-weight="bold" fill="#FFFFFF">UNDERSTAND</text>
+    <path d="M207 20 L223 20" stroke="#CCFF00" stroke-width="1.5"/>
+
+    <rect x="230" y="0" width="70" height="40" fill="#161924" stroke="#2E3547" stroke-width="1"/>
+    <text x="18" y="24" font-family="'Space Mono', monospace" font-size="9" font-weight="bold" fill="#FFFFFF">PLAN</text>
+    <path d="M307 20 L323 20" stroke="#CCFF00" stroke-width="1.5"/>
+
+    <rect x="330" y="0" width="70" height="40" fill="#161924" stroke="#2E3547" stroke-width="1"/>
+    <text x="14" y="24" font-family="'Space Mono', monospace" font-size="9" font-weight="bold" fill="#FFFFFF">EXECUTE</text>
+    <path d="M407 20 L423 20" stroke="#CCFF00" stroke-width="1.5"/>
+
+    <rect x="430" y="0" width="40" height="40" fill="#1A2E1A" stroke="#10B981" stroke-width="1"/>
+    <text x="12" y="24" font-family="'Space Mono', monospace" font-size="9" font-weight="bold" fill="#10B981">✓</text>
+  </g>
+  <text x="325" y="655" font-family="'Space Mono', monospace" font-size="9" fill="#5E6577">UNIFIED ENTERPRISE FLOW: ZERO CONTEXT-SWITCHING BETWEEN TOOLS</text>
+
+  <!-- Right Knowledge & Activity Panel -->
+  <rect x="860" y="95" width="300" height="615" fill="#10121A" stroke="#222530" stroke-width="1"/>
+  <text x="880" y="130" font-family="'Space Mono', monospace" font-size="11" font-weight="bold" fill="#CCFF00">KNOWLEDGE SEARCH &amp; AUDIT</text>
+  
+  <!-- Search input wireframe -->
+  <rect x="880" y="145" width="260" height="34" fill="#0A0B10" stroke="#2B3142" stroke-width="1"/>
+  <text x="895" y="166" font-family="'Space Mono', monospace" font-size="10" fill="#6B7488">🔍 Search docs, specs, tokens...</text>
+
+  <!-- Document Snippet -->
+  <rect x="880" y="195" width="260" height="150" fill="#131622" stroke="#232838" stroke-width="1"/>
+  <text x="895" y="222" font-family="'Syne', sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">Design System Architecture V2</text>
+  <text x="895" y="242" font-family="'Space Mono', monospace" font-size="9" fill="#CCFF00">DOC: /architecture/tokens.md</text>
+  <line x1="895" y1="255" x2="1125" y2="255" stroke="#222530" stroke-width="1"/>
+  <text x="895" y="275" font-family="'Space Mono', monospace" font-size="8.5" fill="#8E95A5">• Atomic component hierarchy</text>
+  <text x="895" y="295" font-family="'Space Mono', monospace" font-size="8.5" fill="#8E95A5">• WCAG AAA color contrast ratios</text>
+  <text x="895" y="315" font-family="'Space Mono', monospace" font-size="8.5" fill="#8E95A5">• React / Tailwind export pipeline</text>
+
+  <!-- Approval Action Card -->
+  <rect x="880" y="365" width="260" height="160" fill="#141723" stroke="#CCFF00" stroke-width="1"/>
+  <text x="895" y="390" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#CCFF00">APPROVAL REQUIRED</text>
+  <text x="895" y="415" font-family="'Syne', sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">Release Token Set V2.4</text>
+  <text x="895" y="435" font-family="'Space Mono', monospace" font-size="9" fill="#8E95A5">Requested by: System Architect</text>
+  <text x="895" y="455" font-family="'Space Mono', monospace" font-size="9" fill="#8E95A5">Impact: 42 Components • 0 Breaking</text>
+  <rect x="895" y="475" width="105" height="30" fill="#CCFF00"/>
+  <text x="915" y="495" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#0A0B10">APPROVE</text>
+  <rect x="1010" y="475" width="105" height="30" fill="#1A1E2A" stroke="#333A4E" stroke-width="1"/>
+  <text x="1035" y="495" font-family="'Space Mono', monospace" font-size="10" fill="#FFFFFF">REVIEW</text>
+
+  <!-- Design System Tokens Pill Bar -->
+  <rect x="880" y="545" width="260" height="140" fill="#0C0E14" stroke="#1F232F" stroke-width="1"/>
+  <text x="895" y="570" font-family="'Space Mono', monospace" font-size="9.5" font-weight="bold" fill="#8E95A5">TOKEN PRIMITIVES</text>
+  
+  <rect x="895" y="585" width="24" height="24" fill="#0C0D12" stroke="#333" stroke-width="1"/>
+  <rect x="925" y="585" width="24" height="24" fill="#141721" stroke="#333" stroke-width="1"/>
+  <rect x="955" y="585" width="24" height="24" fill="#CCFF00"/>
+  <rect x="985" y="585" width="24" height="24" fill="#10B981"/>
+  <rect x="1015" y="585" width="24" height="24" fill="#F59E0B"/>
+
+  <text x="895" y="635" font-family="'Space Mono', monospace" font-size="8.5" fill="#757E94">FRAMEWORK: REACT + TAILWIND CSS</text>
+  <text x="895" y="655" font-family="'Space Mono', monospace" font-size="8.5" fill="#757E94">ACCESSIBILITY: KEYBOARD &amp; CONTRAST</text>
+</svg>
