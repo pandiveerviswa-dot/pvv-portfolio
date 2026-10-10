@@ -347,7 +347,7 @@ export const portfolioData = {
         num: "02",
         title: "UI/UX DESIGN",
         subtitle: "Interface Design, Usability, Wireframes & Digital Systems",
-        countBadge: "2 CASE STUDIES",
+        countBadge: "3 CASE STUDIES",
         status: "ACTIVE ARCHIVE",
         disciplines: ["Information Architecture", "Wireframing & Prototyping", "Design Systems", "Usability Engineering"],
         description: "Human-centered digital interfaces, component design systems, and responsive layout architectures bridging aesthetic typography with intuitive interaction flows."
@@ -675,6 +675,103 @@ export const portfolioData = {
           "RESPONSIVE DESIGN",
           "ACCESSIBLE INTERACTION",
           "PRODUCT THINKING"
+        ]
+      },
+      {
+        id: "explain-my-banking",
+        title: "EXPLAIN MY BANKING",
+        subtitle: "FINANCIAL EXPLAINABILITY & EVIDENCE ENGINE",
+        caseStudyType: "INDEPENDENT FINTECH UX CONCEPT & WORKING PROTOTYPE",
+        category: "UI/UX Design / FinTech",
+        tags: ["FINTECH UX", "TRANSACTION EXPLAINABILITY", "DETERMINISTIC INSIGHTS", "ACCESSIBILITY"],
+        shortDescription: "An independent banking UX concept and working prototype that explains spending changes month-over-month using structured financial insights and supporting transaction evidence.",
+        technologies: ["React", "Vite", "Tailwind CSS", "Deterministic Analysis Engine", "Lucide React"],
+        badge: "Independent FinTech Concept",
+        image: "/images/projects/explain-my-banking-preview.svg",
+        liveDemoUrl: "https://explain-my-banking.vercel.app/",
+        githubUrl: "https://github.com/pandiveerviswa-dot/explain-my-banking",
+        disclaimer: "INDEPENDENT FINTECH UX CONCEPT // NOT AN OFFICIAL STATE BANK OF INDIA (SBI) PRODUCT. USES MOCK TRANSACTION DATA AND LOCAL DETERMINISTIC ANALYSIS.",
+        challenge: "Traditional banking interfaces present static balances and raw transaction lists. When users notice spending increased, they must manually calculate differences across previous months. Explain My Banking addresses the primary question: 'Why did my spending increase this month?' through structured explainability backed by concrete transaction evidence.",
+        execution: [
+          "01. Explainability UX Architecture: Designed an interface answering 'Why did my spending increase?' without financial jargon.",
+          "02. Evidence-Based Verification: Connected high-level variance summaries directly to verifiable line-item transaction cards.",
+          "03. Comparative Spending Analysis: Mapped August 2026 (₹28,250) vs September 2026 (₹36,650) to highlight the ₹8,400 variance.",
+          "04. Category Breakdown Engine: Structured driver categories: Shopping (+₹3,300), Food & Dining (+₹2,500), Transport (+₹1,300), Other (+₹1,300).",
+          "05. Deterministic Logic Framing: Implemented transparent local mathematical analysis rather than opaque external AI generation.",
+          "06. Accessible Action Controls: Added clear contextual drill-downs, transaction evidence sheets, and customer review actions."
+        ],
+        deliverables: [
+          "Explain My Banking Interface Prototype",
+          "Month-over-Month Variance Summary Dashboard",
+          "Category Impact Breakdown Visualization",
+          "Itemized Transaction Evidence Inspector",
+          "Explainability Feedback & Clarification System",
+          "Independent Working Web Prototype"
+        ],
+        hybridConnection: "Bridges user-centered FinTech interface craft with transparent mathematical telemetry, demonstrating how explainable UX turns confusing transaction logs into actionable customer clarity.",
+        theUxProblem: {
+          heading: "THE EXPLAINABILITY GAP IN TRADITIONAL BANKING INTERFACES",
+          struggles: [
+            "CUSTOMERS SEE BALANCE CHANGES BUT NOT THE UNDERLYING DRIVERS",
+            "MANUAL CALCULATION REQUIRED TO COMPARE MONTH-OVER-MONTH STATEMENTS",
+            "UNCERTAINTY ABOUT ONE-OFF PURCHASES VS RECURRING SPENDING SHIFTS",
+            "DISCONNECT BETWEEN HIGH-LEVEL INSIGHTS AND SUPPORTING TRANSACTION EVIDENCE",
+            "LACK OF EMPOWERING CUSTOMER REVIEW ACTIONS"
+          ],
+          designGoal: "EXPLAIN → SHOW EVIDENCE → LET THE CUSTOMER DECIDE."
+        },
+        corePrinciple: "EXPLAIN → SHOW EVIDENCE → LET THE CUSTOMER DECIDE",
+        primaryQuestion: "Why did my spending increase this month?",
+        verifiedDemoData: {
+          previousMonth: { month: "August 2026", amount: "₹28,250" },
+          currentMonth: { month: "September 2026", amount: "₹36,650" },
+          totalVariance: "+₹8,400",
+          categories: [
+            { category: "Shopping", change: "+₹3,300", driver: "Festive apparel & electronics purchase" },
+            { category: "Food & Dining", change: "+₹2,500", driver: "Weekend dining & food delivery frequency" },
+            { category: "Transport", change: "+₹1,300", driver: "Commute rides & fuel expenses" },
+            { category: "Other", change: "+₹1,300", driver: "Miscellaneous recurring utility charges" }
+          ]
+        },
+        designObjectives: [
+          "01 ANSWER THE PRIMARY QUESTION INSTANTLY",
+          "02 GROUND EVERY INSIGHT IN VERIFIABLE TRANSACTION EVIDENCE",
+          "03 MAINTAIN TRANSPARENT LOCAL DETERMINISTIC LOGIC",
+          "04 REDUCE ANXIETY THROUGH CALM AND ACCESSIBLE FINTECH UX",
+          "05 RESPECT USER AUTONOMY: INFORM, NEVER PRESCRIBE"
+        ],
+        designSystemSpecs: {
+          typography: "Inter (High-legibility interface numerals & text) • Plus Jakarta Sans & Space Mono",
+          colorTokens: [
+            { label: "Deep Ink", hex: "#0E131F" },
+            { label: "Surface Page", hex: "#F8FAFC / #11141D" },
+            { label: "Accent Teal", hex: "#0D9488" },
+            { label: "Accent Lime", hex: "#CCFF00" },
+            { label: "Variance Alert", hex: "#E11D48" },
+            { label: "Evidence Border", hex: "rgba(255,255,255,0.15)" }
+          ],
+          components: ["Insight Banners", "Variance Cards", "Evidence Drawers", "Transaction Chips", "Action Bars"]
+        },
+        implementationTransparency: {
+          architecture: "Deterministic Local Rule & Difference Engine",
+          distinction: "Calculates mathematical differences and maps deterministic category narratives locally in the front-end, avoiding hallucinations or privacy leaks from unvetted external LLM backends.",
+          limitations: [
+            "Relies on pre-structured transaction taxonomies rather than arbitrary free-form merchant recognition.",
+            "Current prototype models mock dataset rather than live core-banking APIs.",
+            "No multi-account cross-consolidation in baseline proof of concept."
+          ],
+          futureImprovements: [
+            "Integration with regulated Open Banking / Account Aggregator framework APIs.",
+            "Optional opt-in secure on-device categorization for unmapped UPI descriptions.",
+            "Personalized user-defined budget alerts and multi-month velocity graphs."
+          ]
+        },
+        finalSummaryPoints: [
+          "EXPLAINABILITY UX",
+          "EVIDENCE-BASED CLARITY",
+          "DETERMINISTIC FINTECH LOGIC",
+          "CUSTOMER EMPOWERMENT",
+          "RESPONSIVE ACCESSIBLE DESIGN"
         ]
       }
     ]

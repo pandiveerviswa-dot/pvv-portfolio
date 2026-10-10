@@ -61,6 +61,7 @@ export const SelectedWork = ({
   const uiuxProjects = workData.uiuxProjects || [];
   const nexusProject = uiuxProjects[0];
   const pulseProject = uiuxProjects[1];
+  const bankingProject = uiuxProjects[2];
 
   const finalOpacity = workArchiveVisible ? opacity * workArchiveOpacity : 0;
 
@@ -187,7 +188,7 @@ export const SelectedWork = ({
                   </span>
                   <div className="flex items-center gap-2">
                     <span className="px-2.5 py-1 bg-lime text-black font-mono text-xs font-bold tracking-wider uppercase">
-                      2 CASE STUDIES
+                      3 CASE STUDIES
                     </span>
                     <span className="hidden sm:inline-block font-mono text-[11px] text-white/40 uppercase">
                       ACTIVE ARCHIVE
@@ -371,10 +372,10 @@ export const SelectedWork = ({
       )}
 
       {/* ===================================================================== */}
-      {/* 3. WORLD 02: UI/UX DESIGN ARCHIVE (2 FLAGSHIP CASE STUDIES)          */}
+      {/* 3. WORLD 02: UI/UX DESIGN ARCHIVE (3 FLAGSHIP CASE STUDIES)          */}
       {/* ===================================================================== */}
       {activeWorld === 'uiux' && (
-        <div className="w-full my-auto space-y-5 animate-fadeIn">
+        <div className="w-full my-auto space-y-5 animate-fadeIn max-h-[85vh] overflow-y-auto pr-1">
           {/* Top Sub-Navigation Bar */}
           <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/15">
             <button
@@ -390,13 +391,13 @@ export const SelectedWork = ({
             <div className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-lime inline-block" />
               <span className="font-mono text-xs tracking-wider text-lime uppercase font-semibold">
-                ARCHIVE 02 // UI/UX DESIGN (2 FLAGSHIP CASE STUDIES)
+                ARCHIVE 02 // UI/UX DESIGN (3 FLAGSHIP CASE STUDIES)
               </span>
             </div>
           </div>
 
-          {/* Two Large Flagship Project Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          {/* Three Large Flagship Project Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
             {/* CARD 01: NEXUS */}
             {nexusProject && (
               <div className="bg-[#0c0d12]/95 border border-white/15 hover:border-lime p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 group shadow-2xl relative overflow-hidden">
@@ -517,6 +518,71 @@ export const SelectedWork = ({
                 <div className="pt-4 border-t border-white/10 flex items-center justify-between">
                   <button
                     onClick={() => !isDetailTransitioning && openCaseStudy(pulseProject)}
+                    disabled={isDetailTransitioning}
+                    className="w-full py-3 px-4 bg-lime text-black hover:bg-white transition-all font-mono text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:pointer-events-none"
+                  >
+                    <span>VIEW CASE STUDY</span>
+                    <ArrowUpRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* CARD 03: EXPLAIN MY BANKING */}
+            {bankingProject && (
+              <div className="bg-[#0c0d12]/95 border border-white/15 hover:border-lime p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 group shadow-2xl relative overflow-hidden">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between pb-3 border-b border-white/10">
+                    <span className="font-display text-3xl sm:text-4xl font-black text-lime">
+                      03
+                    </span>
+                    <span className="px-2.5 py-1 bg-lime/10 border border-lime/30 text-lime font-mono text-[10px] font-bold uppercase tracking-wider">
+                      INDEPENDENT FINTECH CONCEPT
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 className="text-2xl sm:text-4xl font-black uppercase tracking-tight text-white group-hover:text-lime transition-colors">
+                      {bankingProject.title}
+                    </h3>
+                    <p className="font-mono text-xs text-lime uppercase tracking-wider font-semibold mt-1">
+                      {bankingProject.subtitle}
+                    </p>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-sans">
+                    {bankingProject.shortDescription}
+                  </p>
+
+                  {/* Discipline Chips */}
+                  <div className="flex flex-wrap gap-1.5 pt-1">
+                    {bankingProject.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="font-mono text-[10px] px-2.5 py-1 bg-white/[0.05] border border-white/10 text-white/80"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* High-Fi Preview Image */}
+                  <div className="border border-white/10 bg-black/60 overflow-hidden relative mt-3">
+                    <img
+                      src={bankingProject.image}
+                      alt={bankingProject.title}
+                      className="w-full h-auto object-cover max-h-[220px] transition-transform duration-500 group-hover:scale-[1.02]"
+                    />
+                    <div className="p-2 border-t border-white/10 bg-[#0a0a0a] flex items-center justify-between font-mono text-[10px] text-white/50">
+                      <span>FINANCIAL EXPLAINER COCKPIT</span>
+                      <span className="text-lime">WORKING DEMO + REPO</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-white/10 flex items-center justify-between">
+                  <button
+                    onClick={() => !isDetailTransitioning && openCaseStudy(bankingProject)}
                     disabled={isDetailTransitioning}
                     className="w-full py-3 px-4 bg-lime text-black hover:bg-white transition-all font-mono text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:pointer-events-none"
                   >

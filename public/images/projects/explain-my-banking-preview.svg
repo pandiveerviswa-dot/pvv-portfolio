@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <!-- Canvas Background -->
+  <rect width="1200" height="750" fill="#08090E"/>
+  <rect x="20" y="20" width="1160" height="710" stroke="#1D2230" stroke-width="1.5"/>
+
+  <!-- Top App Window Bar -->
+  <rect x="24" y="24" width="1152" height="54" fill="#0E1119"/>
+  <circle cx="55" cy="51" r="6" fill="#2D3344"/>
+  <circle cx="75" cy="51" r="6" fill="#2D3344"/>
+  <circle cx="95" cy="51" r="6" fill="#2D3344"/>
+  <text x="125" y="56" font-family="'Space Mono', monospace" font-size="12" fill="#848D9F" letter-spacing="1.5">EXPLAIN MY BANKING // FINANCIAL EXPLAINABILITY &amp; EVIDENCE ENGINE</text>
+  
+  <!-- Concept Badge -->
+  <rect x="850" y="36" width="305" height="30" fill="#171A24" stroke="#CCFF00" stroke-width="1"/>
+  <text x="865" y="55" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#CCFF00" letter-spacing="0.5">INDEPENDENT FINTECH CONCEPT / DEMO</text>
+
+  <!-- Left Sidebar Navigation -->
+  <rect x="40" y="95" width="230" height="615" fill="#0B0D14" stroke="#1D2230" stroke-width="1"/>
+  <text x="60" y="132" font-family="'Syne', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">EXPLAIN<tspan fill="#CCFF00">.BANKING</tspan></text>
+  <text x="60" y="152" font-family="'Space Mono', monospace" font-size="9" fill="#586073" letter-spacing="1">FINTECH EXPLAINABILITY</text>
+
+  <!-- Nav Items -->
+  <rect x="50" y="175" width="210" height="34" fill="#181B26" stroke="#2F364B" stroke-width="1"/>
+  <text x="75" y="196" font-family="'Space Mono', monospace" font-size="10.5" font-weight="bold" fill="#CCFF00">01 SPENDING EXPLAINER</text>
+  <circle cx="62" cy="192" r="3" fill="#CCFF00"/>
+
+  <text x="75" y="235" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">02 VARIANCE ANALYSIS</text>
+  <text x="75" y="270" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">03 TRANSACTION EVIDENCE</text>
+  <text x="75" y="305" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">04 CATEGORY BREAKDOWN</text>
+  <text x="75" y="340" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">05 CUSTOMER DECISIONS</text>
+
+  <!-- Core UX Principle Card -->
+  <rect x="50" y="440" width="210" height="250" fill="#090B10" stroke="#1B1E29" stroke-width="1"/>
+  <text x="62" y="468" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#CCFF00">CORE UX PRINCIPLE</text>
+  
+  <rect x="62" y="482" width="186" height="42" fill="#121622" stroke="#232A3B" stroke-width="1"/>
+  <text x="72" y="500" font-family="'Space Mono', monospace" font-size="8.5" font-weight="bold" fill="#FFFFFF">1. EXPLAIN</text>
+  <text x="72" y="514" font-family="'Space Mono', monospace" font-size="7.5" fill="#848D9F">Why did my spend rise?</text>
+
+  <rect x="62" y="532" width="186" height="42" fill="#121622" stroke="#232A3B" stroke-width="1"/>
+  <text x="72" y="550" font-family="'Space Mono', monospace" font-size="8.5" font-weight="bold" fill="#CCFF00">2. SHOW EVIDENCE</text>
+  <text x="72" y="564" font-family="'Space Mono', monospace" font-size="7.5" fill="#848D9F">Trace line-item transactions</text>
+
+  <rect x="62" y="582" width="186" height="42" fill="#121622" stroke="#232A3B" stroke-width="1"/>
+  <text x="72" y="600" font-family="'Space Mono', monospace" font-size="8.5" font-weight="bold" fill="#10B981">3. LET DECIDE</text>
+  <text x="72" y="614" font-family="'Space Mono', monospace" font-size="7.5" fill="#848D9F">Empower customer choice</text>
+
+  <text x="62" y="660" font-family="'Space Mono', monospace" font-size="8" fill="#586073">DETERMINISTIC ANALYSIS</text>
+  <text x="62" y="675" font-family="'Space Mono', monospace" font-size="8" fill="#586073">NO BLACK-BOX AI</text>
+
+  <!-- Main Financial Stage -->
+  <rect x="290" y="95" width="870" height="615" fill="#0A0C13" stroke="#1D2230" stroke-width="1"/>
+
+  <!-- Top Hero Insight Banner -->
+  <rect x="315" y="115" width="820" height="90" fill="#121522" stroke="#2A3144" stroke-width="1"/>
+  <text x="335" y="142" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#CCFF00">PRIMARY CUSTOMER QUESTION</text>
+  <text x="335" y="170" font-family="'Syne', sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">"Why did my spending increase this month?"</text>
+  <text x="335" y="190" font-family="'Space Mono', monospace" font-size="10.5" fill="#10B981">DEMO ANALYSIS: August 2026 vs September 2026 // Deterministic Insights</text>
+
+  <!-- Metric Comparison Cards -->
+  <g transform="translate(315, 220)">
+    <!-- Baseline Month -->
+    <rect x="0" y="0" width="255" height="100" fill="#0E121A" stroke="#222838" stroke-width="1"/>
+    <text x="20" y="26" font-family="'Space Mono', monospace" font-size="9" fill="#727A8C">BASELINE (AUG 2026)</text>
+    <text x="20" y="62" font-family="'Syne', sans-serif" font-size="26" font-weight="800" fill="#FFFFFF">₹28,250</text>
+    <text x="20" y="85" font-family="'Space Mono', monospace" font-size="9" fill="#848D9F">Previous Month Total</text>
+
+    <!-- Current Month -->
+    <rect x="280" y="0" width="255" height="100" fill="#0E121A" stroke="#222838" stroke-width="1"/>
+    <text x="300" y="26" font-family="'Space Mono', monospace" font-size="9" fill="#727A8C">CURRENT (SEP 2026)</text>
+    <text x="300" y="62" font-family="'Syne', sans-serif" font-size="26" font-weight="800" fill="#FFFFFF">₹36,650</text>
+    <text x="300" y="85" font-family="'Space Mono', monospace" font-size="9" fill="#848D9F">Current Month Total</text>
+
+    <!-- Net Variance -->
+    <rect x="560" y="0" width="260" height="100" fill="#16131A" stroke="#F43F5E" stroke-width="1"/>
+    <text x="580" y="26" font-family="'Space Mono', monospace" font-size="9" fill="#F43F5E">NET SPENDING VARIANCE</text>
+    <text x="580" y="62" font-family="'Syne', sans-serif" font-size="26" font-weight="800" fill="#F43F5E">+₹8,400</text>
+    <text x="580" y="85" font-family="'Space Mono', monospace" font-size="9" fill="#F43F5E">▲ +29.7% Increase vs August</text>
+  </g>
+
+  <!-- Category Breakdown & Drivers -->
+  <g transform="translate(315, 340)">
+    <rect x="0" y="0" width="450" height="350" fill="#0D1017" stroke="#1D2332" stroke-width="1"/>
+    <text x="20" y="30" font-family="'Space Mono', monospace" font-size="10.5" font-weight="bold" fill="#CCFF00">01 CATEGORY DRIVER BREAKDOWN</text>
+    <text x="20" y="48" font-family="'Space Mono', monospace" font-size="8.5" fill="#727A8C">Variance attributed to 4 main categories</text>
+
+    <!-- Category 1: Shopping -->
+    <rect x="20" y="65" width="410" height="56" fill="#131722" stroke="#252D3F" stroke-width="1"/>
+    <text x="35" y="88" font-family="'Space Mono', monospace" font-size="11" font-weight="bold" fill="#FFFFFF">Shopping</text>
+    <text x="35" y="105" font-family="'Space Mono', monospace" font-size="8.5" fill="#848D9F">Festive apparel &amp; electronics</text>
+    <text x="350" y="98" font-family="'Syne', sans-serif" font-size="16" font-weight="bold" fill="#F43F5E">+₹3,300</text>
+
+    <!-- Category 2: Food & Dining -->
+    <rect x="20" y="130" width="410" height="56" fill="#131722" stroke="#252D3F" stroke-width="1"/>
+    <text x="35" y="153" font-family="'Space Mono', monospace" font-size="11" font-weight="bold" fill="#FFFFFF">Food &amp; Dining</text>
+    <text x="35" y="170" font-family="'Space Mono', monospace" font-size="8.5" fill="#848D9F">Weekend dining &amp; takeout frequency</text>
+    <text x="350" y="163" font-family="'Syne', sans-serif" font-size="16" font-weight="bold" fill="#F43F5E">+₹2,500</text>
+
+    <!-- Category 3: Transport -->
+    <rect x="20" y="195" width="410" height="56" fill="#131722" stroke="#252D3F" stroke-width="1"/>
+    <text x="35" y="218" font-family="'Space Mono', monospace" font-size="11" font-weight="bold" fill="#FFFFFF">Transport</text>
+    <text x="35" y="235" font-family="'Space Mono', monospace" font-size="8.5" fill="#848D9F">Cab rides &amp; regional travel</text>
+    <text x="350" y="228" font-family="'Syne', sans-serif" font-size="16" font-weight="bold" fill="#F43F5E">+₹1,300</text>
+
+    <!-- Category 4: Other -->
+    <rect x="20" y="260" width="410" height="56" fill="#131722" stroke="#252D3F" stroke-width="1"/>
+    <text x="35" y="283" font-family="'Space Mono', monospace" font-size="11" font-weight="bold" fill="#FFFFFF">Other</text>
+    <text x="35" y="300" font-family="'Space Mono', monospace" font-size="8.5" fill="#848D9F">Annual subscriptions &amp; fees</text>
+    <text x="350" y="293" font-family="'Syne', sans-serif" font-size="16" font-weight="bold" fill="#F43F5E">+₹1,300</text>
+
+    <text x="20" y="335" font-family="'Space Mono', monospace" font-size="8.5" fill="#10B981">TOTAL ATTRIBUTED VARIANCE: ₹8,400 (100% RECONCILED)</text>
+  </g>
+
+  <!-- Supporting Transaction Evidence Inspector -->
+  <g transform="translate(785, 340)">
+    <rect x="0" y="0" width="350" height="350" fill="#0D1017" stroke="#1D2332" stroke-width="1"/>
+    <text x="20" y="30" font-family="'Space Mono', monospace" font-size="10.5" font-weight="bold" fill="#CCFF00">02 TRANSACTION EVIDENCE</text>
+    <text x="20" y="48" font-family="'Space Mono', monospace" font-size="8.5" fill="#727A8C">Verifiable line items proving variance</text>
+
+    <!-- Tx 1 -->
+    <rect x="15" y="65" width="320" height="52" fill="#121620" stroke="#222838" stroke-width="1"/>
+    <text x="25" y="85" font-family="'Space Mono', monospace" font-size="9.5" fill="#FFFFFF">Urban Trend Store</text>
+    <text x="25" y="102" font-family="'Space Mono', monospace" font-size="8" fill="#586073">Sep 24 • Shopping • Festive</text>
+    <text x="260" y="94" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#F43F5E">₹2,800</text>
+
+    <!-- Tx 2 -->
+    <rect x="15" y="125" width="320" height="52" fill="#121620" stroke="#222838" stroke-width="1"/>
+    <text x="25" y="145" font-family="'Space Mono', monospace" font-size="9.5" fill="#FFFFFF">The Grand Bistro</text>
+    <text x="25" y="162" font-family="'Space Mono', monospace" font-size="8" fill="#586073">Sep 21 • Food &amp; Dining</text>
+    <text x="260" y="154" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#F43F5E">₹1,450</text>
+
+    <!-- Tx 3 -->
+    <rect x="15" y="185" width="320" height="52" fill="#121620" stroke="#222838" stroke-width="1"/>
+    <text x="25" y="205" font-family="'Space Mono', monospace" font-size="9.5" fill="#FFFFFF">RideWave Mobility</text>
+    <text x="25" y="222" font-family="'Space Mono', monospace" font-size="8" fill="#586073">Sep 18 • Transport • Rides</text>
+    <text x="260" y="214" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#F43F5E">₹650</text>
+
+    <!-- Bottom Explainability Summary -->
+    <rect x="15" y="250" width="320" height="85" fill="#151A24" stroke="#CCFF00" stroke-width="1"/>
+    <text x="25" y="272" font-family="'Space Mono', monospace" font-size="8.5" font-weight="bold" fill="#CCFF00">CUSTOMER DECISION STAGE</text>
+    <text x="25" y="290" font-family="'Space Mono', monospace" font-size="8" fill="#FFFFFF">Clear explanation gives customer confidence.</text>
+    <text x="25" y="306" font-family="'Space Mono', monospace" font-size="7.5" fill="#848D9F">Actions: Set budget limit • Tag one-off • Review</text>
+    <text x="25" y="322" font-family="'Space Mono', monospace" font-size="7.5" fill="#10B981">LIVE PROTOTYPE: explain-my-banking.vercel.app</text>
+  </g>
+</svg>

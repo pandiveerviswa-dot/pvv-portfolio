@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { Check } from 'lucide-react';
 import { NexusCaseStudy } from './NexusCaseStudy';
 import { PulseCaseStudy } from './PulseCaseStudy';
+import { ExplainMyBankingCaseStudy } from './ExplainMyBankingCaseStudy';
 
 /**
  * CaseStudyModal
@@ -11,7 +12,7 @@ import { PulseCaseStudy } from './PulseCaseStudy';
  * from background scroll triggers and CSS transform containers.
  * Supports:
  * - Verified Digital Marketing case studies
- * - Flagship Self-Initiated Concept UI/UX case studies (NEXUS & PULSE)
+ * - Flagship Self-Initiated Concept UI/UX case studies (NEXUS, PULSE & EXPLAIN MY BANKING)
  * Features:
  * - Prominent "<- BACK TO WORK" and "CLOSE" header actions with Earth departure travel
  * - Independent native vertical scrolling with overscroll containment
@@ -46,7 +47,8 @@ export const CaseStudyModal = ({ project, isOpen, onClose, opacity = 1, isTransi
 
   const isNexus = project.id === 'nexus-enterprise-workflow';
   const isPulse = project.id === 'pulse-financial-insights';
-  const isUiUx = isNexus || isPulse;
+  const isBanking = project.id === 'explain-my-banking';
+  const isUiUx = isNexus || isPulse || isBanking;
 
   const modalContent = (
     <div
@@ -69,12 +71,12 @@ export const CaseStudyModal = ({ project, isOpen, onClose, opacity = 1, isTransi
         {/* ========================================================= */}
         <div className="flex-shrink-0 flex items-center justify-between border-b border-white/10 px-4 sm:px-8 lg:px-10 py-3.5 sm:py-4 bg-[#0c0d12]/98 backdrop-blur-md z-30 gap-3">
           {/* Project Title & Metadata */}
-          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1 overflow-hidden mr-2">
             <span className="inline-block w-2 h-2 bg-lime shrink-0" />
-            <span className="font-mono text-xs tracking-widest text-lime uppercase font-bold shrink-0">
+            <span className="font-mono text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-lime uppercase font-bold truncate">
               CASE STUDY // {project.badge || project.category}
             </span>
-            <span className="hidden sm:inline text-white/30">•</span>
+            <span className="hidden sm:inline text-white/30 shrink-0">•</span>
             <span className="hidden sm:inline font-mono text-xs text-white/80 uppercase font-semibold tracking-wider truncate max-w-[360px]">
               {project.title}
             </span>
@@ -110,6 +112,8 @@ export const CaseStudyModal = ({ project, isOpen, onClose, opacity = 1, isTransi
             <NexusCaseStudy project={project} />
           ) : isPulse ? (
             <PulseCaseStudy project={project} />
+          ) : isBanking ? (
+            <ExplainMyBankingCaseStudy project={project} onClose={onClose} />
           ) : (
             /* Digital Marketing Verified Case Study View */
             <div className="space-y-10">
