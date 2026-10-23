@@ -10,7 +10,7 @@ export const portfolioData = {
     email: "pandiveerviswa@gmail.com",
     linkedin: "#",
     github: "#",
-    resumePath: "/Pandi-Veer-Viswa-Resume.pdf",
+    resumePath: "/Pandi-Veer-Viswa-CV.pdf",
     profile: "Digital professional working at the intersection of marketing, data, design and technology. Hands-on experience in SEO, WordPress, Google Analytics 4 (GA4), Google Search Console, and Social Media Marketing, combined with a technical foundation in computer science, modern front-end tooling (React, Vite, Tailwind CSS), and user-centered digital experience design.",
     shortBio: "Working across marketing performance, user experience, data analytics, and modern web delivery. Blending analytical precision with design thinking to build impactful digital journeys.",
     extendedBio: "Combining a technical foundation in Computer Science Engineering (AIML) with practical digital marketing execution, user experience architecture, and web technology. Dedicated to creating high-clarity digital experiences that attract high-intent audiences, reduce interaction friction, and optimize business growth through verified data.",
@@ -347,7 +347,7 @@ export const portfolioData = {
         num: "02",
         title: "UI/UX DESIGN",
         subtitle: "Interface Design, Usability, Wireframes & Digital Systems",
-        countBadge: "3 CASE STUDIES",
+        countBadge: "2 CASE STUDIES",
         status: "ACTIVE ARCHIVE",
         disciplines: ["Information Architecture", "Wireframing & Prototyping", "Design Systems", "Usability Engineering"],
         description: "Human-centered digital interfaces, component design systems, and responsive layout architectures bridging aesthetic typography with intuitive interaction flows."
@@ -431,252 +431,8 @@ export const portfolioData = {
       }
     ],
 
-    // UI/UX Design project collection (Self-Initiated Concept Case Studies)
+    // UI/UX Design project collection (Flagship Case Studies)
     uiuxProjects: [
-      {
-        id: "nexus-enterprise-workflow",
-        title: "NEXUS",
-        subtitle: "ENTERPRISE WORKFLOW & KNOWLEDGE EXPERIENCE",
-        caseStudyType: "SELF-INITIATED PRODUCT DESIGN CASE STUDY",
-        category: "UI/UX & Product Design",
-        tags: ["UX / UI", "ENTERPRISE UX", "DESIGN SYSTEM", "RESPONSIVE UX"],
-        shortDescription: "A conceptual enterprise workspace that connects projects, tasks, knowledge, approvals and team activity into one structured digital experience.",
-        technologies: ["Design Systems", "Component Tokens", "Information Architecture", "React", "Tailwind CSS"],
-        badge: "Self-Initiated Case Study",
-        image: "/images/projects/nexus-preview.svg",
-        challenge: "Modern teams often work across multiple disconnected tools. Users need to switch between different systems to understand project status, find documentation, manage tasks, request approvals, collaborate, and search for information. NEXUS explores a unified workflow with zero information friction.",
-        execution: [
-          "01. Architectural Problem Framing: Deconstructed fractured enterprise workflows across tasks, documentation, and approvals.",
-          "02. Conceptual Information Architecture: Established unified 6-node hierarchy (Overview, Tasks, Documents, Activity, Team, Approvals).",
-          "03. Wireframe & Scannability Prototypes: Developed wireframes for Dashboard, Workspace, Task Inspector, and Command-K Search.",
-          "04. Scalable Design System: Engineered tokenized typography, obsidian surface palette, and accessible state components.",
-          "05. Responsive Reflow Strategy: Designed intentional adaptations across Desktop (3-column), Tablet (2-column), and Mobile (bottom-sheet).",
-          "06. Accessibility & Front-End Architecture: Structured semantic HTML landmarks, keyboard traversal, and mapped to a React component tree."
-        ],
-        deliverables: [
-          "Unified Enterprise Dashboard UI",
-          "Connected Knowledge Search Engine",
-          "Multi-Tier Approval Center",
-          "Modular Enterprise Design System",
-          "Responsive Layout Reflow Matrix",
-          "Conceptual React Component Architecture"
-        ],
-        hybridConnection: "Bridges user-centered product design with front-end component engineering, demonstrating how architectural design systems translate cleanly into scalable React & Tailwind browser code.",
-        problemBreakdown: {
-          fragmented: ["TASKS", "DOCUMENTS", "COMMUNICATION", "APPROVALS", "STATUS"],
-          solution: "ONE CONNECTED WORKSPACE"
-        },
-        designObjectives: [
-          "01 REDUCE INFORMATION FRICTION",
-          "02 MAKE WORK STATUS VISIBLE",
-          "03 CONNECT TASKS WITH KNOWLEDGE",
-          "04 SIMPLIFY COMPLEX WORKFLOWS",
-          "05 CREATE A SCALABLE INTERFACE SYSTEM"
-        ],
-        conceptualUserJourney: [
-          { phase: "DISCOVER", desc: "Arrive at unified home and scan multi-project health and priority actions" },
-          { phase: "UNDERSTAND", desc: "Navigate to specific project workspace with contextual docs and team activity" },
-          { phase: "PLAN", desc: "Break initiatives into structured task boards connected directly to knowledge pages" },
-          { phase: "EXECUTE", desc: "Perform focused work with live document collaboration and inline task updates" },
-          { phase: "REVIEW", desc: "Trigger multi-tier approval flows with clear review states and feedback threads" },
-          { phase: "COMPLETE", desc: "Archive verified deliverable, notify stakeholders, and update global status" }
-        ],
-        informationArchitecture: {
-          primaryNav: ["HOME", "PROJECTS", "TASKS", "KNOWLEDGE", "APPROVALS", "TEAM", "SEARCH"],
-          projectTree: [
-            "PROJECT",
-            "├── Overview",
-            "├── Tasks",
-            "├── Documents",
-            "├── Activity",
-            "├── Team",
-            "└── Approvals"
-          ]
-        },
-        wireframeAnnotations: [
-          { name: "01 Dashboard", note: "Tri-column layout with quick global search, active projects radar, and action priority queue." },
-          { name: "02 Project Overview", note: "Dual split-pane balancing milestone timelines on the left with linked documentation on the right." },
-          { name: "03 Task Detail", note: "Slide-over inspector connecting checklist items with related knowledge base documents." },
-          { name: "04 Knowledge Search", note: "Command-K modal with instant filters across docs, tickets, and team comments." },
-          { name: "05 Approval Flow", note: "Two-stage verification card highlighting requester context, asset diffs, and sign-off actions." }
-        ],
-        highFidelityScreens: [
-          { name: "01 NEXUS Dashboard", focus: "Global workspace telemetry, priority task drawer, and recent team deliverables." },
-          { name: "02 Project Workspace", focus: "Milestone kanban integrated with linked specifications and git/deploy status." },
-          { name: "03 Task Detail", focus: "Rich markdown editor with inline task mentions, subtasks, and dependency tree." },
-          { name: "04 Knowledge Search", focus: "Fuzzy-indexed documentation search with syntax-highlighted snippets." },
-          { name: "05 Approval Center", focus: "Review queue with side-by-side diff previews, risk flags, and one-click sign-offs." },
-          { name: "06 Team Activity", focus: "Real-time audit log of commits, reviews, status promotions, and approvals." }
-        ],
-        designSystemSpecs: {
-          typography: "Syne (Display Headings, 600-800) • Plus Jakarta Sans (Interface & Tables, 400-600) • Space Mono (Data Tokens, 500)",
-          colorTokens: [
-            { label: "Canvas Dark", hex: "#0C0D12" },
-            { label: "Surface Card", hex: "#141721" },
-            { label: "Border Subtle", hex: "rgba(255,255,255,0.12)" },
-            { label: "Accent Lime", hex: "#CCFF00" },
-            { label: "Status Live", hex: "#10B981" },
-            { label: "Status Alert", hex: "#F59E0B" }
-          ],
-          components: ["Buttons", "Inputs", "Cards", "Tables", "Badges", "Status Indicators", "Navigation", "Modals"]
-        },
-        responsiveDecisions: {
-          desktop: "Full 3-column panoramic layout with persistent command rail, expandable task inspector, and high-density tables.",
-          tablet: "Adaptive 2-column view with collapsible left rail converted into an off-canvas drawer and touch-friendly targets.",
-          mobile: "Single-column bottom-sheet architecture with simplified summary cards, swipeable tab headers, and 48px+ tap targets."
-        },
-        accessibilityPrinciples: [
-          "Keyboard Navigation: Full Tab, Shift+Tab, and Arrow key traversal with visible high-contrast focus rings.",
-          "High Contrast: Adheres to high-contrast guidelines across text, border tokens, and state indicators.",
-          "Semantic Hierarchy: Valid HTML landmark roles (<main>, <nav>, <aside>, <section>) and strictly sequential H1-H4 headings.",
-          "Predictable Interaction: Modals trap focus with Escape key dismissal, and form inputs feature persistent descriptive labels."
-        ],
-        frontendConnection: {
-          stack: ["HTML5", "CSS3", "JavaScript", "React", "Vite", "Tailwind CSS"],
-          architecture: [
-            "App",
-            "├── Navigation",
-            "├── Dashboard",
-            "├── ProjectWorkspace",
-            "├── TaskPanel",
-            "├── KnowledgeSearch",
-            "├── ApprovalCenter",
-            "└── DesignSystem"
-          ]
-        },
-        finalSummaryPoints: [
-          "USER-CENTERED THINKING",
-          "INFORMATION ARCHITECTURE",
-          "VISUAL INTERFACE DESIGN",
-          "SYSTEM-BASED DESIGN",
-          "FRONT-END AWARENESS"
-        ]
-      },
-      {
-        id: "pulse-financial-insights",
-        title: "PULSE",
-        subtitle: "PERSONAL FINANCIAL INSIGHTS EXPERIENCE",
-        caseStudyType: "SELF-INITIATED PRODUCT DESIGN CASE STUDY",
-        category: "UI/UX & Data Visualization",
-        tags: ["UX / UI", "DATA VISUALIZATION", "DASHBOARD UX", "RESPONSIVE DESIGN"],
-        shortDescription: "A conceptual personal finance platform designed to help users understand spending, budgets, recurring expenses and financial patterns through a clear visual experience.",
-        technologies: ["Data Visualization UX", "Information Hierarchy", "SVG Chart Systems", "React", "Tailwind CSS"],
-        badge: "Self-Initiated Concept",
-        image: "/images/projects/pulse-preview.svg",
-        sampleDisclaimer: "SAMPLE DATA / CONCEPTUAL VISUALIZATION // ALL NUMBERS, BALANCES AND TRANSACTIONS ARE FICTIONAL DEMONSTRATION DATA ONLY.",
-        challenge: "Financial data is easy to collect, but harder to understand. Users see transactions and numbers but struggle to grasp where money goes, what changed month-over-month, which categories are expanding, whether they remain within budgets, and what requires attention. The design goal: Turn financial data into understandable information.",
-        execution: [
-          "01. Cognitive Friction Analysis: Examined why raw tables fail to give users actionable spending context.",
-          "02. Financial Hierarchy System: Built a 3-tier structure: Primary (Balance), Secondary (Velocity/Budgets), Supporting (Line-item Logs).",
-          "03. Scannable Data Visualizations: Engineered clear charts using sample data (Spending Velocity curves, Donut Ring Breakdown, Budget Progress).",
-          "04. Frictionless Transaction Experience: Designed multidimensional filtering (merchant, date, category, amount) with inline receipt drawers.",
-          "05. Non-Advisory Pattern Insights: Created visual anomaly pattern cards without offering financial advice.",
-          "06. Desktop-to-Mobile Transformation: Converted panoramic multi-card financial cockpit into an ergonomic thumb-zone mobile experience."
-        ],
-        deliverables: [
-          "Financial Dashboard Cockpit UI",
-          "Multi-Metric Data Visualizer (Sample Data)",
-          "Faceted Transaction Filter Engine",
-          "Non-Advisory Insights Pattern Cards",
-          "Desktop to Mobile Responsive Transform",
-          "Accessible Financial Design System"
-        ],
-        hybridConnection: "Bridges data analytics intelligence with user experience design: turning dense telemetry and transaction logs into intuitive visual stories that reduce cognitive load.",
-        theUxProblem: {
-          heading: "FINANCIAL DATA IS EASY TO COLLECT. HARDER TO UNDERSTAND.",
-          struggles: [
-            "WHERE MONEY GOES",
-            "WHAT CHANGED",
-            "WHICH CATEGORIES ARE GROWING",
-            "WHETHER THEY ARE WITHIN A BUDGET",
-            "WHAT REQUIRES ATTENTION"
-          ],
-          designGoal: "TURN FINANCIAL DATA INTO UNDERSTANDABLE INFORMATION."
-        },
-        designObjectives: [
-          "01 MAKE COMPLEX DATA EASY TO SCAN",
-          "02 CREATE CLEAR FINANCIAL HIERARCHY",
-          "03 MAKE SPENDING PATTERNS VISIBLE",
-          "04 REDUCE COGNITIVE LOAD",
-          "05 DESIGN FOR DESKTOP AND MOBILE"
-        ],
-        informationArchitecture: {
-          primaryNav: ["OVERVIEW", "TRANSACTIONS", "BUDGETS", "INSIGHTS", "GOALS", "PROFILE"],
-          relationships: "Overview anchors baseline; Transactions details line items; Budgets sets constraints; Insights highlights patterns; Goals projects future trajectories."
-        },
-        dashboardHierarchy: {
-          primary: "TOTAL BALANCE: Bold single metric establishing financial baseline immediately.",
-          secondary: "MONTHLY SPENDING, BUDGET STATUS, SAVINGS: Immediate secondary health indicators showing velocity against goals.",
-          supporting: "RECENT TRANSACTIONS, SPENDING CATEGORIES, UPCOMING PAYMENTS: Granular contextual logs for itemized inspection."
-        },
-        dataVisualizations: [
-          { name: "Monthly Spending Velocity", type: "Curved Area Trend Line", desc: "Plots daily spending pace against cumulative target pacing curves (Sample: $3,420 vs $4,000 target budget)." },
-          { name: "Category Breakdown", type: "Proportional Ring Matrix", desc: "Interactive donut breakdown: Housing 38%, Food 24%, Subscriptions 18%, Transport 20%." },
-          { name: "Budget Progress Meters", type: "Segmented Progress Bars", desc: "Color-graded bars indicating consumed vs available budget per category." },
-          { name: "Recurring Subscriptions", type: "Pacing Calendar Grid", desc: "Visual timeline flagging upcoming renewal dates and month-over-month price changes." }
-        ],
-        transactionExperience: [
-          "Transaction List: Clean, high-contrast rows with category icons, timestamps, and merchant metadata.",
-          "Faceted Search & Filters: Real-time filtering by category, date range, amount range, and payment method.",
-          "Inline Transaction Detail: Expanding any row reveals itemized receipt, category re-tagging, and historical merchant frequency."
-        ],
-        insightsExperience: {
-          description: "Visualizes financial trends and anomalies without providing financial advice.",
-          sampleInsights: [
-            { title: "SPENDING TREND", text: "Food & Dining spending is 18% higher than your previous 3-month rolling median." },
-            { title: "MONTHLY CATEGORY CHANGE", text: "Utility expenses decreased by $42 following seasonal billing cycle adjustment." },
-            { title: "RECURRING EXPENSE", text: "Cloud software subscription renewed at $49/mo (scheduled next on Oct 18)." },
-            { title: "BUDGET STATUS", text: "Groceries budget is at 64% utilization with 12 days remaining in cycle." }
-          ]
-        },
-        mobileExperience: {
-          desktop: "Expansive multi-metric financial cockpit with side navigation, wide SVG charts, and comprehensive transaction data tables.",
-          mobile: "Bottom thumb-zone navigation, stacked metric cards, condensed sparklines, and tap-to-expand transaction drawer."
-        },
-        designSystemSpecs: {
-          typography: "Syne (Balances & Totals) • Plus Jakarta Sans (Labels & Interface) • Space Mono (Financial Data, Account Numbers & Timestamps)",
-          colorTokens: [
-            { label: "Obsidian Deep", hex: "#08090D" },
-            { label: "Surface Card", hex: "#11131A" },
-            { label: "Accent Lime", hex: "#CCFF00" },
-            { label: "Inflow Green", hex: "#10B981" },
-            { label: "Outflow Coral", hex: "#F43F5E" },
-            { label: "Muted Text", hex: "rgba(255,255,255,0.6)" }
-          ],
-          components: ["Cards", "Buttons", "Inputs", "Charts", "Tables", "Badges", "Navigation", "Empty States", "Error States"]
-        },
-        accessibilityPrinciples: [
-          "Accessible contrast ratios meeting WCAG guidelines across all monetary numbers and charts.",
-          "Redundant state indicators: Never relies on color alone; outflows feature '−' minus signs, inflows feature '+' plus signs.",
-          "Keyboard navigation across transaction tables and interactive data points with aria-valuenow attributes.",
-          "Screen reader text labels for all charts and monetary states."
-        ],
-        interactionDesign: [
-          "Interactive Chart Scrubbing: Hovering or dragging across timeline exposes granular day-by-day spend tooltips.",
-          "Smooth Accordion Expansion: Seamless state expansion for transaction drill-downs without layout shifts.",
-          "Budget Slider Simulators: Interactive hypothetical allocation sliders demonstrating real-time visual feedback."
-        ],
-        frontendConnection: {
-          stack: ["HTML5", "CSS3", "JavaScript", "React", "Vite", "Tailwind CSS"],
-          architecture: [
-            "App",
-            "├── Navigation",
-            "├── Dashboard",
-            "├── SpendingChart",
-            "├── BudgetCard",
-            "├── TransactionTable",
-            "├── Insights",
-            "└── DesignSystem"
-          ]
-        },
-        finalSummaryPoints: [
-          "DATA VISUALIZATION",
-          "INFORMATION HIERARCHY",
-          "RESPONSIVE DESIGN",
-          "ACCESSIBLE INTERACTION",
-          "PRODUCT THINKING"
-        ]
-      },
       {
         id: "explain-my-banking",
         title: "EXPLAIN MY BANKING",
@@ -772,6 +528,208 @@ export const portfolioData = {
           "DETERMINISTIC FINTECH LOGIC",
           "CUSTOMER EMPOWERMENT",
           "RESPONSIVE ACCESSIBLE DESIGN"
+        ]
+      },
+      {
+        id: "opspilot",
+        title: "OPSPILOT",
+        subtitle: "AI-POWERED BANKING PROBLEM-SOLVING ASSISTANT",
+        caseStudyType: "AI PRODUCT DESIGN · FINTECH · FULL-STACK PROTOTYPE",
+        category: "AI Product Design / FinTech",
+        tags: ["AI PRODUCT DESIGN", "FINTECH", "UX/UI", "FULL-STACK DEVELOPMENT"],
+        shortDescription: "An AI-assisted banking support prototype that helps users investigate transaction problems, understand available evidence, and identify appropriate next steps.",
+        technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "xAI Grok API", "Vercel", "Render", "GitHub"],
+        badge: "Full-Stack AI Prototype",
+        image: "/images/projects/opspilot-preview.svg",
+        liveDemoUrl: "https://opspilot-ecru.vercel.app/",
+        backendApiUrl: "https://opspilot-api-3ijk.onrender.com/",
+        githubUrl: "https://github.com/pandiveerviswa-dot/opspilot",
+        disclaimer: "Independent portfolio project · Synthetic banking data · Not a real banking service · AI responses may be unavailable or incorrect.",
+        heroStatement: "Don't just show users their transactions. Help them understand what happened and what to do next.",
+        role: "Product concept development, UX/UI design, frontend implementation, backend integration, AI integration, and safety-oriented interaction design.",
+        scope: "A deployed portfolio prototype using synthetic banking records and simulated case information. It is not connected to a real bank.",
+        challenge: "A banking app can display a transaction amount, date, and status without answering the question that matters most to the customer. How might a banking-support interface help a user move from confusion to an evidence-informed next step without pretending to know more than the available records establish?",
+        execution: [
+          "01. Evidence-First Architecture: Engineered interaction prioritizing verifiable synthetic records before generating natural-language explanations.",
+          "02. Contextual Problem Framing: Mapped 4 core customer friction scenarios: pending transfers, card holds, duplicate charges, and ATM cash discrepancies.",
+          "03. Multi-Step Journey Stepper: Designed a 6-stage flow (Ask → Investigate → Explain → Clarify → Recommend → Confirm) with transparent status tracking.",
+          "04. Full-Stack API Integration: Built an Express backend on Render communicating with xAI Grok API while enforcing strict server-side schema validation.",
+          "05. Dual-Mode Fallback Engine: Implemented robust rule-based fallback paths guaranteeing continuous operation when external AI APIs are unconfigured or unavailable.",
+          "06. Consequential Action Checkpoints: Embedded mandatory confirmation modals before executing simulated account operations such as freezing a card."
+        ],
+        deliverables: [
+          "OpsPilot AI Banking Interface Prototype",
+          "Multi-Stage Resolution Engine (/resolve)",
+          "Synthetic Transaction Evidence Inspector",
+          "Simulated Case Tracking & Notification System",
+          "Node.js/Express Backend with xAI Integration",
+          "Dual-Path Validation & Rules Fallback Layer"
+        ],
+        hybridConnection: "Bridges user-centered AI product design with full-stack engineering, demonstrating how bounded reasoning, evidence inspection, and confirmation checkpoints turn black-box AI into safe, responsible fintech tooling.",
+        theProblem: {
+          heading: "Banking Data Doesn't Always Explain the Problem",
+          scenarios: [
+            {
+              title: "Pending transfer",
+              desc: "Has the money gone through, or is it still processing?",
+              impact: "Customers experience uncertainty about whether funds reached the recipient."
+            },
+            {
+              title: "Card hold",
+              desc: "Why does the available balance differ from the expected balance?",
+              impact: "Temporary pre-authorizations (e.g. fuel or hotel holds) cause balance confusion."
+            },
+            {
+              title: "Possible duplicate charge",
+              desc: "Are two entries separate transactions or a problem worth investigating?",
+              impact: "Repeated charges create immediate anxiety without clear distinction of identical merchant receipts."
+            },
+            {
+              title: "ATM cash issue",
+              desc: "What information should the customer check before deciding what to do?",
+              impact: "Users need immediate guidance on terminal IDs, reversal timelines, and dispute logs."
+            }
+          ],
+          challengeStatement: "How might a banking-support interface help a user move from confusion to an evidence-informed next step without pretending to know more than the available records establish?"
+        },
+        productVision: {
+          heading: "From Transaction Visibility to Transaction Understanding",
+          statement: "The goal is not to make the AI sound certain. It is to make the available information easier to understand and the next step easier to identify.",
+          pillars: [
+            "Relevant synthetic transaction records.",
+            "Existing simulated case information.",
+            "Explanations grounded in available evidence.",
+            "Clarifying questions when information is insufficient.",
+            "Suggested next steps appropriate to the scenario."
+          ]
+        },
+        designGoals: [
+          {
+            num: "01",
+            title: "Evidence Before Explanation",
+            desc: "Present relevant transaction and case information so users can understand what supports an explanation."
+          },
+          {
+            num: "02",
+            title: "Clarity Over Jargon",
+            desc: "Use understandable language and request clarification when the available information is insufficient."
+          },
+          {
+            num: "03",
+            title: "Trust Through Boundaries",
+            desc: "Distinguish evidence from interpretation and avoid presenting an AI-generated explanation as a verified banking decision."
+          },
+          {
+            num: "04",
+            title: "A Useful Next Step",
+            desc: "Help users identify an appropriate follow-up instead of ending with an unexplained status."
+          }
+        ],
+        keyUserJourney: [
+          { step: "01", name: "ASK", desc: "The user describes a banking problem, such as a transfer that appears to be missing." },
+          { step: "02", name: "INVESTIGATE", desc: "The system looks for relevant synthetic transactions and simulated case information." },
+          { step: "03", name: "EXPLAIN", desc: "OpsPilot presents available evidence and contextual explanation, subject to validation and provider availability." },
+          { step: "04", name: "CLARIFY", desc: "If evidence is insufficient, the interaction can request more information instead of assuming the cause." },
+          { step: "05", name: "RECOMMEND", desc: "The system presents a suggested next step based on the scenario and supported actions." },
+          { step: "06", name: "CONFIRM", desc: "A consequential simulated action requires confirmation before it proceeds." }
+        ],
+        uxDecisions: [
+          {
+            title: "Transaction Evidence",
+            desc: "Relevant synthetic records give context to the explanation. Distinguish information obtained from records from explanatory interpretation.",
+            screenshot: "/images/projects/opspilot/01_opspilot_main.png"
+          },
+          {
+            title: "Case Context & Multi-Modal Prompts",
+            desc: "Existing simulated case information helps situate the problem when relevant records are available, offering direct common-task starting points.",
+            screenshot: "/images/projects/opspilot/02_opspilot_ask_interface.png"
+          },
+          {
+            title: "Clarification Instead of Guessing",
+            desc: "When available information cannot establish the cause, a clarifying question or fallback selector is more responsible than a definitive but unsupported answer.",
+            screenshot: "/images/projects/opspilot/03_opspilot_investigation_result.png"
+          },
+          {
+            title: "Confirmation for Consequential Actions",
+            desc: "A confirmation step creates a deliberate checkpoint before a supported simulated action proceeds, ensuring user autonomy.",
+            screenshot: "/images/projects/opspilot/03_opspilot_investigation_result.png"
+          }
+        ],
+        systemArchitecture: {
+          heading: "A Full-Stack Prototype with an AI Integration Layer",
+          frontend: {
+            stack: "React · TypeScript · Tailwind CSS",
+            role: "User input, evidence display, recommendations, and confirmation UI",
+            hosting: "Vercel"
+          },
+          backend: {
+            stack: "Node.js · Express",
+            role: "Request handling, server-side validation, and supported-action checks",
+            hosting: "Render"
+          },
+          aiLayer: {
+            provider: "xAI Grok API (subject to provider availability)",
+            fallback: "Rules-based fallback when AI is unconfigured or unavailable",
+            data: "Synthetic transaction evidence and simulated case records"
+          }
+        },
+        aiSafety: {
+          heading: "Useful Assistance Needs Clear Boundaries",
+          points: [
+            "Server-side validation checks model output against supported response structures and actions.",
+            "Available synthetic transaction and case records provide context, without implying access to a bank's full internal systems.",
+            "A rules-based fallback provides an alternative path when AI-provider responses fail or are unavailable, where implemented.",
+            "Consequential simulated actions require confirmation.",
+            "Recommendations and simulated actions are not real financial operations."
+          ],
+          closingNote: "These controls reduce certain risks but do not establish that every response is accurate, every failure scenario is covered, or the prototype is production-ready for banking."
+        },
+        engineeringChallenges: [
+          {
+            title: "AI Provider Failures",
+            desc: "The product must account for unavailable or unsuccessful provider responses. The prototype includes a rules-based fallback path operating seamlessly when AI keys are absent."
+          },
+          {
+            title: "Structured AI Output",
+            desc: "Model-generated content requires validation before it is treated as a supported response or action, preventing prompt injection or format mismatch."
+          },
+          {
+            title: "Useful Error Handling",
+            desc: "Error states should aid diagnosis without exposing API keys, secrets, internal stack traces, or sensitive server details."
+          },
+          {
+            title: "Action Boundaries",
+            desc: "Generated recommendations should not automatically authorize consequential operations. The prototype uses confirmation before consequential simulated actions."
+          }
+        ],
+        whatILearned: [
+          {
+            area: "AI Product UX",
+            takeaway: "An answer is more useful when users can understand its supporting context, evidence base, and operational limitations."
+          },
+          {
+            area: "Evidence-Grounded Interaction",
+            takeaway: "Transaction and case information should guide explanations without being confused with model interpretation or hallucinations."
+          },
+          {
+            area: "Full-Stack Integration",
+            takeaway: "AI products require coordination between frontend state, backend schema boundaries, and external provider rate/error regimes."
+          },
+          {
+            area: "Failure-Aware Design",
+            takeaway: "Provider errors, timeouts, and invalid responses must be designed for as first-class product states rather than edge-case crashes."
+          },
+          {
+            area: "Responsible Action Design",
+            takeaway: "Confirmation and server-side checks help separate AI-assisted suggestions from executed, consequential user commitments."
+          }
+        ],
+        finalSummaryPoints: [
+          "AI PRODUCT DESIGN",
+          "FINTECH EXPLAINABILITY",
+          "FULL-STACK PROTOTYPE",
+          "SAFETY CHECKPOINTS",
+          "RESPONSIBLE AI BOUNDARIES"
         ]
       }
     ]

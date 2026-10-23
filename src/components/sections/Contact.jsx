@@ -57,14 +57,14 @@ export const Contact = ({ opacity = 1, translateY = 0 }) => {
         <div className="pt-4 flex flex-wrap items-center gap-4">
           <a
             href={portfolioData.personal.resumePath}
-            download="Pandi-Veer-Viswa-Resume.pdf"
+            download="Pandi-Veer-Viswa-CV.pdf"
             className="meta-tag inline-flex items-center gap-2.5 px-8 py-4 bg-lime text-ink hover:bg-white rounded-full transition-all duration-200 text-xs font-bold"
           >
             <span>DOWNLOAD RESUME (PDF)</span>
             <FileDown className="w-4 h-4 text-ink" />
           </a>
           <span className="text-xs font-mono text-white/40">
-            Target: /Pandi-Veer-Viswa-Resume.pdf
+            Target: {portfolioData.personal.resumePath}
           </span>
         </div>
       </div>

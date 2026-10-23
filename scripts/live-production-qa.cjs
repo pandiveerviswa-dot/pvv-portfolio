@@ -285,7 +285,7 @@ async function runLiveQA() {
     // Test real resume PDF HTTP 200 on production
     const resumeCheck = await page.evaluate(async () => {
       try {
-        const r = await fetch('/Pandi-Veer-Viswa-Resume.pdf');
+        const r = await fetch('/Pandi-Veer-Viswa-CV.pdf');
         return { ok: r.ok, status: r.status, type: r.headers.get('content-type') };
       } catch (e) {
         return { ok: false, error: e.message };

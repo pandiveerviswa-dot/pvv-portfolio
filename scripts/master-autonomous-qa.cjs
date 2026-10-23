@@ -283,13 +283,13 @@ async function main() {
     // Resume verification
     const resumeStatus = await page.evaluate(async () => {
       try {
-        const resp = await fetch('/Pandi-Veer-Viswa-Resume.pdf');
+        const resp = await fetch('/Pandi-Veer-Viswa-CV.pdf');
         return { ok: resp.ok, status: resp.status, contentType: resp.headers.get('content-type') };
       } catch (e) {
         return { ok: false, error: e.message };
       }
     });
-    assert(resumeStatus.ok && resumeStatus.status === 200, 'Official Resume /Pandi-Veer-Viswa-Resume.pdf is served with HTTP 200');
+    assert(resumeStatus.ok && resumeStatus.status === 200, 'Official Resume /Pandi-Veer-Viswa-CV.pdf is served with HTTP 200');
     results.contentPass = !contentCheck.hasLorem && !contentCheck.hasPlaceholder && resumeStatus.ok;
 
     // ==========================================================

@@ -4,6 +4,7 @@ import { Check } from 'lucide-react';
 import { NexusCaseStudy } from './NexusCaseStudy';
 import { PulseCaseStudy } from './PulseCaseStudy';
 import { ExplainMyBankingCaseStudy } from './ExplainMyBankingCaseStudy';
+import { OpsPilotCaseStudy } from './OpsPilotCaseStudy';
 
 /**
  * CaseStudyModal
@@ -12,7 +13,7 @@ import { ExplainMyBankingCaseStudy } from './ExplainMyBankingCaseStudy';
  * from background scroll triggers and CSS transform containers.
  * Supports:
  * - Verified Digital Marketing case studies
- * - Flagship Self-Initiated Concept UI/UX case studies (NEXUS, PULSE & EXPLAIN MY BANKING)
+ * - Flagship UI/UX case studies (EXPLAIN MY BANKING & OPSPILOT)
  * Features:
  * - Prominent "<- BACK TO WORK" and "CLOSE" header actions with Earth departure travel
  * - Independent native vertical scrolling with overscroll containment
@@ -48,7 +49,8 @@ export const CaseStudyModal = ({ project, isOpen, onClose, opacity = 1, isTransi
   const isNexus = project.id === 'nexus-enterprise-workflow';
   const isPulse = project.id === 'pulse-financial-insights';
   const isBanking = project.id === 'explain-my-banking';
-  const isUiUx = isNexus || isPulse || isBanking;
+  const isOpsPilot = project.id === 'opspilot';
+  const isUiUx = isNexus || isPulse || isBanking || isOpsPilot;
 
   const modalContent = (
     <div
@@ -114,6 +116,8 @@ export const CaseStudyModal = ({ project, isOpen, onClose, opacity = 1, isTransi
             <PulseCaseStudy project={project} />
           ) : isBanking ? (
             <ExplainMyBankingCaseStudy project={project} onClose={onClose} />
+          ) : isOpsPilot ? (
+            <OpsPilotCaseStudy project={project} onClose={onClose} />
           ) : (
             /* Digital Marketing Verified Case Study View */
             <div className="space-y-10">

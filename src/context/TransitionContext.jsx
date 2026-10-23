@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useRef, useCallback } from 'react';
 import { gsap } from 'gsap';
+import { portfolioData } from '../data/portfolioData';
 
 const TransitionContext = createContext(null);
 
@@ -286,7 +287,11 @@ export const TransitionProvider = ({ children }) => {
     setActiveProject(project);
     setCaseStudyOpen(true);
     if (typeof window !== 'undefined') {
-      window.history.pushState({ modal: 'case-study', projectId: project.id }, '');
+      const currentHash = window.location.hash;
+      const targetHash = `#${project.id}`;
+      if (currentHash !== targetHash) {
+        window.history.pushState({ modal: 'case-study', projectId: project.id }, '', targetHash);
+      }
     }
   }, []);
 
@@ -294,10 +299,39 @@ export const TransitionProvider = ({ children }) => {
     setCaseStudyOpen(false);
     setActiveCaseStudy(null);
     setActiveProject(null);
-    if (typeof window !== 'undefined' && window.history.state?.modal === 'case-study') {
-      window.history.replaceState(null, '');
+    if (typeof window !== 'undefined') {
+      if (window.history.state?.modal === 'case-study' || window.location.hash) {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
     }
   }, []);
+
+  // Deep-linking direct access on page mount: #opspilot, ?project=opspilot, etc.
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const rawHash = window.location.hash.replace(/^#\/?/, '').toLowerCase().trim();
+    const params = new URLSearchParams(window.location.search);
+    const rawQuery = (params.get('project') || params.get('case-study') || '').toLowerCase().trim();
+    const slug = rawHash || rawQuery;
+    if (!slug) return;
+
+    const allProjects = [
+      ...(portfolioData.workData?.uiuxProjects || []),
+      ...(portfolioData.workData?.digitalMarketingProjects || []),
+    ];
+
+    const match = allProjects.find(
+      (p) => p.id.toLowerCase() === slug || p.id.toLowerCase().replace(/[^a-z0-9]/g, '') === slug.replace(/[^a-z0-9]/g, '')
+    );
+
+    if (match) {
+      const isUiux = (portfolioData.workData?.uiuxProjects || []).some((p) => p.id === match.id);
+      if (isUiux) {
+        setWorkActiveWorld('uiux');
+      }
+      openCaseStudy(match);
+    }
+  }, [openCaseStudy]);
 
   // Backward-compatible wrappers for project callers
   const openProjectWorld = useCallback((project) => {

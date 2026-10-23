@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <!-- Canvas Background -->
+  <rect width="1200" height="750" fill="#08090E"/>
+  <rect x="20" y="20" width="1160" height="710" stroke="#1D2230" stroke-width="1.5"/>
+
+  <!-- Top App Window Bar -->
+  <rect x="24" y="24" width="1152" height="54" fill="#0E1119"/>
+  <circle cx="55" cy="51" r="6" fill="#2D3344"/>
+  <circle cx="75" cy="51" r="6" fill="#2D3344"/>
+  <circle cx="95" cy="51" r="6" fill="#2D3344"/>
+  <text x="125" y="56" font-family="'Space Mono', monospace" font-size="12" fill="#848D9F" letter-spacing="1.5">OPSPILOT // AI-POWERED BANKING PROBLEM-SOLVING ASSISTANT</text>
+  
+  <!-- Concept Badge -->
+  <rect x="830" y="36" width="325" height="30" fill="#171A24" stroke="#10B981" stroke-width="1"/>
+  <text x="845" y="55" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#10B981" letter-spacing="0.5">PORTFOLIO PROTOTYPE · SYNTHETIC DATA</text>
+
+  <!-- Left Sidebar Navigation -->
+  <rect x="40" y="95" width="230" height="615" fill="#0B0D14" stroke="#1D2230" stroke-width="1"/>
+  <text x="60" y="132" font-family="'Syne', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">OPS<tspan fill="#10B981">PILOT</tspan></text>
+  <text x="60" y="152" font-family="'Space Mono', monospace" font-size="9" fill="#586073" letter-spacing="1">BANKING ASSISTANT · DEMO</text>
+
+  <!-- Nav Items -->
+  <rect x="50" y="175" width="210" height="34" fill="#181B26" stroke="#10B981" stroke-width="1"/>
+  <circle cx="64" cy="192" r="3" fill="#10B981"/>
+  <text x="76" y="196" font-family="'Space Mono', monospace" font-size="10.5" font-weight="bold" fill="#10B981">01 HOME (DASHBOARD)</text>
+
+  <rect x="50" y="215" width="210" height="34" fill="#12151E" stroke="#1F2535" stroke-width="1"/>
+  <circle cx="64" cy="232" r="3" fill="#848D9F"/>
+  <text x="76" y="236" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">02 ASK OPSPILOT</text>
+
+  <text x="76" y="278" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">03 TRANSACTIONS</text>
+  <text x="76" y="315" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">04 INSIGHTS</text>
+  <text x="76" y="352" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">05 MY CASES (1 ACTION)</text>
+  <text x="76" y="390" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">06 NOTIFICATIONS (2)</text>
+
+  <!-- Interaction Flow Box -->
+  <rect x="50" y="440" width="210" height="250" fill="#090B10" stroke="#1B1E29" stroke-width="1"/>
+  <text x="62" y="468" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#10B981">INTERACTION PIPELINE</text>
+  
+  <rect x="62" y="482" width="186" height="36" fill="#121622" stroke="#232A3B" stroke-width="1"/>
+  <text x="72" y="504" font-family="'Space Mono', monospace" font-size="8.5" font-weight="bold" fill="#FFFFFF">01 DESCRIBE → ASK</text>
+
+  <rect x="62" y="524" width="186" height="36" fill="#121622" stroke="#232A3B" stroke-width="1"/>
+  <text x="72" y="546" font-family="'Space Mono', monospace" font-size="8.5" font-weight="bold" fill="#34D399">02 CHECK RECORDS</text>
+
+  <rect x="62" y="566" width="186" height="36" fill="#121622" stroke="#232A3B" stroke-width="1"/>
+  <text x="72" y="588" font-family="'Space Mono', monospace" font-size="8.5" font-weight="bold" fill="#10B981">03 EXPLAIN &amp; PROPOSE</text>
+
+  <rect x="62" y="608" width="186" height="36" fill="#121622" stroke="#232A3B" stroke-width="1"/>
+  <text x="72" y="630" font-family="'Space Mono', monospace" font-size="8.5" font-weight="bold" fill="#CCFF00">04 YOU CONFIRM</text>
+
+  <text x="62" y="668" font-family="'Space Mono', monospace" font-size="8" fill="#586073">FULL-STACK PROTOTYPE</text>
+  <text x="62" y="682" font-family="'Space Mono', monospace" font-size="8" fill="#586073">REACT • NODE • xAI GROK</text>
+
+  <!-- Main Interface Cockpit -->
+  <rect x="290" y="95" width="870" height="615" fill="#0A0C13" stroke="#1D2230" stroke-width="1"/>
+
+  <!-- Top Hero Insight Banner -->
+  <rect x="315" y="115" width="820" height="155" fill="#11141D" stroke="#232A3C" stroke-width="1"/>
+  <text x="335" y="142" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#10B981">OPSPILOT · YOUR BANKING ASSISTANT</text>
+  <text x="335" y="174" font-family="'Syne', sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">Welcome back, Asha Rao (demo)</text>
+  <text x="335" y="196" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">Tell OpsPilot what you need. It checks your records, explains what it finds,</text>
+  <text x="335" y="212" font-family="'Space Mono', monospace" font-size="10.5" fill="#848D9F">does what it safely can, and guides you through the rest.</text>
+
+  <rect x="335" y="224" width="140" height="34" fill="#10B981"/>
+  <text x="360" y="246" font-family="'Space Mono', monospace" font-size="11" font-weight="bold" fill="#000000">✦ Ask OpsPilot</text>
+
+  <!-- Prompt Quick Action Pills -->
+  <rect x="490" y="224" width="310" height="34" fill="#151A24" stroke="#252E40" stroke-width="1"/>
+  <text x="504" y="246" font-family="'Space Mono', monospace" font-size="9" fill="#9CA3AF">"Money deducted but not received"</text>
+
+  <rect x="810" y="224" width="180" height="34" fill="#151A24" stroke="#252E40" stroke-width="1"/>
+  <text x="824" y="246" font-family="'Space Mono', monospace" font-size="9" fill="#9CA3AF">"I was charged twice"</text>
+
+  <!-- Needs Attention Alert -->
+  <g transform="translate(315, 290)">
+    <rect x="0" y="0" width="820" height="68" fill="#161512" stroke="#EAB308" stroke-width="1"/>
+    <circle cx="28" cy="34" r="10" fill="#EAB308" opacity="0.15"/>
+    <text x="24" y="38" font-family="'Space Mono', monospace" font-size="12" font-weight="bold" fill="#EAB308">!</text>
+    <text x="52" y="28" font-family="'Space Mono', monospace" font-size="11" font-weight="bold" fill="#FFFFFF">NEEDS YOUR ATTENTION // Did you make only one purchase at Northwind Electronics?</text>
+    <text x="52" y="48" font-family="'Space Mono', monospace" font-size="9.5" fill="#9CA3AF">Simulated duplicate charge detected: 16 Oct · CASE-2026-0427 · Action required</text>
+    <rect x="710" y="19" width="90" height="30" fill="#EAB308"/>
+    <text x="725" y="38" font-family="'Space Mono', monospace" font-size="9.5" font-weight="bold" fill="#000000">REVIEW →</text>
+  </g>
+
+  <!-- Accounts Stage -->
+  <g transform="translate(315, 375)">
+    <!-- Everyday Savings -->
+    <rect x="0" y="0" width="400" height="110" fill="#0F131C" stroke="#222B3D" stroke-width="1"/>
+    <text x="20" y="26" font-family="'Space Mono', monospace" font-size="9.5" fill="#717D96">EVERYDAY SAVINGS · XXXX-4821</text>
+    <text x="20" y="66" font-family="'Syne', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">₹48,210.55</text>
+    <text x="20" y="90" font-family="'Space Mono', monospace" font-size="9.5" fill="#10B981">● Available balance · Verified</text>
+
+    <!-- Credit Card -->
+    <rect x="420" y="0" width="400" height="110" fill="#0F131C" stroke="#222B3D" stroke-width="1"/>
+    <text x="440" y="26" font-family="'Space Mono', monospace" font-size="9.5" fill="#717D96">REWARDS CREDIT CARD · XXXX-7730</text>
+    <text x="440" y="66" font-family="'Syne', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">₹12,898.00</text>
+    <text x="440" y="90" font-family="'Space Mono', monospace" font-size="9.5" fill="#848D9F">Outstanding balance · ₹87,102 available</text>
+  </g>
+
+  <!-- Evidence & Safety Checkpoint -->
+  <g transform="translate(315, 502)">
+    <!-- Reasoning / Investigation Window -->
+    <rect x="0" y="0" width="490" height="188" fill="#0D1017" stroke="#1D2332" stroke-width="1"/>
+    <text x="20" y="28" font-family="'Space Mono', monospace" font-size="10.5" font-weight="bold" fill="#10B981">INVESTIGATION &amp; REASONING STAGE</text>
+    <text x="20" y="46" font-family="'Space Mono', monospace" font-size="8.5" fill="#727A8C">Grounding explanations in synthetic evidence</text>
+
+    <rect x="15" y="60" width="460" height="50" fill="#121622" stroke="#232A3B" stroke-width="1"/>
+    <text x="25" y="80" font-family="'Space Mono', monospace" font-size="9.5" fill="#FFFFFF">Query: "Why did my available balance drop?"</text>
+    <text x="25" y="96" font-family="'Space Mono', monospace" font-size="8" fill="#34D399">✓ Matched temporary merchant hold (₹3,200) · Pending settlement</text>
+
+    <rect x="15" y="120" width="460" height="52" fill="#121622" stroke="#232A3B" stroke-width="1"/>
+    <text x="25" y="140" font-family="'Space Mono', monospace" font-size="9" fill="#9CA3AF">Rules Fallback: Server validation enforced before action</text>
+    <text x="25" y="156" font-family="'Space Mono', monospace" font-size="8" fill="#586073">External AI Provider: xAI Grok API (Subject to availability)</text>
+  </g>
+
+  <!-- Confirmation Checkpoint Card -->
+  <g transform="translate(825, 502)">
+    <rect x="0" y="0" width="310" height="188" fill="#14121A" stroke="#F43F5E" stroke-width="1"/>
+    <text x="20" y="28" font-family="'Space Mono', monospace" font-size="10" font-weight="bold" fill="#F43F5E">SAFETY CHECKPOINT</text>
+    <text x="20" y="46" font-family="'Space Mono', monospace" font-size="8.5" fill="#9CA3AF">Consequential Action Guardrail</text>
+
+    <rect x="15" y="60" width="280" height="60" fill="#1A1520" stroke="#381E28" stroke-width="1"/>
+    <text x="25" y="80" font-family="'Space Mono', monospace" font-size="9" font-weight="bold" fill="#FFFFFF">Action: Freeze Card (Simulated)</text>
+    <text x="25" y="96" font-family="'Space Mono', monospace" font-size="8" fill="#F43F5E">Requires explicit user confirmation</text>
+    <text x="25" y="110" font-family="'Space Mono', monospace" font-size="7.5" fill="#71717A">No automated banking authorization</text>
+
+    <rect x="15" y="132" width="130" height="36" fill="#262626" stroke="#404040" stroke-width="1"/>
+    <text x="55" y="154" font-family="'Space Mono', monospace" font-size="9.5" fill="#FFFFFF">Cancel</text>
+
+    <rect x="155" y="132" width="140" height="36" fill="#F43F5E"/>
+    <text x="180" y="154" font-family="'Space Mono', monospace" font-size="9.5" font-weight="bold" fill="#FFFFFF">Confirm Freeze</text>
+  </g>
+</svg>
