@@ -24,18 +24,17 @@ export const Statement = ({ opacity = 1, translateY = 0, progress = 0 }) => {
         <h2 
           className="editorial-headline font-extrabold uppercase tracking-tighter text-white"
           style={{
-            fontSize: 'clamp(2.75rem, 6vw, 5.5rem)',
-            lineHeight: 0.9,
+            fontSize: 'clamp(1.85rem, 4vw, 3.65rem)',
+            lineHeight: 0.95,
           }}
         >
-          Marketing<span className="text-lime">.</span> <br />
-          Data<span className="text-lime">.</span> <br />
           Design<span className="text-lime">.</span> <br />
-          Technology<span className="text-lime">.</span>
+          Data<span className="text-lime">.</span> <br />
+          Digital Experiences<span className="text-lime">.</span>
         </h2>
 
         <div className="pt-2 sm:pt-4 border-l-2 border-lime pl-6 sm:pl-8 max-w-3xl space-y-3">
-          <p className="text-base sm:text-xl lg:text-2xl text-white font-medium leading-snug">
+          <p className="text-xs sm:text-base lg:text-lg text-white font-medium leading-relaxed">
             "{portfolioData.personal.headline}"
           </p>
           <p className="text-xs sm:text-sm text-white/70 font-mono leading-relaxed">
@@ -46,7 +45,7 @@ export const Statement = ({ opacity = 1, translateY = 0, progress = 0 }) => {
         {/* Lower Metadata Area */}
         <div className="pt-3 border-t border-white/10 space-y-2">
           <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 text-[11px] sm:text-xs font-mono text-white/50">
-            <span>BANGALORE, INDIA</span>
+            <span className="text-white/80 font-bold">UI/UX DESIGN × ANALYTICS × DIGITAL MARKETING</span>
             <span className="text-white/30">•</span>
             <span className="text-lime font-bold">{portfolioData.positioningPhilosophy.loop}</span>
           </div>

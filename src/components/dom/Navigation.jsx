@@ -7,7 +7,7 @@ export const Navigation = ({ progress, onJumpTo }) => {
   const { isTransitioning, currentSection } = useNavigationTransition();
 
   // Determine contrast state based on scene background:
-  const isLime = (progress >= 0.19 && progress < 0.23) || (progress >= 0.69 && progress < 0.73);
+  const isLime = progress >= 0.19 && progress < 0.23;
   const isLight = progress >= 0.90 && progress < 0.94;
   const isDark = !isLime && !isLight;
 

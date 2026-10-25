@@ -36,9 +36,9 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
     closeCapabilityWorld,
   } = useNavigationTransition();
 
-  // Normalized progress within the capabilities window (0.21 to 0.70)
+  // Normalized progress within the capabilities window (0.21 to 0.60)
   const capStart = 0.21;
-  const capEnd = 0.70;
+  const capEnd = 0.60;
   const rawSubP = (progress - capStart) / Math.max(0.001, capEnd - capStart);
   const pCap = Math.min(1.0, Math.max(0.0, rawSubP));
 
@@ -88,7 +88,7 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
   };
 
   // Visibility guard to prevent any flash of intermediate or preloaded state
-  const isSceneActive = progress >= 0.205 && progress <= 0.71;
+  const isSceneActive = progress >= 0.205 && progress <= 0.61;
 
   // Refs for measuring horizontal track runway
   const containerRef = useRef(null);
@@ -161,54 +161,11 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
     isDraggingRef.current = false;
   };
 
-  // 5 Canonical Capability Cards Data
+  // 5 Canonical Capability Cards Data (Reordered: UI/UX -> Front-End -> Strengths -> Marketing -> Analytics)
   const capabilityCards = useMemo(() => [
     {
-      id: 'digital-marketing',
-      num: '01',
-      title: 'DIGITAL MARKETING',
-      subtitleLine1: 'DIGITAL',
-      subtitleLine2: 'MARKETING',
-      microLabel: 'ATTRACT • ENGAGE • CONVERT',
-      shortDesc:
-        'Building digital visibility through search, content, campaigns and social channels.',
-      skillPreview: [
-        'SEO',
-        'ON-PAGE & TECHNICAL SEO',
-        'KEYWORD RESEARCH',
-        'GOOGLE ADS',
-        'SOCIAL MEDIA',
-        'CONTENT MARKETING',
-        'EMAIL MARKETING',
-        'META ADS',
-        'LEAD GENERATION',
-      ],
-      tag: '01 // ACQUISITION',
-    },
-    {
-      id: 'marketing-analytics',
-      num: '02',
-      title: 'MARKETING ANALYTICS',
-      subtitleLine1: 'MARKETING',
-      subtitleLine2: 'ANALYTICS',
-      microLabel: 'MEASURE • UNDERSTAND • OPTIMIZE',
-      shortDesc:
-        'Turning marketing data into insights through measurement, dashboards and performance analysis.',
-      skillPreview: [
-        'GOOGLE ANALYTICS 4',
-        'GOOGLE SEARCH CONSOLE',
-        'LOOKER STUDIO',
-        'TRAFFIC ANALYSIS',
-        'USER BEHAVIOR',
-        'CONVERSIONS',
-        'CAMPAIGN PERFORMANCE',
-        'KPI REPORTING',
-      ],
-      tag: '02 // TELEMETRY',
-    },
-    {
       id: 'uiux-experience',
-      num: '03',
+      num: '01',
       title: 'UI/UX & DIGITAL EXPERIENCE',
       subtitleLine1: 'UI/UX &',
       subtitleLine2: 'DIGITAL EXPERIENCE',
@@ -225,12 +182,12 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
         'USABILITY',
         'DESIGN SYSTEMS',
       ],
-      tag: '03 // VISUAL CENTERPIECE',
+      tag: '01 // DESIGN CENTERPIECE',
       isCenterpiece: true,
     },
     {
       id: 'frontend-web',
-      num: '04',
+      num: '02',
       title: 'FRONT-END & WEB TECHNOLOGY',
       subtitleLine1: 'FRONT-END &',
       subtitleLine2: 'WEB TECHNOLOGY',
@@ -250,11 +207,11 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
         'RANK MATH',
         'WPFORMS',
       ],
-      tag: '04 // ARCHITECTURE',
+      tag: '02 // ARCHITECTURE',
     },
     {
       id: 'professional-strengths',
-      num: '05',
+      num: '03',
       title: 'PROFESSIONAL STRENGTHS',
       subtitleLine1: 'PROFESSIONAL',
       subtitleLine2: 'STRENGTHS',
@@ -273,7 +230,50 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
         'CRITICAL THINKING',
         'CONTINUOUS LEARNING',
       ],
-      tag: '05 // HOW I THINK & WORK',
+      tag: '03 // HOW I THINK & WORK',
+    },
+    {
+      id: 'digital-marketing',
+      num: '04',
+      title: 'DIGITAL MARKETING',
+      subtitleLine1: 'DIGITAL',
+      subtitleLine2: 'MARKETING',
+      microLabel: 'ATTRACT • ENGAGE • CONVERT',
+      shortDesc:
+        'Building digital visibility through search, content, campaigns and social channels.',
+      skillPreview: [
+        'SEO',
+        'ON-PAGE & TECHNICAL SEO',
+        'KEYWORD RESEARCH',
+        'GOOGLE ADS',
+        'SOCIAL MEDIA',
+        'CONTENT MARKETING',
+        'EMAIL MARKETING',
+        'META ADS',
+        'LEAD GENERATION',
+      ],
+      tag: '04 // ACQUISITION',
+    },
+    {
+      id: 'marketing-analytics',
+      num: '05',
+      title: 'MARKETING ANALYTICS',
+      subtitleLine1: 'MARKETING',
+      subtitleLine2: 'ANALYTICS',
+      microLabel: 'MEASURE • UNDERSTAND • OPTIMIZE',
+      shortDesc:
+        'Turning marketing data into insights through measurement, dashboards and performance analysis.',
+      skillPreview: [
+        'GOOGLE ANALYTICS 4',
+        'GOOGLE SEARCH CONSOLE',
+        'LOOKER STUDIO',
+        'TRAFFIC ANALYSIS',
+        'USER BEHAVIOR',
+        'CONVERSIONS',
+        'CAMPAIGN PERFORMANCE',
+        'KPI REPORTING',
+      ],
+      tag: '05 // TELEMETRY',
     },
   ], []);
 
@@ -308,7 +308,7 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
               </div>
 
               {/* Large Editorial Headline */}
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tighter text-white leading-[0.94]">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black uppercase tracking-tighter text-white leading-[0.94]">
                 SKILLS<br />
                 THAT<br />
                 <span className="text-lime">CONNECT</span>
@@ -317,9 +317,9 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
               {/* Supporting Hybrid Descriptor */}
               <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-white/10">
                 <p className="font-mono text-xs sm:text-sm tracking-wider text-white/70 leading-relaxed uppercase">
-                  MARKETING.<br />
-                  DATA.<br />
                   DESIGN.<br />
+                  DATA.<br />
+                  EXPERIENCES.<br />
                   TECHNOLOGY.
                 </p>
                 <p className="text-white/40 text-[10px] sm:text-[11px] font-mono mt-2 sm:mt-3 leading-normal hidden sm:block">
@@ -377,7 +377,7 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
                     className={`relative w-[290px] sm:w-[350px] lg:w-[410px] xl:w-[440px] h-[430px] sm:h-[470px] lg:h-[500px] flex-shrink-0 flex flex-col justify-between p-5 sm:p-7 border ${
                       isActive
                         ? 'bg-lime text-black border-lime shadow-[0_0_50px_rgba(204,255,0,0.22)] scale-100 z-10'
-                        : 'bg-[#0c0d12]/90 backdrop-blur-md text-white border-white/15 hover:border-white/30 scale-[0.97] opacity-80 z-0'
+                        : 'bg-[#0a0b10] text-white border-white/15 hover:border-white/30 scale-[0.97] opacity-80 z-0'
                     }`}
                   >
                     {/* Technical Crosshair / Corner Accents */}
@@ -429,19 +429,19 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
 
                       {/* Large Number + Title */}
                       <div className="flex items-start justify-between gap-3 mt-1">
-                        <h3 className="text-xl sm:text-2xl lg:text-3xl font-black uppercase tracking-tight leading-[0.95]">
+                        <h3 className="text-lg sm:text-xl lg:text-2xl font-black uppercase tracking-tight leading-[0.95]">
                           {card.subtitleLine1}
                           <br />
                           {card.subtitleLine2}
                         </h3>
-                        <span className="font-mono text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter opacity-85 leading-none">
+                        <span className="font-mono text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter opacity-85 leading-none">
                           {card.num}
                         </span>
                       </div>
 
                       {/* Short Description */}
                       <p
-                        className={`text-xs sm:text-[13px] mt-3 leading-relaxed line-clamp-3 ${
+                        className={`text-[11px] sm:text-xs mt-3 leading-relaxed line-clamp-3 ${
                           isActive ? 'text-black/85 font-medium' : 'text-white/70'
                         }`}
                       >

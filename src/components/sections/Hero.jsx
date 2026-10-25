@@ -101,8 +101,8 @@ export const Hero = ({
               <h1 
                 className="editorial-headline font-extrabold uppercase tracking-tighter text-white"
                 style={{
-                  fontSize: 'clamp(3.5rem, 8vw, 7rem)',
-                  lineHeight: 0.88,
+                  fontSize: 'clamp(2.75rem, 6.5vw, 5.75rem)',
+                  lineHeight: 0.9,
                 }}
               >
                 PANDI <br />
@@ -110,17 +110,15 @@ export const Hero = ({
                 VISWA
               </h1>
 
-              <div className="text-xs sm:text-sm md:text-base font-mono font-extrabold tracking-wider text-lime uppercase flex flex-wrap items-center gap-1.5 sm:gap-2 pt-3">
-                <span>DIGITAL MARKETING</span>
+              <div className="text-[11px] sm:text-xs md:text-sm font-mono font-extrabold tracking-wider text-lime uppercase flex flex-wrap items-center gap-1.5 sm:gap-2 pt-3">
+                <span>UI/UX DESIGN</span>
                 <span className="text-white/40">×</span>
                 <span>ANALYTICS</span>
                 <span className="text-white/40">×</span>
-                <span>UI/UX</span>
-                <span className="text-white/40">×</span>
-                <span>FRONT-END</span>
+                <span>DIGITAL MARKETING</span>
               </div>
-              <div className="text-[11px] sm:text-xs font-mono text-white/60 uppercase tracking-widest pt-1.5">
-                Digital Marketing • Analytics • UI/UX • Web Experiences
+              <div className="text-[10px] sm:text-[11px] font-mono text-white/60 uppercase tracking-widest pt-1.5">
+                USER EXPERIENCE • DATA-DRIVEN INSIGHTS • DIGITAL GROWTH
               </div>
             </div>
           </div>

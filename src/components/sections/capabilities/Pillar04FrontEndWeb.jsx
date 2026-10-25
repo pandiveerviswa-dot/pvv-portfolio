@@ -7,7 +7,7 @@ import { portfolioData } from '../../../data/portfolioData';
  * Focus: React, Vite, Tailwind CSS, JavaScript, HTML/CSS, WordPress, Elementor, Rank Math, WPForms, Python
  */
 export const Pillar04FrontEndWeb = () => {
-  const data = portfolioData.fourPillars[3];
+  const data = (portfolioData.fivePillars || portfolioData.fourPillars).find(p => p.id === 'frontend-web') || portfolioData.fourPillars[1];
 
   const categories = [
     {

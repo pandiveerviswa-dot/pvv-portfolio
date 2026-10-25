@@ -46,7 +46,7 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
         </div>
 
         <div className="space-y-2">
-          <h1 className="editorial-headline text-4xl sm:text-6xl font-black uppercase tracking-tight text-white">
+          <h1 className="editorial-headline text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
             EXPLAIN MY BANKING
           </h1>
           <p className="font-mono text-sm sm:text-base text-lime tracking-wider uppercase font-semibold">
@@ -82,14 +82,14 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
         </div>
 
         {/* High-Fidelity Preview */}
-        <div className="border border-white/15 bg-black/60 overflow-hidden relative group">
+        <div className="border border-white/15 bg-black/80 overflow-hidden relative group rounded-lg shadow-2xl">
           <img
-            src="/images/projects/explain-my-banking-preview.svg"
-            alt="Explain My Banking UI Preview"
-            className="w-full h-auto object-cover max-h-[480px]"
+            src="/images/projects/explain-my-banking-preview.png"
+            alt="Explain My Banking Dashboard Application Screenshot"
+            className="w-full h-auto object-contain max-h-[580px] sm:max-h-[640px] mx-auto block"
           />
           <div className="p-3 bg-[#0a0c13] border-t border-white/10 flex flex-wrap items-center justify-between gap-2 font-mono text-[11px] text-white/60">
-            <span>FINANCIAL EXPLAINABILITY COCKPIT // AUGUST vs SEPTEMBER 2026 VARIANCE</span>
+            <span>FINANCIAL EXPLAINABILITY COCKPIT // REAL APPLICATION DASHBOARD</span>
             <span className="text-lime font-bold">WORKING PROTOTYPE</span>
           </div>
         </div>
@@ -115,7 +115,7 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-2xl sm:text-3xl font-extrabold uppercase text-white leading-tight">
+          <h2 className="text-xl sm:text-2xl font-extrabold uppercase text-white leading-tight">
             TRADITIONAL BANKING FEEDS SHOW WHAT HAPPENED.<br />
             <span className="text-lime">THEY DON'T EXPLAIN WHY.</span>
           </h2>
@@ -130,7 +130,7 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-lime uppercase font-bold tracking-widest block mb-2">
             THE PRIMARY CUSTOMER QUESTION
           </span>
-          <div className="text-2xl sm:text-3xl font-extrabold uppercase text-white">
+          <div className="text-xl sm:text-2xl font-extrabold uppercase text-white">
             "Why did my spending increase this month?"
           </div>
           <p className="text-xs sm:text-sm text-white/70 mt-2 max-w-2xl">
@@ -140,9 +140,9 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
 
         {/* User Struggles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-3">
-            <span className="font-mono text-xs text-white/40 uppercase block">CORE INTERACTION BOTTLENECKS</span>
-            <div className="space-y-2 font-mono text-xs text-white/75">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-3">
+            <span className="font-mono text-xs text-white/50 uppercase block font-semibold">CORE INTERACTION BOTTLENECKS</span>
+            <div className="space-y-2 font-mono text-xs text-white/85">
               {[
                 'CHRONOLOGICAL STATEMENT DUMPS WITH NO MONTH-OVER-MONTH VARIANCE',
                 'MANUAL CALCULATION REQUIRED TO PINPOINT WHICH CATEGORIES EXPANDED',
@@ -150,7 +150,7 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
                 'ABSTRACT FINANCIAL CHARTS DISCONNECTED FROM LINE-ITEM TRANSACTIONS',
                 'PATRONIZING BUDGET ADVICE INSTEAD OF OBJECTIVE EXPLANATIONS'
               ].map((item, i) => (
-                <div key={item} className="p-2.5 bg-black/40 border border-white/10 flex items-center gap-2">
+                <div key={item} className="p-2.5 bg-[#181a24] border border-white/10 flex items-center gap-2">
                   <span className="text-rose-400 font-bold">0{i + 1}.</span>
                   <span>{item}</span>
                 </div>
@@ -158,17 +158,17 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
             </div>
           </div>
 
-          <div className="p-5 bg-lime/[0.04] border border-lime/30 space-y-3 flex flex-col justify-between">
+          <div className="p-5 bg-lime/[0.08] border border-lime/30 space-y-3 flex flex-col justify-between">
             <div>
               <span className="font-mono text-xs text-lime uppercase font-bold block">CORE UX PRINCIPLE</span>
-              <h3 className="text-xl font-bold uppercase text-white mt-1">
+              <h3 className="text-base sm:text-lg font-bold uppercase text-white mt-1">
                 EXPLAIN → SHOW EVIDENCE → LET THE CUSTOMER DECIDE
               </h3>
-              <p className="text-xs sm:text-sm text-white/80 font-sans leading-relaxed mt-2">
+              <p className="text-xs sm:text-sm text-white/90 font-sans leading-relaxed mt-2">
                 A respectful FinTech interface answers the question upfront with narrative clarity, surfaces the mathematical receipt evidence immediately below, and respects user autonomy without unsolicited financial preaching.
               </p>
             </div>
-            <div className="p-3 bg-black/60 border border-lime/30 font-mono text-xs text-lime space-y-1">
+            <div className="p-3 bg-[#0a0b10] border border-lime/40 font-mono text-xs text-lime space-y-1">
               <div className="flex items-center gap-2">
                 <Check className="w-3.5 h-3.5" />
                 <span>Explain: Clear driver narrative in plain language</span>
@@ -195,31 +195,31 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
         </div>
 
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-extrabold uppercase text-white">
+          <h2 className="text-xl sm:text-2xl font-extrabold uppercase text-white">
             AUGUST 2026 VS SEPTEMBER 2026 ANALYSIS
           </h2>
-          <p className="text-xs sm:text-sm text-white/70 font-sans max-w-3xl leading-relaxed">
+          <p className="text-xs sm:text-sm text-white/80 font-sans max-w-3xl leading-relaxed">
             The working prototype models a realistic month-over-month variance dataset. Comparing August 2026 to September 2026 demonstrates exactly how raw spend differences are reconciled into driver categories.
           </p>
         </div>
 
         {/* Macro Month Comparison Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-1">
-            <span className="font-mono text-xs text-white/40 uppercase block">BASELINE MONTH (AUG 2026)</span>
-            <div className="font-display text-3xl sm:text-4xl font-extrabold text-white">₹28,250</div>
-            <span className="font-mono text-[11px] text-white/50">Total Baseline Outflow</span>
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-1">
+            <span className="font-mono text-xs text-white/50 uppercase block font-semibold">BASELINE MONTH (AUG 2026)</span>
+            <div className="font-display text-2xl sm:text-3xl font-extrabold text-white">₹28,250</div>
+            <span className="font-mono text-[11px] text-white/60">Total Baseline Outflow</span>
           </div>
 
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-1">
-            <span className="font-mono text-xs text-white/40 uppercase block">CURRENT MONTH (SEP 2026)</span>
-            <div className="font-display text-3xl sm:text-4xl font-extrabold text-white">₹36,650</div>
-            <span className="font-mono text-[11px] text-white/50">Total Current Outflow</span>
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-1">
+            <span className="font-mono text-xs text-white/50 uppercase block font-semibold">CURRENT MONTH (SEP 2026)</span>
+            <div className="font-display text-2xl sm:text-3xl font-extrabold text-white">₹36,650</div>
+            <span className="font-mono text-[11px] text-white/60">Total Current Outflow</span>
           </div>
 
           <div className="p-5 bg-rose-500/10 border border-rose-500/30 space-y-1">
             <span className="font-mono text-xs text-rose-400 uppercase font-bold block">NET SPENDING VARIANCE</span>
-            <div className="font-display text-3xl sm:text-4xl font-extrabold text-rose-400">+₹8,400</div>
+            <div className="font-display text-2xl sm:text-3xl font-extrabold text-rose-400">+₹8,400</div>
             <span className="font-mono text-[11px] text-rose-300">▲ +29.7% Increase Month-over-Month</span>
           </div>
         </div>
@@ -295,29 +295,29 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Step 1: EXPLAIN */}
-          <div className="p-6 bg-white/[0.02] border border-white/15 space-y-3 flex flex-col justify-between">
+          <div className="p-6 bg-[#12141c] border border-white/15 space-y-3 flex flex-col justify-between">
             <div>
               <span className="font-display text-3xl font-black text-lime">01</span>
               <h3 className="font-mono text-sm font-bold uppercase text-white mt-1">EXPLAIN</h3>
-              <p className="text-xs text-white/75 font-sans leading-relaxed mt-2">
+              <p className="text-xs text-white/85 font-sans leading-relaxed mt-2">
                 Presents a human-readable synthesis answering why spending grew. Avoids dense percentages; focuses on category drivers and situational context.
               </p>
             </div>
-            <div className="p-3 bg-black/60 border border-white/10 font-mono text-[11px] text-lime/90 mt-4">
+            <div className="p-3 bg-[#181a24] border border-white/10 font-mono text-[11px] text-lime/90 mt-4">
               "Your spending rose ₹8,400 this month, driven primarily by Shopping (+₹3,300) and Food (+₹2,500)."
             </div>
           </div>
 
           {/* Step 2: SHOW EVIDENCE */}
-          <div className="p-6 bg-white/[0.02] border border-white/15 space-y-3 flex flex-col justify-between">
+          <div className="p-6 bg-[#12141c] border border-white/15 space-y-3 flex flex-col justify-between">
             <div>
               <span className="font-display text-3xl font-black text-lime">02</span>
               <h3 className="font-mono text-sm font-bold uppercase text-white mt-1">SHOW EVIDENCE</h3>
-              <p className="text-xs text-white/75 font-sans leading-relaxed mt-2">
+              <p className="text-xs text-white/85 font-sans leading-relaxed mt-2">
                 Every statement insight connects directly to verifiable transaction line items. Users can inspect merchant details, dates, and amounts with zero opacity.
               </p>
             </div>
-            <div className="p-3 bg-black/60 border border-white/10 font-mono text-[11px] text-white/90 mt-4 space-y-1">
+            <div className="p-3 bg-[#181a24] border border-white/10 font-mono text-[11px] text-white/95 mt-4 space-y-1">
               <div>• Urban Trend Store: ₹2,800</div>
               <div>• The Grand Bistro: ₹1,450</div>
               <div>• RideWave Mobility: ₹650</div>
@@ -325,15 +325,15 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
           </div>
 
           {/* Step 3: LET DECIDE */}
-          <div className="p-6 bg-white/[0.02] border border-white/15 space-y-3 flex flex-col justify-between">
+          <div className="p-6 bg-[#12141c] border border-white/15 space-y-3 flex flex-col justify-between">
             <div>
               <span className="font-display text-3xl font-black text-lime">03</span>
               <h3 className="font-mono text-sm font-bold uppercase text-white mt-1">LET CUSTOMER DECIDE</h3>
-              <p className="text-xs text-white/75 font-sans leading-relaxed mt-2">
+              <p className="text-xs text-white/85 font-sans leading-relaxed mt-2">
                 Instead of moralizing about budgeting, the interface offers empowering user controls: mark as expected, set a guardrail, or flag for review.
               </p>
             </div>
-            <div className="p-3 bg-black/60 border border-white/10 font-mono text-[11px] text-emerald-400 mt-4 space-y-1">
+            <div className="p-3 bg-[#181a24] border border-white/10 font-mono text-[11px] text-emerald-400 mt-4 space-y-1">
               <div>[✓] Mark as one-off festive event</div>
               <div>[+] Set soft Shopping guardrail</div>
             </div>
@@ -350,50 +350,50 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-2xl sm:text-3xl font-extrabold uppercase text-white">
+          <h2 className="text-xl sm:text-2xl font-extrabold uppercase text-white">
             FROM FIGMA BLUEPRINT TO REACT 19 IMPLEMENTATION
           </h2>
-          <p className="text-xs sm:text-sm text-white/70 max-w-3xl font-sans leading-relaxed">
+          <p className="text-xs sm:text-sm text-white/80 max-w-3xl font-sans leading-relaxed">
             The transition from conceptual design tokens to modern front-end code prioritized accessibility, contrast ratios, and layout stability across desktop and mobile screens.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Design Specs (Figma) */}
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-4">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-white/10">
               <span className="font-mono text-xs font-bold text-lime uppercase">FIGMA DESIGN BLUEPRINT</span>
-              <span className="font-mono text-[10px] text-white/40">DESIGN SYSTEM TOKENS</span>
+              <span className="font-mono text-[10px] text-white/50">DESIGN SYSTEM TOKENS</span>
             </div>
 
-            <div className="space-y-3 font-sans text-xs text-white/80">
+            <div className="space-y-3 font-sans text-xs text-white/85">
               <div>
-                <span className="font-mono text-[11px] text-white/40 uppercase block mb-1">TYPOGRAPHY HIERARCHY</span>
+                <span className="font-mono text-[11px] text-white/50 uppercase block mb-1">TYPOGRAPHY HIERARCHY</span>
                 <p>
                   <strong className="text-white">Display &amp; Primary UI:</strong> Inter (400, 500, 600) chosen for tabular numeral alignment and readability across financial figures.
                 </p>
               </div>
 
               <div>
-                <span className="font-mono text-[11px] text-white/40 uppercase block mb-1">COLOR ARCHITECTURE</span>
+                <span className="font-mono text-[11px] text-white/50 uppercase block mb-1">COLOR ARCHITECTURE</span>
                 <div className="grid grid-cols-2 gap-2 font-mono text-[11px]">
-                  <div className="p-2 bg-black/40 border border-white/10">
-                    <span className="text-white">Surface Page</span>: <span className="text-white/60">#F8FAFC / #0C0D12</span>
+                  <div className="p-2 bg-[#181a24] border border-white/10">
+                    <span className="text-white font-semibold">Surface Page</span>: <span className="text-white/70">#F8FAFC / #0C0D12</span>
                   </div>
-                  <div className="p-2 bg-black/40 border border-white/10">
-                    <span className="text-teal-400">Accent Teal</span>: <span className="text-white/60">#0D9488</span>
+                  <div className="p-2 bg-[#181a24] border border-white/10">
+                    <span className="text-teal-400 font-semibold">Accent Teal</span>: <span className="text-white/70">#0D9488</span>
                   </div>
-                  <div className="p-2 bg-black/40 border border-white/10">
-                    <span className="text-lime">Accent Lime</span>: <span className="text-white/60">#CCFF00</span>
+                  <div className="p-2 bg-[#181a24] border border-white/10">
+                    <span className="text-lime font-semibold">Accent Lime</span>: <span className="text-white/70">#CCFF00</span>
                   </div>
-                  <div className="p-2 bg-black/40 border border-white/10">
-                    <span className="text-rose-400">Variance Delta</span>: <span className="text-white/60">#E11D48</span>
+                  <div className="p-2 bg-[#181a24] border border-white/10">
+                    <span className="text-rose-400 font-semibold">Variance Delta</span>: <span className="text-white/70">#E11D48</span>
                   </div>
                 </div>
               </div>
 
               <div>
-                <span className="font-mono text-[11px] text-white/40 uppercase block mb-1">INTERACTION DESIGN DECISIONS</span>
+                <span className="font-mono text-[11px] text-white/50 uppercase block mb-1">INTERACTION DESIGN DECISIONS</span>
                 <p>
                   Zero modal jumps. The entire flow expands in-place via smooth height-contained drawers, keeping spatial continuity intact as users inspect supporting evidence.
                 </p>
@@ -402,15 +402,15 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
           </div>
 
           {/* Implementation Architecture */}
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-4">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-white/10">
               <span className="font-mono text-xs font-bold text-lime uppercase">FRONT-END IMPLEMENTATION</span>
-              <span className="font-mono text-[10px] text-white/40">PRODUCTION STACK</span>
+              <span className="font-mono text-[10px] text-white/50">PRODUCTION STACK</span>
             </div>
 
-            <div className="space-y-3 font-sans text-xs text-white/80">
+            <div className="space-y-3 font-sans text-xs text-white/85">
               <div>
-                <span className="font-mono text-[11px] text-white/40 uppercase block mb-1">ENGINEERING STACK</span>
+                <span className="font-mono text-[11px] text-white/50 uppercase block mb-1">ENGINEERING STACK</span>
                 <div className="flex flex-wrap gap-1.5 pt-1">
                   {['React 19', 'Vite 5', 'Tailwind CSS', 'Lucide React', 'Bunny Fonts (Inter)'].map((t) => (
                     <span key={t} className="font-mono text-[11px] px-2.5 py-1 bg-lime/10 border border-lime/30 text-lime font-bold">
@@ -421,8 +421,8 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
               </div>
 
               <div>
-                <span className="font-mono text-[11px] text-white/40 uppercase block mb-1">COMPONENT ARCHITECTURE</span>
-                <div className="p-3 bg-black/60 border border-white/10 font-mono text-[11px] text-white/70 space-y-1">
+                <span className="font-mono text-[11px] text-white/50 uppercase block mb-1">COMPONENT ARCHITECTURE</span>
+                <div className="p-3 bg-[#181a24] border border-white/10 font-mono text-[11px] text-white/85 space-y-1">
                   <div>ExplainMyBankingApp</div>
                   <div>├── OverviewBanner (August vs September)</div>
                   <div>├── VarianceSummaryCard (Net Delta +₹8,400)</div>
@@ -433,7 +433,7 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
               </div>
 
               <div>
-                <span className="font-mono text-[11px] text-white/40 uppercase block mb-1">ACCESSIBILITY &amp; PERFORMANCE</span>
+                <span className="font-mono text-[11px] text-white/50 uppercase block mb-1">ACCESSIBILITY &amp; PERFORMANCE</span>
                 <p>
                   Strict semantic headings, `aria-expanded` attributes on evidence drawers, high-contrast text ratios exceeding WCAG AA, and instant client-side rendering with zero network latency.
                 </p>
@@ -452,21 +452,21 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-2xl sm:text-3xl font-extrabold uppercase text-white">
+          <h2 className="text-xl sm:text-2xl font-extrabold uppercase text-white">
             TRANSPARENT DETERMINISTIC LOGIC VS OPAQUE EXTERNAL AI
           </h2>
-          <p className="text-xs sm:text-sm text-white/70 max-w-3xl font-sans leading-relaxed">
+          <p className="text-xs sm:text-sm text-white/80 max-w-3xl font-sans leading-relaxed">
             In FinTech engineering, accuracy and predictability are paramount. Below is an honest breakdown of the exact logic running in the live application.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-5 bg-lime/[0.04] border border-lime/30 space-y-3">
+          <div className="p-5 bg-lime/[0.08] border border-lime/30 space-y-3">
             <div className="flex items-center gap-2 text-lime font-mono text-xs font-bold uppercase">
               <CheckCircle2 className="w-4 h-4" />
               <span>WHAT IS ACTUALLY IMPLEMENTED (DETERMINISTIC)</span>
             </div>
-            <ul className="space-y-2 font-sans text-xs text-white/80 leading-relaxed">
+            <ul className="space-y-2 font-sans text-xs text-white/90 leading-relaxed">
               <li className="flex items-start gap-2">
                 <span className="text-lime font-bold">•</span>
                 <span><strong>Mathematical Rule Engine:</strong> Client-side algorithms calculate exact differences between August and September transaction sets.</span>
@@ -486,12 +486,12 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
             </ul>
           </div>
 
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-3">
-            <div className="flex items-center gap-2 text-white/50 font-mono text-xs font-bold uppercase">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-3">
+            <div className="flex items-center gap-2 text-white/70 font-mono text-xs font-bold uppercase">
               <Cpu className="w-4 h-4" />
               <span>WHAT IS NOT PRESENT (NO BLACK-BOX LLM)</span>
             </div>
-            <ul className="space-y-2 font-sans text-xs text-white/70 leading-relaxed">
+            <ul className="space-y-2 font-sans text-xs text-white/80 leading-relaxed">
               <li className="flex items-start gap-2">
                 <span className="text-rose-400 font-bold">•</span>
                 <span><strong>No Remote Generative LLM API:</strong> Does not pipe private banking records to external cloud LLM APIs (OpenAI/Anthropic).</span>
@@ -522,11 +522,11 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-3">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-3">
             <span className="font-mono text-xs text-amber-400 font-bold uppercase block">
               CURRENT PROTOTYPE LIMITATIONS
             </span>
-            <ul className="space-y-2 font-sans text-xs text-white/70 leading-relaxed">
+            <ul className="space-y-2 font-sans text-xs text-white/80 leading-relaxed">
               <li className="flex items-start gap-2">
                 <span className="text-amber-400 font-bold">01.</span>
                 <span><strong>Fixed Dataset Scope:</strong> Currently analyzes a curated mock two-month transaction scenario (August vs September 2026).</span>
@@ -542,11 +542,11 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
             </ul>
           </div>
 
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-3">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-3">
             <span className="font-mono text-xs text-lime font-bold uppercase block">
               POSSIBLE FUTURE IMPROVEMENTS
             </span>
-            <ul className="space-y-2 font-sans text-xs text-white/70 leading-relaxed">
+            <ul className="space-y-2 font-sans text-xs text-white/80 leading-relaxed">
               <li className="flex items-start gap-2">
                 <span className="text-lime font-bold">01.</span>
                 <span><strong>Account Aggregator (AA) Integration:</strong> Connecting with RBI-regulated Account Aggregators to import real user statements securely with explicit consent.</span>

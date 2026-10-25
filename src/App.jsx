@@ -17,9 +17,7 @@ gsap.registerPlugin(ScrollTrigger);
  */
 function getSceneBackgroundColor(p, isTransitioning = false) {
   if (isTransitioning) return '#080808';
-  if (p < 0.70) return '#080808'; // Scenes 01, 02 & 03: Hero, Statement & Capabilities Gallery (Deep Black Cosmos)
-  if (p < 0.73) return '#CCFF00'; // Scene 04: Acid-Lime Wipe into Selected Work
-  if (p < 0.89) return '#080808'; // Scene 05: Selected Work (Dark Gallery)
+  if (p < 0.89) return '#080808'; // Scenes 01 to 05: Hero, Statement, Capabilities, Tools Transition, Selected Work
   if (p < 0.94) return '#F5F5F1'; // Scene 06: Experience & Education (Off-White)
   return '#080808';               // Scene 07: Contact Destination (Matte Black)
 }
@@ -140,10 +138,10 @@ function PortfolioContent() {
         onBeginJourney={() => handleNavJump('capabilities')}
       />
 
-      {/* Master Scroll Track: 14,000px pacing for smooth filmic scrub across all 4 pillars */}
+      {/* Master Scroll Track: 16,000px pacing for smooth filmic scrub across all pillars & tools transition */}
       <div
         ref={trackRef}
-        className="w-full h-[14000px] pointer-events-none opacity-0"
+        className="w-full h-[16000px] pointer-events-none opacity-0"
         aria-hidden="true"
       />
 

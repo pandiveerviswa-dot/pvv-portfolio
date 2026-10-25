@@ -45,24 +45,24 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
         </div>
 
         <div className="space-y-3">
-          <h1 className="editorial-headline text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight text-white">
+          <h1 className="editorial-headline text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
             OPSPILOT
           </h1>
-          <p className="font-mono text-sm sm:text-lg text-emerald-400 tracking-wider uppercase font-semibold">
+          <p className="font-mono text-sm sm:text-base text-emerald-400 tracking-wider uppercase font-semibold">
             AI-POWERED BANKING PROBLEM-SOLVING ASSISTANT
           </p>
         </div>
 
         {/* Hero Statement Quote */}
-        <div className="p-5 sm:p-6 bg-gradient-to-r from-emerald-950/30 via-[#0c0d12] to-[#0c0d12] border-l-4 border-emerald-500 border-y border-r border-white/10">
-          <p className="text-base sm:text-xl text-white font-medium italic leading-relaxed">
+        <div className="p-5 sm:p-6 bg-gradient-to-r from-emerald-950/40 via-[#12141c] to-[#12141c] border-l-4 border-emerald-500 border-y border-r border-white/15">
+          <p className="text-sm sm:text-base lg:text-lg text-white font-medium italic leading-relaxed">
             &ldquo;Don&rsquo;t just show users their transactions. Help them understand what happened and what to do next.&rdquo;
           </p>
         </div>
 
         {/* Role & Technology Metadata Matrix */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-          <div className="p-4 bg-white/[0.02] border border-white/10 space-y-1.5">
+          <div className="p-4 bg-[#12141c] border border-white/15 space-y-1.5">
             <span className="font-mono text-[11px] uppercase tracking-wider text-white/50 font-bold block">
               MY CONTRIBUTION &amp; ROLE
             </span>
@@ -71,7 +71,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
             </p>
           </div>
 
-          <div className="p-4 bg-white/[0.02] border border-white/10 space-y-1.5">
+          <div className="p-4 bg-[#12141c] border border-white/15 space-y-1.5">
             <span className="font-mono text-[11px] uppercase tracking-wider text-white/50 font-bold block">
               TECHNOLOGY STACK
             </span>
@@ -79,7 +79,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
               {['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'xAI Grok API', 'Vercel', 'Render', 'GitHub'].map((tech) => (
                 <span
                   key={tech}
-                  className="font-mono text-[10px] px-2 py-0.5 bg-white/[0.05] border border-white/15 text-white/90"
+                  className="font-mono text-[10px] px-2 py-0.5 bg-white/10 border border-white/15 text-white/90 font-medium"
                 >
                   {tech}
                 </span>
@@ -140,7 +140,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             02 // PROJECT OVERVIEW
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             From Banking Data to Actionable Understanding
           </h2>
         </div>
@@ -154,7 +154,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           </p>
         </div>
 
-        <div className="p-5 bg-white/[0.02] border border-white/15 space-y-2">
+        <div className="p-5 bg-[#12141c] border border-white/15 space-y-2">
           <span className="font-mono text-xs text-white/50 uppercase tracking-wider font-bold block">
             PROTOTYPE SCOPE &amp; BOUNDARIES
           </span>
@@ -172,7 +172,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             03 // THE PROBLEM
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             Banking Data Doesn&rsquo;t Always Explain the Problem
           </h2>
         </div>
@@ -211,7 +211,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           ].map((scenario) => (
             <div
               key={scenario.num}
-              className="p-5 bg-white/[0.02] border border-white/10 space-y-2.5 relative overflow-hidden group hover:border-emerald-500/40 transition-colors"
+              className="p-5 bg-[#12141c] border border-white/10 space-y-2.5 relative overflow-hidden group hover:border-emerald-500/40 transition-colors"
             >
               <div className="flex items-center justify-between">
                 <span className="font-mono text-xs text-emerald-400 font-bold">
@@ -256,7 +256,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             04 // PRODUCT VISION
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             From Transaction Visibility to Transaction Understanding
           </h2>
         </div>
@@ -276,7 +276,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           ].map((pillar, idx) => (
             <div
               key={idx}
-              className="p-4 bg-white/[0.02] border border-white/15 flex items-start gap-3"
+              className="p-4 bg-[#12141c] border border-white/15 flex items-start gap-3"
             >
               <span className="w-5 h-5 bg-emerald-500/10 border border-emerald-500 text-emerald-400 font-mono text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5">
                 {idx + 1}
@@ -289,7 +289,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
         </div>
 
         {/* Closing Vision Quote */}
-        <div className="p-5 bg-white/[0.02] border-l-2 border-emerald-400 border-white/10">
+        <div className="p-5 bg-[#12141c] border-l-2 border-emerald-400 border-white/10">
           <p className="font-mono text-xs sm:text-sm text-white/90 italic leading-relaxed">
             &ldquo;The goal is not to make the AI sound certain. It is to make the available information easier to understand and the next step easier to identify.&rdquo;
           </p>
@@ -304,7 +304,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             05 // DESIGN GOALS
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             Principles Guiding the Assistant
           </h2>
         </div>
@@ -340,7 +340,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
             return (
               <div
                 key={goal.num}
-                className="p-6 bg-white/[0.02] border border-white/15 hover:border-emerald-500/40 transition-colors space-y-3"
+                className="p-6 bg-[#12141c] border border-white/15 hover:border-emerald-500/40 transition-colors space-y-3"
               >
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-xs text-emerald-400 font-bold">
@@ -370,7 +370,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             06 // KEY USER JOURNEY
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             From &ldquo;Where Did My Money Go?&rdquo; to &ldquo;What Should I Do Next?&rdquo;
           </h2>
         </div>
@@ -411,7 +411,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           ].map((item) => (
             <div
               key={item.step}
-              className="p-5 bg-white/[0.02] border border-white/15 space-y-2 relative"
+              className="p-5 bg-[#12141c] border border-white/15 space-y-2 relative"
             >
               <div className="flex items-center justify-between">
                 <span className="font-display text-2xl font-black text-emerald-400">
@@ -440,7 +440,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             07 // UX &amp; INTERFACE DECISIONS
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             Make the Reasoning Easier to Follow
           </h2>
         </div>
@@ -451,7 +451,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
             <span className="font-mono text-xs text-emerald-400 uppercase font-bold">
               01 // QUERY INTERFACE &amp; CONTEXTUAL STARTERS
             </span>
-            <h3 className="text-xl sm:text-2xl font-bold uppercase text-white">
+            <h3 className="text-lg sm:text-xl font-bold uppercase text-white">
               Direct Starting Scenarios &amp; Transparent Stepper
             </h3>
             <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-sans">
@@ -493,7 +493,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
             <span className="font-mono text-xs text-emerald-400 uppercase font-bold">
               02 // REASONING &amp; ACTION CHECKPOINTS
             </span>
-            <h3 className="text-xl sm:text-2xl font-bold uppercase text-white">
+            <h3 className="text-lg sm:text-xl font-bold uppercase text-white">
               Confirmation for Consequential Simulated Actions
             </h3>
             <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-sans">
@@ -511,7 +511,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
             <span className="font-mono text-xs text-emerald-400 uppercase font-bold">
               03 // RESPONSIVE ADAPTATION
             </span>
-            <h3 className="text-xl sm:text-2xl font-bold uppercase text-white">
+            <h3 className="text-lg sm:text-xl font-bold uppercase text-white">
               Mobile-First Ergonomics
             </h3>
             <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-sans">
@@ -540,13 +540,13 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             08 // SYSTEM ARCHITECTURE
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             A Full-Stack Prototype with an AI Integration Layer
           </h2>
         </div>
 
         {/* Architecture Flow Diagram */}
-        <div className="p-6 bg-white/[0.02] border border-white/15 space-y-6">
+        <div className="p-6 bg-[#12141c] border border-white/15 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Frontend */}
             <div className="p-5 bg-[#0a0c13] border border-white/20 space-y-3">
@@ -597,7 +597,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
             </div>
           </div>
 
-          <div className="p-4 bg-white/[0.02] border border-white/10 font-mono text-xs text-white/75 leading-relaxed">
+          <div className="p-4 bg-[#12141c] border border-white/10 font-mono text-xs text-white/75 leading-relaxed">
             <span className="text-emerald-400 font-bold">ARCHITECTURAL GROUNDING:</span> Verified against the actual repository and deployment endpoints. The client does not directly connect to third-party AI keys from the browser; all requests traverse the Express backend on Render for schema validation, logging, and rules fallback.
           </div>
         </div>
@@ -611,7 +611,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             09 // AI AND SAFETY
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             Useful Assistance Needs Clear Boundaries
           </h2>
         </div>
@@ -626,7 +626,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           ].map((point, idx) => (
             <div
               key={idx}
-              className="p-4 bg-white/[0.02] border border-white/15 flex items-start gap-3 text-xs sm:text-sm font-sans text-white/85"
+              className="p-4 bg-[#12141c] border border-white/15 flex items-start gap-3 text-xs sm:text-sm font-sans text-white/85"
             >
               <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
               <span>{point}</span>
@@ -650,7 +650,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             10 // ENGINEERING CHALLENGES
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             Designing for More Than the Successful Response
           </h2>
         </div>
@@ -676,7 +676,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           ].map((challenge, idx) => (
             <div
               key={idx}
-              className="p-5 bg-white/[0.02] border border-white/15 space-y-2 hover:border-emerald-500/30 transition-colors"
+              className="p-5 bg-[#12141c] border border-white/15 space-y-2 hover:border-emerald-500/30 transition-colors"
             >
               <div className="flex items-center justify-between">
                 <span className="font-mono text-xs text-emerald-400 font-bold">
@@ -703,7 +703,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             11 // FINAL OUTCOME
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             A Deployed, End-to-End Portfolio Prototype
           </h2>
         </div>
@@ -718,7 +718,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
         </div>
 
         {/* Balanced Claims Notice */}
-        <div className="p-4 bg-white/[0.02] border border-white/15 font-mono text-xs text-white/70 space-y-1">
+        <div className="p-4 bg-[#12141c] border border-white/15 font-mono text-xs text-white/70 space-y-1">
           <span className="text-emerald-400 font-bold block">HONEST EVALUATION &amp; METRIC INTEGRITY:</span>
           <p>
             The frontend and backend have deployment URLs supplied for the project. Live AI response reliability has not yet been conclusively verified, so do not claim model accuracy, uptime, latency, customer satisfaction, conversion improvements, or production banking readiness.
@@ -734,7 +734,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             12 // RETROSPECTIVE
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white mt-1">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-white mt-1">
             What Building OpsPilot Taught Me
           </h2>
         </div>
@@ -764,7 +764,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="p-5 bg-white/[0.02] border border-white/15 space-y-2"
+              className="p-5 bg-[#12141c] border border-white/15 space-y-2"
             >
               <div className="flex items-center justify-between">
                 <span className="font-mono text-xs text-emerald-400 font-bold">
@@ -791,7 +791,7 @@ export const OpsPilotCaseStudy = ({ project, onClose }) => {
           <span className="font-mono text-xs text-emerald-400 tracking-wider uppercase font-semibold">
             13 // INTERACTIVE PROTOTYPE
           </span>
-          <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
+          <h2 className="text-2xl sm:text-4xl font-black uppercase tracking-tight text-white">
             Explore OpsPilot
           </h2>
           <p className="text-xs sm:text-sm text-white/75 max-w-xl mx-auto font-sans leading-relaxed">

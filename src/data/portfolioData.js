@@ -1,46 +1,46 @@
 export const portfolioData = {
   personal: {
     name: "Pandi Veer Viswa",
-    role: "DIGITAL MARKETING × ANALYTICS × UI/UX × FRONT-END",
-    subRole: "Creative Digital Technologist",
-    headline: "Marketing that understands data. Design that understands people. Technology that delivers the experience.",
-    shortDescriptor: "Digital Marketing • Analytics • UI/UX • Web Experiences",
+    role: "UI/UX DESIGN × ANALYTICS × DIGITAL MARKETING",
+    subRole: "UI/UX & Digital Experience Designer",
+    headline: "Design experiences around people. Turn data into insights. Create digital journeys that matter.",
+    shortDescriptor: "USER EXPERIENCE • DATA-DRIVEN INSIGHTS • DIGITAL GROWTH",
     location: "Bangalore, India",
     phone: "+91 6380630519",
     email: "pandiveerviswa@gmail.com",
     linkedin: "#",
     github: "#",
     resumePath: "/Pandi-Veer-Viswa-CV.pdf",
-    profile: "Digital professional working at the intersection of marketing, data, design and technology. Hands-on experience in SEO, WordPress, Google Analytics 4 (GA4), Google Search Console, and Social Media Marketing, combined with a technical foundation in computer science, modern front-end tooling (React, Vite, Tailwind CSS), and user-centered digital experience design.",
-    shortBio: "Working across marketing performance, user experience, data analytics, and modern web delivery. Blending analytical precision with design thinking to build impactful digital journeys.",
-    extendedBio: "Combining a technical foundation in Computer Science Engineering (AIML) with practical digital marketing execution, user experience architecture, and web technology. Dedicated to creating high-clarity digital experiences that attract high-intent audiences, reduce interaction friction, and optimize business growth through verified data.",
+    profile: "I combine user-centered design, analytical thinking and digital marketing expertise to create engaging digital experiences aligned with user needs and business goals. Hands-on experience in UI/UX architecture, front-end tooling (React, Vite, Tailwind CSS), behavioral telemetry (GA4, Looker Studio), and digital growth systems.",
+    shortBio: "I combine user-centered design, analytical thinking and digital marketing expertise to create engaging digital experiences aligned with user needs and business goals.",
+    extendedBio: "Combining a technical foundation in Computer Science Engineering (AIML) with user experience architecture, front-end technologies, behavioral analytics, and digital marketing execution. Dedicated to creating high-clarity digital experiences that solve real user problems, reduce interaction friction, and achieve business outcomes through verified insights.",
     languages: ["English", "Tamil"],
   },
 
   positioningPhilosophy: {
     title: "THE HYBRID DISCIPLINE",
-    statement: "Modern digital growth does not happen in silos. It happens at the intersection where marketing finds the audience, UI/UX engages the human, analytics decodes the behavior, and web technology delivers the experience.",
+    statement: "I combine user-centered design, analytical thinking and digital marketing expertise to create engaging digital experiences aligned with user needs and business goals.",
     pillars: [
       {
-        id: "marketing",
-        num: "01",
-        name: "MARKETING",
-        action: "ATTRACT",
-        desc: "Search, organic visibility, and performance channels that connect real human intent to solutions."
-      },
-      {
         id: "uiux",
-        num: "02",
+        num: "01",
         name: "UI/UX",
         action: "ENGAGE",
         desc: "Information architecture, visual hierarchy, and friction-free interactions designed for people."
       },
       {
         id: "analytics",
-        num: "03",
+        num: "02",
         name: "ANALYTICS",
         action: "UNDERSTAND",
         desc: "Behavioral telemetry, GA4 event pipelines, and Looker Studio dashboards that reveal ground truth."
+      },
+      {
+        id: "marketing",
+        num: "03",
+        name: "MARKETING",
+        action: "ATTRACT",
+        desc: "Search, organic visibility, and performance channels that connect real human intent to solutions."
       },
       {
         id: "technology",
@@ -50,51 +50,13 @@ export const portfolioData = {
         desc: "Modern front-end engineering, WordPress web systems, and responsive layouts that perform at speed."
       }
     ],
-    loop: "ATTRACT → ENGAGE → UNDERSTAND → DELIVER → OPTIMIZE ↺"
+    loop: "DESIGN → DATA → DIGITAL EXPERIENCES"
   },
 
-  fourPillars: [
-    {
-      id: "digital-marketing",
-      num: "01",
-      title: "DIGITAL MARKETING",
-      subheading: "ATTRACT • ENGAGE • CONVERT",
-      summary: "Strategic search optimization, performance acquisition, and structured content management engineered to capture qualified intent and convert traffic into measurable business pipeline.",
-      capabilities: [
-        { name: "Search Engine Optimization (SEO)", desc: "Organic search visibility and search ranking strategies." },
-        { name: "On-Page & Technical SEO", desc: "Meta architectures, crawl efficiency, schema, and page speed." },
-        { name: "Keyword Research & Mapping", desc: "High-intent search query discovery mapped to user journeys." },
-        { name: "Google Ads Support", desc: "Targeted search campaign management and intent alignment." },
-        { name: "Social Media Marketing (SMM)", desc: "Meta Business Suite scheduling and multi-channel engagement." },
-        { name: "Content Marketing & Strategy", desc: "Structured editorial content designed for crawlability and clarity." },
-        { name: "Email Marketing & Lead Gen", desc: "Targeted email funnels and verified prospect acquisition." }
-      ],
-      workAreas: [
-        "SEO & Website Optimization",
-        "Campaign Management",
-        "Content Publishing & Social Workflows"
-      ]
-    },
-    {
-      id: "marketing-analytics",
-      num: "02",
-      title: "MARKETING ANALYTICS",
-      subheading: "MEASURE • UNDERSTAND • OPTIMIZE",
-      summary: "Transforming raw digital activity into actionable behavioral intelligence. Measuring every user touchpoint across Google Analytics 4, Search Console, and custom Looker Studio dashboards.",
-      capabilities: [
-        { name: "Google Analytics 4 (GA4)", desc: "Event-based measurement, session telemetry, and audience funnels." },
-        { name: "Google Search Console", desc: "Indexation tracking, query performance, and crawl error diagnosis." },
-        { name: "Looker Studio BI Dashboards", desc: "Custom visual reports synthesizing complex metrics for decisions." },
-        { name: "Traffic Source Attribution", desc: "Granular attribution across Organic, Direct, Referral, Social, and Paid." },
-        { name: "User Behavior & Flow Analysis", desc: "Deciphering scroll depth, engagement duration, and drop-off barriers." },
-        { name: "Conversion & Goal Tracking", desc: "Precision event tracking across contact leads and action triggers." },
-        { name: "Data-Driven Optimization", desc: "Continuous iterative refinement backed by verified behavioral trends." }
-      ],
-      pipeline: "DATA → BEHAVIOR → INSIGHT → OPTIMIZATION"
-    },
+  fivePillars: [
     {
       id: "uiux-experience",
-      num: "03",
+      num: "01",
       title: "UI/UX & DIGITAL EXPERIENCE",
       subheading: "HIERARCHY • USABILITY • INTERACTION • CLARITY",
       summary: "Designing digital experiences where visual hierarchy, content architecture, cognitive ease, and responsive engineering work in seamless unison. Grounded in hands-on website development and interface craft.",
@@ -212,7 +174,7 @@ export const portfolioData = {
     },
     {
       id: "frontend-web",
-      num: "04",
+      num: "02",
       title: "FRONT-END & WEB TECHNOLOGY",
       subheading: "DESIGN → STRUCTURE → CODE → INTERACTION → EXPERIENCE",
       summary: "The technical toolkit that powers modern digital web experiences. Bridging visual design and functional browser code with high standards of performance, clean architecture, and responsive precision.",
@@ -230,8 +192,68 @@ export const portfolioData = {
         { name: "Python", layer: "Data Foundations & Logic", type: "Language" }
       ],
       progression: "DESIGN → STRUCTURE → CODE → INTERACTION → EXPERIENCE"
+    },
+    {
+      id: "professional-strengths",
+      num: "03",
+      title: "PROFESSIONAL STRENGTHS",
+      subheading: "THINK • COLLABORATE • GROW",
+      summary: "Core cognitive and collaborative capabilities that elevate project execution, teamwork, and problem solving drawn from academic and professional performance.",
+      strengths: [
+        { num: "01", name: "Analytical Thinking", desc: "Deconstructing complex digital systems and user metrics into clear, actionable structural hypotheses." },
+        { num: "02", name: "Effective Communication", desc: "Translating intricate technical and analytics data into clear strategic direction for stakeholders." },
+        { num: "03", name: "Problem Solving", desc: "Addressing indexing bottlenecks, conversion drop-offs, and usability friction with systematic remedies." },
+        { num: "04", name: "Attention to Detail", desc: "Ensuring exactness across title tags, pixel-perfect spacing tokens, tracking codes, and code syntax." },
+        { num: "05", name: "Time Management", desc: "Prioritizing high-impact sprint deliverables across multi-channel campaigns and web deployments." },
+        { num: "06", name: "Team Collaboration", desc: "Working constructively alongside content writers, designers, and developers to align on unified outcomes." },
+        { num: "07", name: "Adaptability", desc: "Rapidly mastering evolving search algorithms, modern front-end frameworks, and digital tools." },
+        { num: "08", name: "Creativity", desc: "Pairing rigid mathematical data with artistic editorial composition to forge memorable brand experiences." },
+        { num: "09", name: "Critical Thinking", desc: "Questioning assumptions, verifying telemetry signals, and letting verified ground truth guide design decisions." },
+        { num: "10", name: "Continuous Learning", desc: "Constantly expanding across UI/UX paradigms, Three.js 3D web systems, and modern front-end architectures." }
+      ]
+    },
+    {
+      id: "digital-marketing",
+      num: "04",
+      title: "DIGITAL MARKETING",
+      subheading: "ATTRACT • ENGAGE • CONVERT",
+      summary: "Strategic search optimization, performance acquisition, and structured content management engineered to capture qualified intent and convert traffic into measurable business pipeline.",
+      capabilities: [
+        { name: "Search Engine Optimization (SEO)", desc: "Organic search visibility and search ranking strategies." },
+        { name: "On-Page & Technical SEO", desc: "Meta architectures, crawl efficiency, schema, and page speed." },
+        { name: "Keyword Research & Mapping", desc: "High-intent search query discovery mapped to user journeys." },
+        { name: "Google Ads Support", desc: "Targeted search campaign management and intent alignment." },
+        { name: "Social Media Marketing (SMM)", desc: "Meta Business Suite scheduling and multi-channel engagement." },
+        { name: "Content Marketing & Strategy", desc: "Structured editorial content designed for crawlability and clarity." },
+        { name: "Email Marketing & Lead Gen", desc: "Targeted email funnels and verified prospect acquisition." }
+      ],
+      workAreas: [
+        "SEO & Website Optimization",
+        "Campaign Management",
+        "Content Publishing & Social Workflows"
+      ]
+    },
+    {
+      id: "marketing-analytics",
+      num: "05",
+      title: "MARKETING ANALYTICS",
+      subheading: "MEASURE • UNDERSTAND • OPTIMIZE",
+      summary: "Transforming raw digital activity into actionable behavioral intelligence. Measuring every user touchpoint across Google Analytics 4, Search Console, and custom Looker Studio dashboards.",
+      capabilities: [
+        { name: "Google Analytics 4 (GA4)", desc: "Event-based measurement, session telemetry, and audience funnels." },
+        { name: "Google Search Console", desc: "Indexation tracking, query performance, and crawl error diagnosis." },
+        { name: "Looker Studio BI Dashboards", desc: "Custom visual reports synthesizing complex metrics for decisions." },
+        { name: "Traffic Source Attribution", desc: "Granular attribution across Organic, Direct, Referral, Social, and Paid." },
+        { name: "User Behavior & Flow Analysis", desc: "Deciphering scroll depth, engagement duration, and drop-off barriers." },
+        { name: "Conversion & Goal Tracking", desc: "Precision event tracking across contact leads and action triggers." },
+        { name: "Data-Driven Optimization", desc: "Continuous iterative refinement backed by verified behavioral trends." }
+      ],
+      pipeline: "DATA → BEHAVIOR → INSIGHT → OPTIMIZATION"
     }
   ],
+  get fourPillars() {
+    return this.fivePillars;
+  },
 
   howIThinkAndWork: [
     {
@@ -333,24 +355,24 @@ export const portfolioData = {
   workData: {
     categories: [
       {
-        id: "digital-marketing",
-        num: "01",
-        title: "DIGITAL MARKETING",
-        subtitle: "SEO, Performance Analytics, and Web CMS Infrastructure",
-        countBadge: "3 CASE STUDIES",
-        status: "ACTIVE ARCHIVE",
-        disciplines: ["Search Engine Optimization", "GA4 & Looker Studio", "WordPress & Elementor", "Conversion Funnels"],
-        description: "Data-driven organic search architectures, technical SEO audits, and business CMS deployments engineered for visibility, usability, and measurable growth."
-      },
-      {
         id: "uiux",
-        num: "02",
+        num: "01",
         title: "UI/UX DESIGN",
         subtitle: "Interface Design, Usability, Wireframes & Digital Systems",
         countBadge: "2 CASE STUDIES",
         status: "ACTIVE ARCHIVE",
         disciplines: ["Information Architecture", "Wireframing & Prototyping", "Design Systems", "Usability Engineering"],
         description: "Human-centered digital interfaces, component design systems, and responsive layout architectures bridging aesthetic typography with intuitive interaction flows."
+      },
+      {
+        id: "digital-marketing",
+        num: "02",
+        title: "DIGITAL MARKETING",
+        subtitle: "SEO, Performance Analytics, and Web CMS Infrastructure",
+        countBadge: "3 CASE STUDIES",
+        status: "ACTIVE ARCHIVE",
+        disciplines: ["Search Engine Optimization", "GA4 & Looker Studio", "WordPress & Elementor", "Conversion Funnels"],
+        description: "Data-driven organic search architectures, technical SEO audits, and business CMS deployments engineered for visibility, usability, and measurable growth."
       }
     ],
 
@@ -443,7 +465,7 @@ export const portfolioData = {
         shortDescription: "An independent banking UX concept and working prototype that explains spending changes month-over-month using structured financial insights and supporting transaction evidence.",
         technologies: ["React", "Vite", "Tailwind CSS", "Deterministic Analysis Engine", "Lucide React"],
         badge: "Independent FinTech Concept",
-        image: "/images/projects/explain-my-banking-preview.svg",
+        image: "/images/projects/explain-my-banking-preview.png",
         liveDemoUrl: "https://explain-my-banking.vercel.app/",
         githubUrl: "https://github.com/pandiveerviswa-dot/explain-my-banking",
         disclaimer: "INDEPENDENT FINTECH UX CONCEPT // NOT AN OFFICIAL STATE BANK OF INDIA (SBI) PRODUCT. USES MOCK TRANSACTION DATA AND LOCAL DETERMINISTIC ANALYSIS.",
@@ -540,7 +562,7 @@ export const portfolioData = {
         shortDescription: "An AI-assisted banking support prototype that helps users investigate transaction problems, understand available evidence, and identify appropriate next steps.",
         technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "xAI Grok API", "Vercel", "Render", "GitHub"],
         badge: "Full-Stack AI Prototype",
-        image: "/images/projects/opspilot-preview.svg",
+        image: "/images/projects/opspilot/01_opspilot_main.png",
         liveDemoUrl: "https://opspilot-ecru.vercel.app/",
         backendApiUrl: "https://opspilot-api-3ijk.onrender.com/",
         githubUrl: "https://github.com/pandiveerviswa-dot/opspilot",

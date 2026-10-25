@@ -7,7 +7,7 @@ import { portfolioData } from '../../../data/portfolioData';
  * Focus: SEO, Performance Channels, Campaign Management, Content Optimization
  */
 export const Pillar01DigitalMarketing = () => {
-  const data = portfolioData.fourPillars[0];
+  const data = (portfolioData.fivePillars || portfolioData.fourPillars).find(p => p.id === 'digital-marketing') || portfolioData.fourPillars[0];
 
   return (
     <div className="space-y-6 sm:space-y-8 animate-fade-in w-full">

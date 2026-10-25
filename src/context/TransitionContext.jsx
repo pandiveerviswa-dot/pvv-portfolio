@@ -376,9 +376,9 @@ export const TransitionProvider = ({ children }) => {
     let targetKey = 'hero';
     if (typeof targetKeyOrProgress === 'number') {
       if (targetKeyOrProgress <= 0.05) targetKey = 'hero';
-      else if (targetKeyOrProgress <= 0.65) targetKey = 'capabilities';
-      else if (targetKeyOrProgress <= 0.85) targetKey = 'work';
-      else if (targetKeyOrProgress <= 0.93) targetKey = 'experience';
+      else if (targetKeyOrProgress <= 0.60) targetKey = 'capabilities';
+      else if (targetKeyOrProgress <= 0.89) targetKey = 'work';
+      else if (targetKeyOrProgress <= 0.94) targetKey = 'experience';
       else targetKey = 'contact';
     } else {
       targetKey = targetKeyOrProgress;

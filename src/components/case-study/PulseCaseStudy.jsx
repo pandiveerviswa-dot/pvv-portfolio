@@ -18,7 +18,7 @@ export const PulseCaseStudy = ({ project }) => {
         </div>
 
         <div className="space-y-2">
-          <h1 className="editorial-headline text-4xl sm:text-6xl font-black uppercase tracking-tight text-white">
+          <h1 className="editorial-headline text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
             PULSE
           </h1>
           <p className="font-mono text-sm sm:text-base text-lime tracking-wider uppercase font-semibold">
@@ -62,7 +62,7 @@ export const PulseCaseStudy = ({ project }) => {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-2xl sm:text-3xl font-extrabold uppercase text-white leading-tight">
+          <h2 className="text-xl sm:text-2xl font-extrabold uppercase text-white leading-tight">
             FINANCIAL DATA IS EASY TO COLLECT.<br />
             <span className="text-lime">HARDER TO UNDERSTAND.</span>
           </h2>
@@ -72,7 +72,7 @@ export const PulseCaseStudy = ({ project }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-3">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-3">
             <span className="font-mono text-xs text-white/40 uppercase block">CORE USER STRUGGLES</span>
             <div className="space-y-2 font-mono text-xs text-white/75">
               {[
@@ -93,7 +93,7 @@ export const PulseCaseStudy = ({ project }) => {
           <div className="p-5 bg-lime/[0.04] border border-lime/30 space-y-3 flex flex-col justify-between">
             <div>
               <span className="font-mono text-xs text-lime uppercase font-bold block">DESIGN OBJECTIVE</span>
-              <h3 className="text-xl font-bold uppercase text-white mt-1">
+              <h3 className="text-lg font-bold uppercase text-white mt-1">
                 TURN FINANCIAL DATA INTO UNDERSTANDABLE INFORMATION
               </h3>
               <p className="text-xs sm:text-sm text-white/80 font-sans leading-relaxed mt-2">
@@ -134,8 +134,8 @@ export const PulseCaseStudy = ({ project }) => {
             { num: '04', title: 'REDUCE COGNITIVE LOAD', desc: 'Surface automated pattern insights to eliminate manual financial calculations.' },
             { num: '05', title: 'DESIGN FOR DESKTOP AND MOBILE', desc: 'Ensure equal analytical capability on wide screens and handheld touch devices.' },
           ].map((obj) => (
-            <div key={obj.num} className="p-4 bg-white/[0.02] border border-white/10 space-y-2">
-              <span className="font-display text-2xl font-black text-lime">{obj.num}</span>
+            <div key={obj.num} className="p-4 bg-[#12141c] border border-white/10 space-y-2">
+              <span className="font-display text-xl font-black text-lime">{obj.num}</span>
               <h3 className="font-mono text-xs font-bold uppercase text-white tracking-wide">{obj.title}</h3>
               <p className="text-xs text-white/70 font-sans leading-relaxed">{obj.desc}</p>
             </div>
@@ -160,7 +160,7 @@ export const PulseCaseStudy = ({ project }) => {
             { name: 'GOALS', role: 'Trajectory Mapping', desc: 'Future pacing projections for savings milestones.' },
             { name: 'PROFILE', role: 'Account Settings', desc: 'Security, connected institutions, and preferences.' },
           ].map((nav) => (
-            <div key={nav.name} className="p-3.5 bg-white/[0.02] border border-white/15 space-y-1.5">
+            <div key={nav.name} className="p-3.5 bg-[#12141c] border border-white/15 space-y-1.5">
               <span className="font-mono text-[10px] text-lime font-bold block">{nav.role}</span>
               <h4 className="font-mono text-xs font-bold text-white uppercase">{nav.name}</h4>
               <p className="text-[11px] text-white/70 font-sans leading-snug">{nav.desc}</p>
@@ -198,7 +198,7 @@ export const PulseCaseStudy = ({ project }) => {
               rationale: 'Granular details for verification and drill-down. Placed in structured sub-cards to avoid overwhelming the initial scan.',
             },
           ].map((t) => (
-            <div key={t.tier} className="p-4 bg-white/[0.02] border border-white/15 space-y-1.5">
+            <div key={t.tier} className="p-4 bg-[#12141c] border border-white/15 space-y-1.5">
               <div className="flex items-center justify-between">
                 <span className={`font-mono text-xs font-bold uppercase ${t.color}`}>{t.tier}</span>
                 <span className="font-mono text-[10px] text-white/40">SAMPLE DATA MATRIX</span>
@@ -246,7 +246,7 @@ export const PulseCaseStudy = ({ project }) => {
               desc: 'Visual schedule flagging upcoming renewal dates (e.g. Oct 18, Oct 24) and highlighting month-over-month rate modifications.',
             },
           ].map((viz) => (
-            <div key={viz.name} className="p-4 bg-white/[0.02] border border-white/15 space-y-2">
+            <div key={viz.name} className="p-4 bg-[#12141c] border border-white/15 space-y-2">
               <span className="font-mono text-[10px] text-lime uppercase font-bold">{viz.type}</span>
               <h3 className="font-mono text-xs font-bold text-white uppercase">{viz.name}</h3>
               <p className="text-xs text-white/70 font-sans leading-relaxed">{viz.desc}</p>
@@ -263,7 +263,7 @@ export const PulseCaseStudy = ({ project }) => {
           <span>07 // TRANSACTION AUDIT EXPERIENCE</span>
         </div>
 
-        <div className="p-5 bg-white/[0.02] border border-white/15 space-y-4">
+        <div className="p-5 bg-[#12141c] border border-white/15 space-y-4">
           <p className="text-xs sm:text-sm text-white/80 font-sans leading-relaxed">
             Engineered for frictionless ledger management through instant fuzzy search, multidimensional filters, and inline receipt expanders.
           </p>
@@ -305,7 +305,7 @@ export const PulseCaseStudy = ({ project }) => {
               { title: 'RECURRING EXPENSE', text: 'Cloud software subscription renewed at $49/mo (scheduled next on Oct 18).', type: 'Subscription Audit' },
               { title: 'BUDGET STATUS', text: 'Groceries budget is at 64% utilization with 12 days remaining in cycle.', type: 'Pacing Guardrail' },
             ].map((insight) => (
-              <div key={insight.title} className="p-4 bg-white/[0.02] border border-white/15 space-y-1.5">
+              <div key={insight.title} className="p-4 bg-[#12141c] border border-white/15 space-y-1.5">
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-xs text-lime font-bold">{insight.title}</span>
                   <span className="font-mono text-[10px] text-white/40">{insight.type}</span>
@@ -326,7 +326,7 @@ export const PulseCaseStudy = ({ project }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-2">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-2">
             <div className="flex items-center gap-2 font-mono text-xs text-lime font-bold">
               <Monitor className="w-4 h-4" />
               <span>DESKTOP EXPERIENCE</span>
@@ -339,7 +339,7 @@ export const PulseCaseStudy = ({ project }) => {
             </ul>
           </div>
 
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-2">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-2">
             <div className="flex items-center gap-2 font-mono text-xs text-lime font-bold">
               <Smartphone className="w-4 h-4" />
               <span>MOBILE EXPERIENCE</span>
@@ -363,7 +363,7 @@ export const PulseCaseStudy = ({ project }) => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          <div className="lg:col-span-6 p-5 bg-white/[0.02] border border-white/15 space-y-3">
+          <div className="lg:col-span-6 p-5 bg-[#12141c] border border-white/15 space-y-3">
             <span className="font-mono text-xs text-lime uppercase font-bold">TYPOGRAPHY &amp; MONETARY SCALE</span>
             <div className="space-y-2 font-sans text-xs">
               <div>
@@ -381,7 +381,7 @@ export const PulseCaseStudy = ({ project }) => {
             </div>
           </div>
 
-          <div className="lg:col-span-6 p-5 bg-white/[0.02] border border-white/15 space-y-3">
+          <div className="lg:col-span-6 p-5 bg-[#12141c] border border-white/15 space-y-3">
             <span className="font-mono text-xs text-lime uppercase font-bold">SEMANTIC COLOR SYSTEM</span>
             <div className="grid grid-cols-3 gap-2">
               {[
@@ -434,7 +434,7 @@ export const PulseCaseStudy = ({ project }) => {
             { title: 'Keyboard & Focus Rings', desc: 'Interactive charts and transaction rows support arrow navigation with visible focus states.' },
             { title: 'Screen Reader Labels', desc: 'Monetary amounts formatted with explicit aria-label descriptions (e.g. "Negative forty-two dollars").' },
           ].map((a11y) => (
-            <div key={a11y.title} className="p-4 bg-white/[0.02] border border-white/15 space-y-1">
+            <div key={a11y.title} className="p-4 bg-[#12141c] border border-white/15 space-y-1">
               <span className="font-mono text-xs font-bold text-lime uppercase block">{a11y.title}</span>
               <p className="text-xs text-white/75 font-sans leading-relaxed">{a11y.desc}</p>
             </div>
@@ -456,7 +456,7 @@ export const PulseCaseStudy = ({ project }) => {
             { title: 'Accordion Drawers', desc: 'Smooth expanding containers reveal itemized receipts without triggering layout reflow jumps.' },
             { title: 'Filter Transitions', desc: 'Subtle crossfade state updates when toggling date ranges or transaction categories.' },
           ].map((inter) => (
-            <div key={inter.title} className="p-4 bg-white/[0.02] border border-white/15 space-y-1">
+            <div key={inter.title} className="p-4 bg-[#12141c] border border-white/15 space-y-1">
               <span className="font-mono text-xs font-bold text-lime uppercase block">{inter.title}</span>
               <p className="text-xs text-white/75 font-sans leading-relaxed">{inter.desc}</p>
             </div>

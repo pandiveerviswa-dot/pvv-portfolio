@@ -92,87 +92,21 @@ export const SelectedWork = ({
               </h2>
             </div>
             <p className="font-mono text-xs sm:text-sm text-white/60 tracking-wider uppercase max-w-md">
-              EXPLORE BY DISCIPLINE // 01 DIGITAL MARKETING × 02 UI/UX DESIGN
+              EXPLORE BY DISCIPLINE // 01 UI/UX DESIGN × 02 DIGITAL MARKETING
             </p>
           </div>
 
           {/* Two Major Category World Panels */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto w-full">
             {/* ------------------------------------------------------------- */}
-            {/* WORLD 01: DIGITAL MARKETING                                  */}
-            {/* ------------------------------------------------------------- */}
-            <div
-              data-world="digital-marketing"
-              role="button"
-              tabIndex={0}
-              onClick={() => handleSelectWorld('digital-marketing')}
-              className={`group border border-white/15 hover:border-lime bg-[#0c0d12]/90 hover:bg-[#11131a] p-6 sm:p-8 lg:p-10 transition-all duration-300 flex flex-col justify-between relative overflow-hidden shadow-2xl ${
-                isDetailTransitioning ? 'pointer-events-none opacity-60' : 'cursor-pointer'
-              }`}
-            >
-              {/* Subtle accent corner glow */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-lime/5 rounded-full blur-3xl pointer-events-none group-hover:bg-lime/10 transition-all duration-500" />
-
-              <div>
-                {/* Meta Top Line */}
-                <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
-                  <span className="font-display text-4xl sm:text-5xl font-black text-lime">
-                    01
-                  </span>
-                  <div className="flex items-center gap-2">
-                    <span className="px-2.5 py-1 bg-lime text-black font-mono text-xs font-bold tracking-wider uppercase">
-                      3 CASE STUDIES
-                    </span>
-                    <span className="hidden sm:inline-block font-mono text-[11px] text-white/40 uppercase">
-                      ACTIVE ARCHIVE
-                    </span>
-                  </div>
-                </div>
-
-                {/* Title & Scope */}
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white group-hover:text-lime transition-colors">
-                  DIGITAL MARKETING
-                </h3>
-                <p className="font-mono text-xs sm:text-sm text-white/60 mt-1 mb-4">
-                  SEO, Performance Analytics, and Web CMS Infrastructure
-                </p>
-
-                <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-sans mb-6">
-                  Data-driven organic search architectures, technical SEO audits, and business CMS deployments engineered for visibility, usability, and measurable growth.
-                </p>
-
-                {/* Discipline Chips */}
-                <div className="flex flex-wrap gap-1.5 mb-8">
-                  {['Search Engine Optimization', 'GA4 & Looker Studio', 'WordPress CMS', 'Lead Funnels'].map((item) => (
-                    <span
-                      key={item}
-                      className="font-mono text-[11px] px-2.5 py-1 bg-white/5 border border-white/10 text-white/80 group-hover:border-lime/30 transition-colors"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Action Trigger */}
-              <div className="pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs font-bold tracking-wider text-lime group-hover:text-white transition-colors">
-                <span>ENTER ARCHIVE</span>
-                <span className="flex items-center gap-1 group-hover:translate-x-1.5 transition-transform duration-200">
-                  <span>EXPLORE 01</span>
-                  <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </div>
-
-            {/* ------------------------------------------------------------- */}
-            {/* WORLD 02: UI/UX DESIGN                                       */}
+            {/* WORLD 01: UI/UX DESIGN                                       */}
             {/* ------------------------------------------------------------- */}
             <div
               data-world="uiux"
               role="button"
               tabIndex={0}
               onClick={() => handleSelectWorld('uiux')}
-              className={`group border border-white/15 hover:border-lime/60 bg-[#0c0d12]/90 hover:bg-[#11131a] p-6 sm:p-8 lg:p-10 transition-all duration-300 flex flex-col justify-between relative overflow-hidden shadow-2xl ${
+              className={`group border border-white/15 hover:border-lime/60 bg-[#0a0b10] hover:bg-[#11131a] p-6 sm:p-8 lg:p-10 transition-all duration-300 flex flex-col justify-between relative overflow-hidden shadow-2xl ${
                 isDetailTransitioning ? 'pointer-events-none opacity-60' : 'cursor-pointer'
               }`}
             >
@@ -183,7 +117,7 @@ export const SelectedWork = ({
                 {/* Meta Top Line */}
                 <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
                   <span className="font-display text-4xl sm:text-5xl font-black text-lime">
-                    02
+                    01
                   </span>
                   <div className="flex items-center gap-2">
                     <span className="px-2.5 py-1 bg-lime text-black font-mono text-xs font-bold tracking-wider uppercase">
@@ -224,6 +158,72 @@ export const SelectedWork = ({
               <div className="pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs font-bold tracking-wider text-lime group-hover:text-white transition-colors">
                 <span>ENTER ARCHIVE</span>
                 <span className="flex items-center gap-1 group-hover:translate-x-1.5 transition-transform duration-200">
+                  <span>EXPLORE 01</span>
+                  <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </div>
+
+            {/* ------------------------------------------------------------- */}
+            {/* WORLD 02: DIGITAL MARKETING                                  */}
+            {/* ------------------------------------------------------------- */}
+            <div
+              data-world="digital-marketing"
+              role="button"
+              tabIndex={0}
+              onClick={() => handleSelectWorld('digital-marketing')}
+              className={`group border border-white/15 hover:border-lime bg-[#0a0b10] hover:bg-[#11131a] p-6 sm:p-8 lg:p-10 transition-all duration-300 flex flex-col justify-between relative overflow-hidden shadow-2xl ${
+                isDetailTransitioning ? 'pointer-events-none opacity-60' : 'cursor-pointer'
+              }`}
+            >
+              {/* Subtle accent corner glow */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-lime/5 rounded-full blur-3xl pointer-events-none group-hover:bg-lime/10 transition-all duration-500" />
+
+              <div>
+                {/* Meta Top Line */}
+                <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+                  <span className="font-display text-4xl sm:text-5xl font-black text-lime">
+                    02
+                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="px-2.5 py-1 bg-lime text-black font-mono text-xs font-bold tracking-wider uppercase">
+                      3 CASE STUDIES
+                    </span>
+                    <span className="hidden sm:inline-block font-mono text-[11px] text-white/40 uppercase">
+                      ACTIVE ARCHIVE
+                    </span>
+                  </div>
+                </div>
+
+                {/* Title & Scope */}
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white group-hover:text-lime transition-colors">
+                  DIGITAL MARKETING
+                </h3>
+                <p className="font-mono text-xs sm:text-sm text-white/60 mt-1 mb-4">
+                  SEO, Performance Analytics, and Web CMS Infrastructure
+                </p>
+
+                <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-sans mb-6">
+                  Data-driven organic search architectures, technical SEO audits, and business CMS deployments engineered for visibility, usability, and measurable growth.
+                </p>
+
+                {/* Discipline Chips */}
+                <div className="flex flex-wrap gap-1.5 mb-8">
+                  {['Search Engine Optimization', 'GA4 & Looker Studio', 'WordPress CMS', 'Lead Funnels'].map((item) => (
+                    <span
+                      key={item}
+                      className="font-mono text-[11px] px-2.5 py-1 bg-white/5 border border-white/10 text-white/80 group-hover:border-lime/30 transition-colors"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Action Trigger */}
+              <div className="pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs font-bold tracking-wider text-lime group-hover:text-white transition-colors">
+                <span>ENTER ARCHIVE</span>
+                <span className="flex items-center gap-1 group-hover:translate-x-1.5 transition-transform duration-200">
                   <span>EXPLORE 02</span>
                   <ArrowRight className="w-4 h-4" />
                 </span>
@@ -234,7 +234,7 @@ export const SelectedWork = ({
       )}
 
       {/* ===================================================================== */}
-      {/* 2. WORLD 01: DIGITAL MARKETING ARCHIVE                               */}
+      {/* 2. WORLD 02: DIGITAL MARKETING ARCHIVE                               */}
       {/* ===================================================================== */}
       {activeWorld === 'digital-marketing' && (
         <div className="w-full my-auto space-y-5 animate-fadeIn">
@@ -253,7 +253,7 @@ export const SelectedWork = ({
             <div className="flex items-center gap-3">
               <span className="w-2 h-2 bg-lime inline-block" />
               <span className="font-mono text-xs tracking-wider text-lime uppercase font-semibold">
-                ARCHIVE 01 // DIGITAL MARKETING (3 VERIFIED PROJECTS)
+                ARCHIVE 02 // DIGITAL MARKETING (3 VERIFIED PROJECTS)
               </span>
             </div>
           </div>
@@ -270,7 +270,7 @@ export const SelectedWork = ({
                   className={`p-3 text-left border transition-all duration-200 flex items-center justify-between disabled:pointer-events-none ${
                     isSelected
                       ? 'bg-lime text-black border-lime font-bold shadow-md'
-                      : 'bg-[#0c0d12]/80 text-white/80 border-white/15 hover:border-white/40'
+                      : 'bg-[#0a0b10] text-white/80 border-white/15 hover:border-white/40'
                   }`}
                 >
                   <div className="truncate">
@@ -291,7 +291,7 @@ export const SelectedWork = ({
 
           {/* Featured Project Stage */}
           {currentDmProject && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center bg-[#0c0d12]/95 border border-white/15 p-6 sm:p-8 lg:p-10 shadow-2xl">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center bg-[#0a0b10] border border-white/15 p-6 sm:p-8 lg:p-10 shadow-2xl">
               {/* Left Column: Metadata & Details */}
               <div className="lg:col-span-6 space-y-4">
                 <div className="flex items-center gap-3">
@@ -371,7 +371,7 @@ export const SelectedWork = ({
       )}
 
       {/* ===================================================================== */}
-      {/* 3. WORLD 02: UI/UX DESIGN ARCHIVE (2 FLAGSHIP CASE STUDIES)          */}
+      {/* 3. WORLD 01: UI/UX DESIGN ARCHIVE (2 FLAGSHIP CASE STUDIES)          */}
       {/* ===================================================================== */}
       {activeWorld === 'uiux' && (
         <div className="w-full my-auto space-y-5 animate-fadeIn max-h-[85vh] overflow-y-auto pr-1">
@@ -390,7 +390,7 @@ export const SelectedWork = ({
             <div className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-lime inline-block" />
               <span className="font-mono text-xs tracking-wider text-lime uppercase font-semibold">
-                ARCHIVE 02 // UI/UX DESIGN (2 FLAGSHIP CASE STUDIES)
+                ARCHIVE 01 // UI/UX DESIGN (2 FLAGSHIP CASE STUDIES)
               </span>
             </div>
           </div>
@@ -399,7 +399,7 @@ export const SelectedWork = ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto w-full">
             {/* CARD 01: EXPLAIN MY BANKING */}
             {bankingProject && (
-              <div className="bg-[#0c0d12]/95 border border-white/15 hover:border-lime p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 group shadow-2xl relative overflow-hidden">
+              <div className="bg-[#0a0b10] border border-white/15 hover:border-lime p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 group shadow-2xl relative overflow-hidden">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between pb-3 border-b border-white/10">
                     <span className="font-display text-3xl sm:text-4xl font-black text-lime">
@@ -464,7 +464,7 @@ export const SelectedWork = ({
 
             {/* CARD 02: OPSPILOT */}
             {opspilotProject && (
-              <div className="bg-[#0c0d12]/95 border border-white/15 hover:border-lime p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 group shadow-2xl relative overflow-hidden">
+              <div className="bg-[#0a0b10] border border-white/15 hover:border-lime p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 group shadow-2xl relative overflow-hidden">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between pb-3 border-b border-white/10">
                     <span className="font-display text-3xl sm:text-4xl font-black text-lime">

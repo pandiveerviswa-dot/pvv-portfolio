@@ -7,7 +7,7 @@ import { portfolioData } from '../../../data/portfolioData';
  * 01 UX • 02 IA • 03 WIREFRAME • 04 VISUAL • 05 RESPONSIVE • 06 INTERACTION • 07 USABILITY • 08 SYSTEM • 09 EXPERIENCE
  */
 export const Pillar03UiUxExperience = ({ activeSubIndex = 0, onSubChange }) => {
-  const data = portfolioData.fourPillars[2];
+  const data = (portfolioData.fivePillars || portfolioData.fourPillars).find(p => p.id === 'uiux-experience') || portfolioData.fourPillars[0];
   const [selectedScene, setSelectedScene] = useState(activeSubIndex);
 
   // Sync with prop if driven externally by scroll

@@ -8,7 +8,7 @@ import { portfolioData } from '../../../data/portfolioData';
  * Focus: GA4, Search Console, Looker Studio, Attribution, Conversions
  */
 export const Pillar02MarketingAnalytics = () => {
-  const data = portfolioData.fourPillars[1];
+  const data = (portfolioData.fivePillars || portfolioData.fourPillars).find(p => p.id === 'marketing-analytics') || portfolioData.fourPillars[1];
 
   const pipelineSteps = [
     { num: "01", step: "DATA", desc: "GA4 events, Search Console query logs & telemetry" },

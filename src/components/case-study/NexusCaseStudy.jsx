@@ -18,7 +18,7 @@ export const NexusCaseStudy = ({ project }) => {
         </div>
 
         <div className="space-y-2">
-          <h1 className="editorial-headline text-4xl sm:text-6xl font-black uppercase tracking-tight text-white">
+          <h1 className="editorial-headline text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
             NEXUS
           </h1>
           <p className="font-mono text-sm sm:text-base text-lime tracking-wider uppercase font-semibold">
@@ -53,7 +53,7 @@ export const NexusCaseStudy = ({ project }) => {
         </div>
 
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-extrabold uppercase text-white">
+          <h2 className="text-xl sm:text-2xl font-extrabold uppercase text-white">
             THE FRAGMENTED WORKFLOW
           </h2>
           <p className="text-xs sm:text-sm text-white/70 max-w-3xl font-sans leading-relaxed">
@@ -63,7 +63,7 @@ export const NexusCaseStudy = ({ project }) => {
 
         {/* Fragmented vs Unified Comparison */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-3">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-3">
             <span className="font-mono text-xs text-white/40 uppercase block">FRAGMENTED ECOSYSTEM</span>
             <div className="space-y-2 font-mono text-xs text-white/70">
               <div className="p-2.5 bg-black/40 border border-white/10 flex items-center justify-between">
@@ -95,7 +95,7 @@ export const NexusCaseStudy = ({ project }) => {
           <div className="p-5 bg-lime/[0.04] border border-lime/30 space-y-3 flex flex-col justify-between">
             <div>
               <span className="font-mono text-xs text-lime uppercase block font-bold">THE NEXUS PARADIGM</span>
-              <h3 className="text-xl font-bold uppercase text-white mt-1">
+              <h3 className="text-lg font-bold uppercase text-white mt-1">
                 ONE CONNECTED WORKSPACE
               </h3>
               <p className="text-xs sm:text-sm text-white/80 font-sans leading-relaxed mt-2">
@@ -136,8 +136,8 @@ export const NexusCaseStudy = ({ project }) => {
             { num: '04', title: 'SIMPLIFY COMPLEX WORKFLOWS', desc: 'Multi-stage sign-offs broken into transparent 2-step verification cards.' },
             { num: '05', title: 'CREATE A SCALABLE INTERFACE SYSTEM', desc: 'Modular design tokens and atomic primitives allowing seamless feature expansions.' },
           ].map((obj) => (
-            <div key={obj.num} className="p-4 bg-white/[0.02] border border-white/10 space-y-2">
-              <span className="font-display text-2xl font-black text-lime">{obj.num}</span>
+            <div key={obj.num} className="p-4 bg-[#12141c] border border-white/10 space-y-2">
+              <span className="font-display text-xl font-black text-lime">{obj.num}</span>
               <h3 className="font-mono text-xs font-bold uppercase text-white tracking-wide">{obj.title}</h3>
               <p className="text-xs text-white/70 font-sans leading-relaxed">{obj.desc}</p>
             </div>
@@ -167,7 +167,7 @@ export const NexusCaseStudy = ({ project }) => {
             { stage: 'REVIEW', desc: 'Trigger approval flow with side-by-side asset/spec diffs.' },
             { stage: 'COMPLETE', desc: 'Archive release, notify stakeholders, and update audit trail.' },
           ].map((s, idx) => (
-            <div key={s.stage} className="p-3.5 bg-white/[0.02] border border-white/15 space-y-2">
+            <div key={s.stage} className="p-3.5 bg-[#12141c] border border-white/15 space-y-2">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[10px] text-lime font-bold">STAGE 0{idx + 1}</span>
                 <span className="text-white/30 text-xs">→</span>
@@ -236,7 +236,7 @@ export const NexusCaseStudy = ({ project }) => {
             { num: '04', title: 'Knowledge Search Wireframe', desc: 'Command-K modal with instant filters across docs, tickets, and team comments.', decision: 'Universal keyboard accelerator allows power users to traverse any entity in under 3 keystrokes.' },
             { num: '05', title: 'Approval Flow Wireframe', desc: 'Two-stage verification card highlighting requester context, asset diffs, and sign-off actions.', decision: 'Side-by-side asset diffs prevent erroneous approvals by highlighting modifications clearly.' },
           ].map((w) => (
-            <div key={w.num} className="p-4 bg-white/[0.02] border border-white/15 space-y-1.5">
+            <div key={w.num} className="p-4 bg-[#12141c] border border-white/15 space-y-1.5">
               <div className="flex items-center gap-3">
                 <span className="font-mono text-xs text-lime font-bold">{w.num}</span>
                 <span className="font-mono text-xs text-white uppercase font-bold">{w.title}</span>
@@ -268,7 +268,7 @@ export const NexusCaseStudy = ({ project }) => {
             { name: '05 Approval Center', focus: 'Review queue with side-by-side diff previews, risk flags, and one-click sign-offs.' },
             { name: '06 Team Activity Feed', focus: 'Real-time audit log of commits, reviews, status promotions, and approvals.' },
           ].map((screen) => (
-            <div key={screen.name} className="p-4 bg-white/[0.02] border border-white/15 space-y-2">
+            <div key={screen.name} className="p-4 bg-[#12141c] border border-white/15 space-y-2">
               <div className="h-28 bg-[#11131b] border border-white/10 flex flex-col justify-between p-3">
                 <div className="flex items-center justify-between font-mono text-[10px] text-white/40">
                   <span>SCREENSHOT</span>
@@ -292,11 +292,11 @@ export const NexusCaseStudy = ({ project }) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Typography Scale */}
-          <div className="lg:col-span-6 p-5 bg-white/[0.02] border border-white/15 space-y-3">
+          <div className="lg:col-span-6 p-5 bg-[#12141c] border border-white/15 space-y-3">
             <span className="font-mono text-xs text-lime uppercase font-bold">TYPOGRAPHY TOKENS</span>
             <div className="space-y-2">
               <div>
-                <div className="text-xl font-extrabold uppercase font-display text-white">Syne Display (Headings)</div>
+                <div className="text-lg font-extrabold uppercase font-display text-white">Syne Display (Headings)</div>
                 <span className="font-mono text-[10px] text-white/40">Weights: 700 / 800 • Tracking: -0.04em</span>
               </div>
               <div className="pt-2 border-t border-white/10">
@@ -311,7 +311,7 @@ export const NexusCaseStudy = ({ project }) => {
           </div>
 
           {/* Color Tokens Palette */}
-          <div className="lg:col-span-6 p-5 bg-white/[0.02] border border-white/15 space-y-3">
+          <div className="lg:col-span-6 p-5 bg-[#12141c] border border-white/15 space-y-3">
             <span className="font-mono text-xs text-lime uppercase font-bold">COLOR SYSTEM TOKENS</span>
             <div className="grid grid-cols-3 gap-2">
               {[
@@ -354,7 +354,7 @@ export const NexusCaseStudy = ({ project }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-2">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-2">
             <div className="flex items-center gap-2 font-mono text-xs text-lime font-bold">
               <Monitor className="w-4 h-4" />
               <span>DESKTOP (1440px+)</span>
@@ -364,7 +364,7 @@ export const NexusCaseStudy = ({ project }) => {
             </p>
           </div>
 
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-2">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-2">
             <div className="flex items-center gap-2 font-mono text-xs text-lime font-bold">
               <Tablet className="w-4 h-4" />
               <span>TABLET (768px - 1024px)</span>
@@ -374,7 +374,7 @@ export const NexusCaseStudy = ({ project }) => {
             </p>
           </div>
 
-          <div className="p-5 bg-white/[0.02] border border-white/15 space-y-2">
+          <div className="p-5 bg-[#12141c] border border-white/15 space-y-2">
             <div className="flex items-center gap-2 font-mono text-xs text-lime font-bold">
               <Smartphone className="w-4 h-4" />
               <span>MOBILE (375px - 640px)</span>
@@ -406,7 +406,7 @@ export const NexusCaseStudy = ({ project }) => {
             { title: 'Semantic Hierarchy', desc: 'Valid landmark roles (<main>, <nav>, <aside>, <section>) and strictly sequential H1-H4 headings.' },
             { title: 'Accessible Form States', desc: 'Clear, persistent form labels with explicit aria-invalid error descriptions and states.' },
           ].map((a11y) => (
-            <div key={a11y.title} className="p-4 bg-white/[0.02] border border-white/15 space-y-1">
+            <div key={a11y.title} className="p-4 bg-[#12141c] border border-white/15 space-y-1">
               <span className="font-mono text-xs font-bold text-lime uppercase block">{a11y.title}</span>
               <p className="text-xs text-white/75 font-sans leading-relaxed">{a11y.desc}</p>
             </div>

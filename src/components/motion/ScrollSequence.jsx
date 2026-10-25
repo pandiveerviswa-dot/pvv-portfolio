@@ -5,6 +5,7 @@ import { Capabilities } from '../sections/Capabilities';
 import { SelectedWork } from '../sections/SelectedWork';
 import { Experience } from '../sections/Experience';
 import { Contact } from '../sections/Contact';
+import { ToolsTransition } from '../sections/ToolsTransition';
 import { LimeTransition } from './LimeTransition';
 import { useNavigationTransition } from '../../context/TransitionContext';
 
@@ -50,15 +51,13 @@ export const ScrollSequence = ({ progress = 0, onOpenCaseStudy, onBeginJourney }
   // 2. Statement (The Hybrid Manifesto): 0.09 - 0.20
   const sStatement = getSceneState(progress, 0.09, 0.20, 0.12, 0.17);
 
-  // 3. Capabilities (ONE Horizontal Cinematic Gallery): 0.21 - 0.70
-  const sCapabilities = getSceneState(progress, 0.21, 0.70, 0.24, 0.67);
+  // 3. Capabilities (ONE Horizontal Cinematic Gallery): 0.21 - 0.60
+  const sCapabilities = getSceneState(progress, 0.21, 0.60, 0.24, 0.57);
 
-  // 4. Acid-Lime Transition 2: 0.69 - 0.73 (Wipes into Selected Work Gallery during manual scroll only)
-  const lime2Active = !isTransitioning && progress >= 0.69 && progress <= 0.73;
-  const lime2Progress = lime2Active ? (progress - 0.69) / 0.04 : 0;
+  // 4. Tools Transition (Cinematic Showcase): 0.58 - 0.74 (handled in ToolsTransition)
 
-  // 5. Selected Work Exhibition (Two-World Project Archive): 0.70 - 0.89
-  const sWork = getSceneState(progress, 0.70, 0.89, 0.73, 0.86);
+  // 5. Selected Work Exhibition (Two-World Project Archive): 0.74 - 0.89
+  const sWork = getSceneState(progress, 0.74, 0.89, 0.76, 0.86);
 
   // 6. Experience & Education: 0.89 - 0.95
   const sExp = getSceneState(progress, 0.89, 0.95, 0.91, 0.93);
@@ -104,11 +103,10 @@ export const ScrollSequence = ({ progress = 0, onOpenCaseStudy, onBeginJourney }
           />
         )}
 
-        {/* Lime Transition 02 (Wipes into Selected Work) */}
-        <LimeTransition
-          active={lime2Active}
-          progress={lime2Progress}
-          label="SELECTED WORK // EXHIBITION"
+        {/* Scene 03 -> 04: Cinematic Scroll-Synchronized Tools I Use Transition */}
+        <ToolsTransition
+          progress={progress}
+          isTransitioning={isTransitioning}
         />
 
         {/* Scene 04: Selected Work Two-World Project Archive */}

@@ -27,7 +27,7 @@ export const Contact = ({ opacity = 1, translateY = 0 }) => {
 
       {/* Massive Editorial Headline & Communication Actions */}
       <div className="space-y-6 sm:space-y-8 my-auto">
-        <h2 className="editorial-headline text-5xl sm:text-8xl lg:text-[9.5rem] font-extrabold uppercase tracking-tighter leading-none text-white">
+        <h2 className="editorial-headline text-3xl sm:text-6xl lg:text-[5.5rem] font-extrabold uppercase tracking-tighter leading-none text-white">
           Let’s Talk<span className="text-lime">.</span>
         </h2>
 
@@ -35,7 +35,7 @@ export const Contact = ({ opacity = 1, translateY = 0 }) => {
           {/* Direct Email Action */}
           <a
             href={`mailto:${portfolioData.personal.email}`}
-            className="editorial-headline text-2xl sm:text-5xl lg:text-6xl font-bold text-white hover:text-lime transition-colors underline decoration-white/20 hover:decoration-lime underline-offset-8 block"
+            className="editorial-headline text-xl sm:text-3xl lg:text-4xl font-bold text-white hover:text-lime transition-colors underline decoration-white/20 hover:decoration-lime underline-offset-8 block"
           >
             {portfolioData.personal.email}
           </a>

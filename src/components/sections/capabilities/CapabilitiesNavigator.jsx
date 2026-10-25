@@ -3,15 +3,20 @@ import React from 'react';
 /**
  * CapabilitiesNavigator: Minimalist persistent capability and UI/UX tracker
  * Highlights active pillar and active sub-principle based on scroll progression.
+ * Exact sequence:
+ * 01 UI/UX & EXPERIENCE
+ * 02 FRONT-END & WEB
+ * 03 PROFESSIONAL STRENGTHS
+ * 04 DIGITAL MARKETING
+ * 05 MARKETING ANALYTICS
  */
 export const CapabilitiesNavigator = ({ activePillar = 0, activeUiUxScene = 0, onSelectPillar }) => {
   const pillars = [
-    { num: "01", name: "DIGITAL MARKETING" },
-    { num: "02", name: "MARKETING ANALYTICS" },
-    { num: "03", name: "UI/UX & EXPERIENCE" },
-    { num: "04", name: "FRONT-END & WEB" },
-    { num: "05", name: "THE DIGITAL STACK" },
-    { num: "06", name: "HOW I THINK & WORK" }
+    { num: "01", name: "UI/UX & EXPERIENCE" },
+    { num: "02", name: "FRONT-END & WEB" },
+    { num: "03", name: "PROFESSIONAL STRENGTHS" },
+    { num: "04", name: "DIGITAL MARKETING" },
+    { num: "05", name: "MARKETING ANALYTICS" }
   ];
 
   const uiuxScenes = [
@@ -29,7 +34,8 @@ export const CapabilitiesNavigator = ({ activePillar = 0, activeUiUxScene = 0, o
           return (
             <div
               key={pillar.num}
-              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full transition-all duration-300 ${
+              onClick={() => onSelectPillar && onSelectPillar(idx)}
+              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full transition-all duration-300 cursor-pointer ${
                 isActive
                   ? 'bg-ink text-lime font-bold shadow-sm'
                   : 'text-ink/40 hover:text-ink/80'
@@ -42,8 +48,8 @@ export const CapabilitiesNavigator = ({ activePillar = 0, activeUiUxScene = 0, o
         })}
       </div>
 
-      {/* Secondary UI/UX Sub-Rail (Only visible when Pillar 03 is active) */}
-      {activePillar === 2 && (
+      {/* Secondary UI/UX Sub-Rail (Only visible when Pillar 01 is active) */}
+      {activePillar === 0 && (
         <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2.5 text-[9px] sm:text-[10px] text-ink/50 pt-1 border-t border-ink/5 w-full">
           <span className="text-ink/30 font-bold uppercase tracking-widest mr-1">DISCIPLINE:</span>
           {uiuxScenes.map((scene, idx) => {
