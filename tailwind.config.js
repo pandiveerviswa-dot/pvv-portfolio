@@ -1,3 +1,5 @@
+import plugin from 'tailwindcss/plugin';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -38,5 +40,11 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    // Short phones (e.g. iPhone SE, 375x667) where fixed-frame scenes need tighter spacing.
+    // Added as a variant rather than a screen so Tailwind's max-* variants stay available.
+    plugin(({ addVariant }) => {
+      addVariant('short', '@media (max-width: 1023px) and (max-height: 700px)');
+    }),
+  ],
 }

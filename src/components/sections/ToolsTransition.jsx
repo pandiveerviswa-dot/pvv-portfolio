@@ -26,6 +26,7 @@ function easeOutCubic(x) {
 
 export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [isBelowLg, setIsBelowLg] = useState(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -33,7 +34,16 @@ export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
     setPrefersReducedMotion(mediaQuery.matches);
     const handler = (e) => setPrefersReducedMotion(e.matches);
     mediaQuery.addEventListener('change', handler);
-    return () => mediaQuery.removeEventListener('change', handler);
+
+    const lgQuery = window.matchMedia('(max-width: 1023px)');
+    setIsBelowLg(lgQuery.matches);
+    const lgHandler = (e) => setIsBelowLg(e.matches);
+    lgQuery.addEventListener('change', lgHandler);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handler);
+      lgQuery.removeEventListener('change', lgHandler);
+    };
   }, []);
 
   // Transition bounds between Page 3 (ends 0.60) and Page 4 (starts 0.72)
@@ -94,9 +104,11 @@ export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
   return (
     <section
       aria-label="Tools and Technologies Transition"
-      className="fixed inset-0 z-20 flex flex-col justify-start lg:justify-center overflow-y-auto lg:overflow-hidden pt-28 sm:pt-24 pb-8 px-4 sm:px-8 lg:px-16 pointer-events-none"
+      className="fixed inset-0 z-20 flex flex-col justify-start lg:justify-center overflow-y-auto lg:overflow-hidden pt-[76px] sm:pt-24 pb-4 sm:pb-8 px-4 sm:px-8 lg:px-16 pointer-events-none"
       style={{
         opacity: sectionOpacity,
+        // Below lg the section can overflow short screens, so let touch scroll it once it is fully in view
+        ...(sectionOpacity > 0.5 && isBelowLg && { pointerEvents: 'auto' }),
       }}
     >
       {/* Cinematic Content Wrapper with responsive max width */}
@@ -121,7 +133,7 @@ export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
               <h2 className="editorial-headline text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-white leading-tight">
                 Tools I Use<span className="text-lime">.</span>
               </h2>
-              <p className="font-mono text-xs sm:text-sm text-white/70 max-w-2xl pt-0.5 sm:pt-1">
+              <p className="font-mono text-[13px] max-sm:leading-snug sm:text-sm text-white/70 max-w-2xl pt-0.5 sm:pt-1">
                 From user experience architecture and modern front-end code to behavioral analytics pipelines and AI-assisted workflows.
               </p>
             </div>
@@ -170,7 +182,7 @@ export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
                 <span>DESIGN &amp; PROTOTYPING</span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-1.5 sm:gap-2 pointer-events-auto">
+              <div className="grid grid-cols-3 lg:grid-cols-1 gap-1.5 sm:gap-2 pointer-events-auto">
                 {UPPER_ZONE_DATA.design.map((tool) => {
                   const Icon = tool.icon;
                   return (
@@ -179,12 +191,12 @@ export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
                       tabIndex={0}
                       role="article"
                       aria-label={`${tool.name}: ${tool.category}`}
-                      className="group relative flex items-center gap-2 sm:gap-3 p-2 sm:p-2.5 lg:p-3 rounded-xl bg-[#12151f]/90 border border-white/10 hover:border-lime/60 focus:border-lime focus:outline-none transition-all duration-200 hover:scale-[1.02] hover:bg-[#161a27] cursor-default shadow-md"
+                      className="group relative flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3 p-2 sm:p-2.5 lg:p-3 rounded-xl bg-[#12151f]/90 border border-white/10 hover:border-lime/60 focus:border-lime focus:outline-none transition-all duration-200 hover:scale-[1.02] hover:bg-[#161a27] cursor-default shadow-md"
                     >
                       <div className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 rounded-lg bg-black/50 border border-white/10 flex items-center justify-center shrink-0 group-hover:border-lime/40 transition-colors">
                         <Icon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                       </div>
-                      <div className="min-w-0 flex-1">
+                      <div className="min-w-0 w-full sm:w-auto sm:flex-1 text-center sm:text-left">
                         <div className="font-mono text-[10.5px] sm:text-xs lg:text-sm font-bold text-white group-hover:text-lime transition-colors leading-tight">
                           <span className="hidden sm:inline">{tool.name}</span>
                           <span className="sm:hidden">{tool.shortName || tool.name}</span>
@@ -213,7 +225,7 @@ export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
                 <span>FRONT-END ENGINEERING &amp; WEB STACK</span>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5 sm:gap-2 pointer-events-auto">
+              <div className="grid grid-cols-3 gap-1.5 sm:gap-2 pointer-events-auto">
                 {UPPER_ZONE_DATA.development.map((tool) => {
                   const Icon = tool.icon;
                   return (
@@ -222,12 +234,12 @@ export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
                       tabIndex={0}
                       role="article"
                       aria-label={`${tool.name}: ${tool.category}`}
-                      className="group relative flex items-center gap-2 sm:gap-2.5 p-2 sm:p-2.5 lg:p-3 rounded-xl bg-[#12151f]/90 border border-white/10 hover:border-lime/60 focus:border-lime focus:outline-none transition-all duration-200 hover:scale-[1.02] hover:bg-[#161a27] cursor-default shadow-md"
+                      className="group relative flex flex-col sm:flex-row items-center gap-1.5 sm:gap-2.5 p-2 sm:p-2.5 lg:p-3 rounded-xl bg-[#12151f]/90 border border-white/10 hover:border-lime/60 focus:border-lime focus:outline-none transition-all duration-200 hover:scale-[1.02] hover:bg-[#161a27] cursor-default shadow-md"
                     >
                       <div className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 rounded-lg bg-black/50 border border-white/10 flex items-center justify-center shrink-0 group-hover:border-lime/40 transition-colors">
                         <Icon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                       </div>
-                      <div className="min-w-0 flex-1">
+                      <div className="min-w-0 w-full sm:w-auto sm:flex-1 text-center sm:text-left">
                         <div className="font-mono text-[10.5px] sm:text-xs lg:text-sm font-bold text-white group-hover:text-lime transition-colors leading-tight">
                           <span className="hidden sm:inline">{tool.name}</span>
                           <span className="sm:hidden">{tool.shortName || tool.name}</span>
@@ -279,7 +291,7 @@ export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
                 <span>ANALYTICS, TELEMETRY &amp; CMS INFRASTRUCTURE</span>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5 sm:gap-2 pointer-events-auto">
+              <div className="grid grid-cols-3 gap-1.5 sm:gap-2 pointer-events-auto">
                 {LOWER_ZONE_DATA.analyticsAndMarketing.map((tool) => {
                   const Icon = tool.icon;
                   return (
@@ -288,12 +300,12 @@ export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
                       tabIndex={0}
                       role="article"
                       aria-label={`${tool.name}: ${tool.category}`}
-                      className="group relative flex items-center gap-2 sm:gap-2.5 p-2 sm:p-2.5 lg:p-3 rounded-xl bg-[#12151f]/90 border border-white/10 hover:border-lime/60 focus:border-lime focus:outline-none transition-all duration-200 hover:scale-[1.02] hover:bg-[#161a27] cursor-default shadow-md"
+                      className="group relative flex flex-col sm:flex-row items-center gap-1.5 sm:gap-2.5 p-2 sm:p-2.5 lg:p-3 rounded-xl bg-[#12151f]/90 border border-white/10 hover:border-lime/60 focus:border-lime focus:outline-none transition-all duration-200 hover:scale-[1.02] hover:bg-[#161a27] cursor-default shadow-md"
                     >
                       <div className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 rounded-lg bg-black/50 border border-white/10 flex items-center justify-center shrink-0 group-hover:border-lime/40 transition-colors">
                         <Icon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                       </div>
-                      <div className="min-w-0 flex-1">
+                      <div className="min-w-0 w-full sm:w-auto sm:flex-1 text-center sm:text-left">
                         <div className="font-mono text-[10.5px] sm:text-xs lg:text-sm font-bold text-white group-hover:text-lime transition-colors leading-tight">
                           <span className="hidden sm:inline">{tool.name}</span>
                           <span className="sm:hidden">{tool.shortName || tool.name}</span>
@@ -331,12 +343,12 @@ export const ToolsTransition = ({ progress = 0, isTransitioning = false }) => {
                       tabIndex={0}
                       role="article"
                       aria-label={`${tool.name}: ${tool.category}`}
-                      className="group relative flex items-center gap-2 sm:gap-3 p-2 sm:p-2.5 lg:p-3 rounded-xl bg-[#12151f]/90 border border-white/10 hover:border-lime/60 focus:border-lime focus:outline-none transition-all duration-200 hover:scale-[1.02] hover:bg-[#161a27] cursor-default shadow-md"
+                      className="group relative flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3 p-2 sm:p-2.5 lg:p-3 rounded-xl bg-[#12151f]/90 border border-white/10 hover:border-lime/60 focus:border-lime focus:outline-none transition-all duration-200 hover:scale-[1.02] hover:bg-[#161a27] cursor-default shadow-md"
                     >
                       <div className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 rounded-lg bg-black/50 border border-white/10 flex items-center justify-center shrink-0 group-hover:border-lime/40 transition-colors">
                         <Icon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                       </div>
-                      <div className="min-w-0 flex-1">
+                      <div className="min-w-0 w-full sm:w-auto sm:flex-1 text-center sm:text-left">
                         <div className="font-mono text-[10.5px] sm:text-xs lg:text-sm font-bold text-white group-hover:text-lime transition-colors leading-tight">
                           <span className="hidden sm:inline">{tool.name}</span>
                           <span className="sm:hidden">{tool.shortName || tool.name}</span>

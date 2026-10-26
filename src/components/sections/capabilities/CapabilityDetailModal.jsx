@@ -60,7 +60,7 @@ export const CapabilityDetailModal = ({ cardIndex, isOpen, onClose, opacity = 1 
       onWheel={(e) => e.stopPropagation()}
     >
       <div
-        className="relative w-full max-w-5xl h-[92vh] max-h-[92dvh] bg-[#0a0b10] border border-white/20 rounded-none shadow-[0_0_90px_rgba(0,0,0,0.95)] flex flex-col overflow-hidden pointer-events-auto animate-fadeIn"
+        className="relative w-full max-w-5xl h-[94dvh] sm:h-[92vh] sm:max-h-[92dvh] bg-[#0a0b10] border border-white/20 rounded-none shadow-[0_0_90px_rgba(0,0,0,0.95)] flex flex-col overflow-hidden pointer-events-auto animate-fadeIn"
         onClick={(e) => e.stopPropagation()}
       >
         {/* ========================================================= */}
@@ -71,10 +71,11 @@ export const CapabilityDetailModal = ({ cardIndex, isOpen, onClose, opacity = 1 
           <button
             onClick={onClose}
             aria-label="Back to capabilities gallery"
-            className="group flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 bg-lime text-black hover:bg-white border border-lime transition-all font-mono text-xs font-bold uppercase tracking-wider shadow-md"
+            className="group flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 min-h-[44px] sm:min-h-0 bg-lime text-black hover:bg-white border border-lime transition-all font-mono text-xs font-bold uppercase tracking-wider shadow-md"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-            <span>← BACK TO CAPABILITIES</span>
+            <span className="sm:hidden">BACK</span>
+            <span className="hidden sm:inline">← BACK TO CAPABILITIES</span>
           </button>
 
           {/* Capability Metadata Centerpiece */}
@@ -89,7 +90,7 @@ export const CapabilityDetailModal = ({ cardIndex, isOpen, onClose, opacity = 1 
           <button
             onClick={onClose}
             aria-label="Close modal"
-            className="group flex items-center gap-2 px-3.5 py-1.5 border border-white/20 hover:border-lime bg-white/5 hover:bg-lime hover:text-black font-mono text-xs tracking-widest uppercase transition-colors"
+            className="group flex items-center gap-2 px-3.5 py-1.5 min-h-[44px] sm:min-h-0 border border-white/20 hover:border-lime bg-white/5 hover:bg-lime hover:text-black font-mono text-xs tracking-widest uppercase transition-colors"
           >
             <span>CLOSE</span>
             <span className="text-lime group-hover:text-black font-bold">✕</span>
@@ -101,7 +102,7 @@ export const CapabilityDetailModal = ({ cardIndex, isOpen, onClose, opacity = 1 
         {/* ========================================================= */}
         <div
           ref={scrollContainerRef}
-          className="modal-scroll flex-1 w-full overflow-y-auto overflow-x-hidden p-6 sm:p-10 lg:p-12 overscroll-contain touch-pan-y"
+          className="modal-scroll flex-1 w-full overflow-y-auto overflow-x-hidden p-4 sm:p-10 lg:p-12 overscroll-contain touch-pan-y"
           style={{
             WebkitOverflowScrolling: 'touch',
             touchAction: 'pan-y',

@@ -65,7 +65,7 @@ export const CaseStudyModal = ({ project, isOpen, onClose, opacity = 1, isTransi
       onWheel={(e) => e.stopPropagation()}
     >
       <div
-        className="relative w-full max-w-5xl h-[92vh] max-h-[92dvh] bg-[#0a0b10] border border-white/20 rounded-none shadow-[0_0_90px_rgba(0,0,0,0.95)] flex flex-col overflow-hidden pointer-events-auto animate-fadeIn"
+        className="relative w-full max-w-5xl h-[94dvh] sm:h-[92vh] sm:max-h-[92dvh] bg-[#0a0b10] border border-white/20 rounded-none shadow-[0_0_90px_rgba(0,0,0,0.95)] flex flex-col overflow-hidden pointer-events-auto animate-fadeIn"
         onClick={(e) => e.stopPropagation()}
       >
         {/* ========================================================= */}
@@ -89,7 +89,7 @@ export const CaseStudyModal = ({ project, isOpen, onClose, opacity = 1, isTransi
             onClick={onClose}
             disabled={isTransitioning}
             aria-label="Close case study"
-            className="group flex items-center gap-2 px-4 py-2 border border-white/20 hover:border-lime bg-white/5 hover:bg-lime hover:text-black font-mono text-xs font-bold tracking-widest uppercase transition-colors disabled:opacity-50 disabled:pointer-events-none shrink-0"
+            className="group flex items-center gap-2 px-4 py-2 min-h-[44px] sm:min-h-0 border border-white/20 hover:border-lime bg-white/5 hover:bg-lime hover:text-black font-mono text-xs font-bold tracking-widest uppercase transition-colors disabled:opacity-50 disabled:pointer-events-none shrink-0"
           >
             <span>CLOSE</span>
             <span className="text-lime group-hover:text-black font-bold">✕</span>
@@ -101,7 +101,7 @@ export const CaseStudyModal = ({ project, isOpen, onClose, opacity = 1, isTransi
         {/* ========================================================= */}
         <div
           ref={scrollContainerRef}
-          className="modal-scroll flex-1 w-full overflow-y-auto overflow-x-hidden p-6 sm:p-10 lg:p-12 overscroll-contain touch-pan-y"
+          className="modal-scroll flex-1 w-full overflow-y-auto overflow-x-hidden p-4 sm:p-10 lg:p-12 overscroll-contain touch-pan-y"
           style={{
             WebkitOverflowScrolling: 'touch',
             touchAction: 'pan-y',
@@ -123,7 +123,7 @@ export const CaseStudyModal = ({ project, isOpen, onClose, opacity = 1, isTransi
             <div className="space-y-10">
               {/* Header & Meta */}
               <div>
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-3">
                   <span className="font-mono text-xs text-lime tracking-widest uppercase font-bold">
                     {project.category}
                   </span>
@@ -242,7 +242,7 @@ export const CaseStudyModal = ({ project, isOpen, onClose, opacity = 1, isTransi
 
           {/* Bottom Close Bar */}
           <div className="mt-12 pt-6 border-t border-white/15 flex flex-wrap items-center justify-between gap-4 font-mono text-xs text-white/70">
-            <div>
+            <div className="hidden sm:block">
               PRESS <kbd className="px-1.5 py-0.5 bg-white/10 border border-white/20 text-lime">ESC</kbd> OR CLICK OUTSIDE TO CLOSE
             </div>
             <button

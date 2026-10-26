@@ -114,6 +114,49 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
     return () => window.removeEventListener('resize', updateMetrics);
   }, [updateMetrics]);
 
+  // Below lg: hide skill chips that would be cut off mid-row and show a "+N" count instead.
+  // Card height follows the viewport on phones, so the number of whole rows that fit varies.
+  const fitSkillChips = useCallback(() => {
+    if (!trackRef.current) return;
+    const isBelowLg = window.matchMedia('(max-width: 1023px)').matches;
+    trackRef.current.querySelectorAll('[data-chip-cloud]').forEach((cloud) => {
+      const chips = [...cloud.querySelectorAll('[data-chip]')];
+      const more = cloud.querySelector('[data-chip-more]');
+      chips.forEach((chip) => { chip.style.display = ''; });
+      more.style.display = 'none';
+      if (!isBelowLg || cloud.getBoundingClientRect().height === 0) return;
+
+      const area = cloud.parentElement;
+      const clipBottom = () => Math.min(
+        cloud.getBoundingClientRect().bottom,
+        area.getBoundingClientRect().bottom - parseFloat(getComputedStyle(area).paddingBottom)
+      );
+      const fits = (el) => el.getBoundingClientRect().bottom <= clipBottom() + 0.5;
+
+      let visible = chips.length;
+      while (visible > 0 && !fits(chips[visible - 1])) {
+        chips[--visible].style.display = 'none';
+      }
+      if (visible === chips.length) return;
+      more.style.display = '';
+      more.textContent = `+${chips.length - visible}`;
+      while (visible > 0 && !fits(more)) {
+        chips[--visible].style.display = 'none';
+        more.textContent = `+${chips.length - visible}`;
+      }
+      if (!fits(more)) more.style.display = 'none';
+    });
+  }, []);
+
+  useEffect(() => {
+    fitSkillChips();
+    window.addEventListener('resize', fitSkillChips);
+    if (document.fonts) {
+      document.fonts.ready.then(fitSkillChips);
+    }
+    return () => window.removeEventListener('resize', fitSkillChips);
+  }, [fitSkillChips, galleryVisible]);
+
   // Robust fallback runway if not yet measured by the DOM on first paint
   const effectiveMaxScroll = maxScrollDistance > 0 ? maxScrollDistance : 1700;
 
@@ -308,18 +351,19 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
               </div>
 
               {/* Large Editorial Headline */}
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black uppercase tracking-tighter text-white leading-[0.94]">
-                SKILLS<br />
-                THAT<br />
+              {/* Line breaks collapse below lg so the heading stays compact on phones */}
+              <h2 className="text-[1.75rem] sm:text-3xl lg:text-4xl font-black uppercase tracking-tighter text-white leading-[0.94]">
+                SKILLS{' '}<br className="hidden lg:block" />
+                THAT{' '}<br className="hidden lg:block" />
                 <span className="text-lime">CONNECT</span>
               </h2>
 
               {/* Supporting Hybrid Descriptor */}
-              <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-white/10">
+              <div className="mt-2 sm:mt-4 pt-2 sm:pt-4 border-t border-white/10">
                 <p className="font-mono text-xs sm:text-sm tracking-wider text-white/70 leading-relaxed uppercase">
-                  DESIGN.<br />
-                  DATA.<br />
-                  EXPERIENCES.<br />
+                  DESIGN.{' '}<br className="hidden lg:block" />
+                  DATA.{' '}<br className="hidden lg:block" />
+                  EXPERIENCES.{' '}<br className="hidden lg:block" />
                   TECHNOLOGY.
                 </p>
                 <p className="text-white/40 text-[10px] sm:text-[11px] font-mono mt-2 sm:mt-3 leading-normal hidden sm:block">
@@ -355,7 +399,7 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
           {/* ========================================================= */}
           <div
             ref={containerRef}
-            className="flex-1 relative overflow-hidden flex items-center cursor-grab active:cursor-grabbing"
+            className="flex-1 relative overflow-hidden flex items-center cursor-grab active:cursor-grabbing touch-pan-y"
             onPointerDown={handlePointerDown}
             onPointerMove={handlePointerMove}
             onPointerUp={handlePointerUp}
@@ -363,7 +407,7 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
           >
             <div
               ref={trackRef}
-              className="flex items-stretch gap-5 sm:gap-7 will-change-transform py-2"
+              className="flex items-stretch max-sm:items-center max-sm:absolute max-sm:inset-y-0 max-sm:left-0 gap-5 sm:gap-7 will-change-transform py-2"
               style={{
                 transform: `translate3d(-${currentTranslateX}px, 0, 0)`,
               }}
@@ -374,7 +418,7 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
                 return (
                   <div
                     key={card.id}
-                    className={`relative w-[290px] sm:w-[350px] lg:w-[410px] xl:w-[440px] h-[430px] sm:h-[470px] lg:h-[500px] flex-shrink-0 flex flex-col justify-between p-5 sm:p-7 border ${
+                    className={`relative w-[290px] sm:w-[350px] lg:w-[410px] xl:w-[440px] h-full max-h-[440px] sm:max-h-none sm:h-[470px] lg:h-[500px] flex-shrink-0 flex flex-col justify-between p-5 short:p-4 sm:p-7 border ${
                       isActive
                         ? 'bg-lime text-black border-lime shadow-[0_0_50px_rgba(204,255,0,0.22)] scale-100 z-10'
                         : 'bg-[#0a0b10] text-white border-white/15 hover:border-white/30 scale-[0.97] opacity-80 z-0'
@@ -412,7 +456,7 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
 
                     {/* Top Micro-Header */}
                     <div>
-                      <div className="flex items-center justify-between border-b pb-2.5 mb-3 border-current/15">
+                      <div className="flex items-center justify-between border-b pb-2.5 mb-3 short:pb-1.5 short:mb-2 border-current/15">
                         <span className="font-mono text-[10px] sm:text-[11px] font-bold tracking-widest uppercase">
                           {card.microLabel}
                         </span>
@@ -441,7 +485,7 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
 
                       {/* Short Description */}
                       <p
-                        className={`text-[11px] sm:text-xs mt-3 leading-relaxed line-clamp-3 ${
+                        className={`text-[11px] sm:text-xs mt-3 short:mt-2 leading-relaxed line-clamp-3 short:line-clamp-2 ${
                           isActive ? 'text-black/85 font-medium' : 'text-white/70'
                         }`}
                       >
@@ -450,14 +494,15 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
                     </div>
 
                     {/* Center: Skill Preview Cloud */}
-                    <div className="my-auto py-2.5 border-y border-current/15">
+                    <div className="my-auto py-2.5 border-y border-current/15 min-h-0 overflow-hidden">
                       <div className="font-mono text-[9px] uppercase tracking-widest opacity-60 mb-1.5">
                         CAPABILITY PREVIEW //
                       </div>
-                      <div className="flex flex-wrap gap-1.5 max-h-[90px] sm:max-h-[110px] overflow-hidden">
+                      <div data-chip-cloud className="flex flex-wrap gap-1.5 max-h-[124px] sm:max-h-[110px] overflow-hidden">
                         {card.skillPreview.slice(0, 8).map((skill, sIdx) => (
                           <span
                             key={sIdx}
+                            data-chip
                             className={`font-mono text-[9px] sm:text-[10px] px-2 py-0.5 tracking-wider uppercase font-semibold ${
                               isActive
                                 ? 'bg-black/10 text-black border border-black/20'
@@ -467,6 +512,14 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
                             {skill}
                           </span>
                         ))}
+                        <span
+                          data-chip-more
+                          aria-hidden="true"
+                          style={{ display: 'none' }}
+                          className={`font-mono text-[9px] px-2 py-0.5 tracking-wider font-bold ${
+                            isActive ? 'bg-black text-lime' : 'bg-white/10 text-white/80'
+                          }`}
+                        />
                       </div>
                     </div>
 
@@ -537,7 +590,7 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
                 onClick={() => scrollToCard(activeCardIndex - 1)}
                 disabled={activeCardIndex === 0 || !isInteractive || isDetailTransitioning}
                 aria-label="Previous capability"
-                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center font-mono text-xs text-white hover:border-lime hover:bg-lime hover:text-black disabled:opacity-30 disabled:pointer-events-none transition-colors"
+                className="w-11 h-11 sm:w-8 sm:h-8 rounded-full border border-white/20 flex items-center justify-center font-mono text-xs text-white hover:border-lime hover:bg-lime hover:text-black disabled:opacity-30 disabled:pointer-events-none transition-colors"
               >
                 ←
               </button>
@@ -546,7 +599,7 @@ export const Capabilities = ({ opacity = 1, translateY = 0, progress = 0 }) => {
                 onClick={() => scrollToCard(activeCardIndex + 1)}
                 disabled={activeCardIndex === 4 || !isInteractive || isDetailTransitioning}
                 aria-label="Next capability"
-                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center font-mono text-xs text-white hover:border-lime hover:bg-lime hover:text-black disabled:opacity-30 disabled:pointer-events-none transition-colors"
+                className="w-11 h-11 sm:w-8 sm:h-8 rounded-full border border-white/20 flex items-center justify-center font-mono text-xs text-white hover:border-lime hover:bg-lime hover:text-black disabled:opacity-30 disabled:pointer-events-none transition-colors"
               >
                 →
               </button>

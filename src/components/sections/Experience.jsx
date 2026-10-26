@@ -10,16 +10,16 @@ export const Experience = ({ opacity = 1, translateY = 0, progress = 0 }) => {
 
   return (
     <section
-      className="absolute inset-0 flex flex-col justify-center p-6 sm:p-12 lg:p-16 pt-24 sm:pt-28 max-w-[1600px] mx-auto w-full text-ink transition-opacity duration-300"
+      className="absolute inset-0 flex flex-col justify-start lg:justify-center px-4 pb-6 sm:p-12 lg:p-16 pt-20 sm:pt-28 max-w-[1600px] mx-auto w-full text-ink transition-opacity duration-300 max-lg:overflow-y-auto"
       style={{
         opacity,
         transform: `translateY(${translateY}px)`,
         pointerEvents: opacity > 0.3 ? 'auto' : 'none',
       }}
     >
-      <div className="space-y-6 sm:space-y-8 max-w-6xl w-full mx-auto">
+      <div className="space-y-6 sm:space-y-8 max-w-6xl w-full mx-auto my-auto">
         {/* Verified Industry Experience: Noodhan Technology */}
-        <div className="p-6 sm:p-10 bg-black text-white rounded-3xl border border-white/20 shadow-2xl space-y-6">
+        <div className="p-5 sm:p-10 bg-black text-white rounded-3xl border border-white/20 shadow-2xl space-y-5 sm:space-y-6">
           <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/15">
             <div className="meta-tag text-lime font-bold">
               [ 05 / VERIFIED INDUSTRY EXPERIENCE ]
@@ -28,7 +28,7 @@ export const Experience = ({ opacity = 1, translateY = 0, progress = 0 }) => {
           </div>
 
           <div className="space-y-1">
-            <h2 className="editorial-headline text-3xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white">
+            <h2 className="editorial-headline text-[clamp(1.5rem,7.4vw,1.875rem)] sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white">
               {exp.role}.
             </h2>
             <p className="text-sm sm:text-base font-mono text-white/70">
@@ -41,7 +41,7 @@ export const Experience = ({ opacity = 1, translateY = 0, progress = 0 }) => {
             {exp.highlights.map((item, idx) => (
               <div
                 key={idx}
-                className="p-4 bg-white/5 rounded-2xl border border-white/10 text-xs sm:text-sm text-white/80 flex items-start gap-2.5 leading-relaxed"
+                className="p-3.5 sm:p-4 bg-white/5 rounded-2xl border border-white/10 text-xs sm:text-sm text-white/80 flex items-start gap-2.5 leading-relaxed"
               >
                 <span className="w-2 h-2 rounded-full bg-lime mt-1.5 shrink-0"></span>
                 <span>{item}</span>

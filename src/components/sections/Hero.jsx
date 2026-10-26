@@ -57,7 +57,7 @@ export const Hero = ({
 
   return (
     <section 
-      className="absolute inset-0 flex flex-col justify-between p-6 sm:p-10 lg:p-14 pt-24 sm:pt-28 max-w-[1650px] mx-auto w-full text-white transition-opacity duration-300 z-10"
+      className="absolute inset-0 flex flex-col justify-between gap-4 short:gap-2 lg:gap-0 px-4 pb-4 short:pb-1.5 sm:p-10 lg:p-14 pt-20 short:pt-[72px] sm:pt-28 max-w-[1650px] mx-auto w-full text-white transition-opacity duration-300 z-10 max-lg:overflow-y-auto"
       style={{
         opacity,
         transform: `translateY(${translateY}px)`,
@@ -65,7 +65,7 @@ export const Hero = ({
       }}
     >
       {/* Top Meta Coordinate Bar */}
-      <div className="flex justify-between items-center text-[10px] sm:text-xs font-mono text-white/50 border-b border-white/10 pb-4">
+      <div className="flex flex-wrap justify-between items-center gap-x-4 gap-y-1 text-[10px] sm:text-xs font-mono text-white/50 border-b border-white/10 pb-3 short:pb-2 sm:pb-4">
         <span className="flex items-center gap-2">
           <span className="text-white/40">•</span>
           <span>EST. 2026 // PORTFOLIO RECORD</span>
@@ -74,9 +74,9 @@ export const Hero = ({
       </div>
 
       {/* Hero Master Composition: Huge Typography + Real Photographic Card */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center my-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 short:gap-2 sm:gap-8 lg:gap-12 items-center my-auto">
         {/* Left: Oversized Editorial Headline with Vertical Chapter Rail */}
-        <div className="lg:col-span-7 space-y-4 sm:space-y-6">
+        <div className="lg:col-span-7 space-y-4 short:space-y-1.5 sm:space-y-6">
           <div className="meta-tag text-lime font-bold tracking-ultra-wide">
             [ 01 / EXECUTIVE IDENTITY ]
           </div>
@@ -99,7 +99,7 @@ export const Hero = ({
             {/* Master Headline */}
             <div>
               <h1 
-                className="editorial-headline font-extrabold uppercase tracking-tighter text-white"
+                className="editorial-headline font-extrabold uppercase tracking-tighter text-white short:!text-[2.1rem]"
                 style={{
                   fontSize: 'clamp(2.75rem, 6.5vw, 5.75rem)',
                   lineHeight: 0.9,
@@ -110,7 +110,7 @@ export const Hero = ({
                 VISWA
               </h1>
 
-              <div className="text-[11px] sm:text-xs md:text-sm font-mono font-extrabold tracking-wider text-lime uppercase flex flex-wrap items-center gap-1.5 sm:gap-2 pt-3">
+              <div className="text-[11px] sm:text-xs md:text-sm font-mono font-extrabold tracking-wider text-lime uppercase flex flex-wrap items-center gap-1.5 sm:gap-2 pt-3 short:pt-2">
                 <span>UI/UX DESIGN</span>
                 <span className="text-white/40">×</span>
                 <span>ANALYTICS</span>
@@ -134,7 +134,7 @@ export const Hero = ({
         >
           {/* Card Container with Tech Border, Green Glow, and Frame Contact Pulse */}
           <div 
-            className="relative w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[400px] p-3.5 bg-black/75 backdrop-blur-md rounded-2xl border border-white/20 transition-shadow duration-100 group"
+            className="relative w-full max-w-[min(340px,28svh)] short:max-w-[26svh] sm:max-w-[380px] lg:max-w-[400px] p-3.5 short:p-2.5 bg-black/75 backdrop-blur-md rounded-2xl border border-white/20 transition-shadow duration-100 group"
             style={{
               boxShadow: contactFactor > 0.02
                 ? `0 0 ${20 + contactFactor * 35}px rgba(204,255,0,${0.15 + contactFactor * 0.40})`
@@ -159,7 +159,7 @@ export const Hero = ({
             )}
 
             {/* Card Header */}
-            <div className="flex justify-between items-center pb-2.5 mb-2 border-b border-white/10 px-1">
+            <div className="flex justify-between items-center pb-2.5 mb-2 short:pb-1.5 short:mb-1.5 border-b border-white/10 px-1">
               <span className="px-2 py-0.5 bg-white text-ink text-[9px] font-mono font-extrabold uppercase rounded tracking-wider">
                 PORTRAIT
               </span>
@@ -284,9 +284,9 @@ export const Hero = ({
             </div>
 
             {/* Card Footer */}
-            <div className="flex justify-between items-center pt-2.5 mt-2 border-t border-white/10 px-1 text-[10px] font-mono text-white/75">
-              <span className="tracking-wide uppercase">PORTRAIT // PANDI VEER VISWA</span>
-              <span className="flex items-center gap-1.5 text-lime font-bold">
+            <div className="flex justify-between items-center pt-2.5 mt-2 short:pt-1.5 short:mt-1.5 border-t border-white/10 px-1 text-[10px] font-mono text-white/75">
+              <span className="tracking-wide uppercase truncate mr-2">PORTRAIT // PANDI VEER VISWA</span>
+              <span className="flex items-center gap-1.5 text-lime font-bold shrink-0">
                 <span className="w-1.5 h-1.5 rounded-full bg-lime animate-pulse"></span>
                 <span>VERIFIED</span>
               </span>
@@ -296,7 +296,7 @@ export const Hero = ({
       </div>
 
       {/* Bottom Scroll Prompt Bar & Live Timeline Indicator */}
-      <div className="flex flex-wrap justify-between items-center gap-4 text-xs font-mono text-white/50 border-t border-white/10 pt-4">
+      <div className="flex flex-wrap justify-between items-center gap-4 text-xs font-mono text-white/50 border-t border-white/10 pt-3 short:pt-1 sm:pt-4">
         {/* Minimal Timeline Scrub Indicator */}
         <div className="flex items-center gap-3">
           <div className="w-20 sm:w-28 h-1 bg-white/15 rounded-full overflow-hidden">
@@ -312,7 +312,7 @@ export const Hero = ({
         {/* Functional "BEGIN JOURNEY" Trigger */}
         <button
           onClick={onBeginJourney}
-          className="group flex items-center gap-2 text-lime font-bold hover:text-white transition-colors cursor-pointer focus:outline-none"
+          className="group flex items-center gap-2 min-h-[44px] lg:min-h-0 text-lime font-bold hover:text-white transition-colors cursor-pointer focus:outline-none"
           aria-label="Begin portfolio scroll journey"
         >
           <span>BEGIN JOURNEY</span>

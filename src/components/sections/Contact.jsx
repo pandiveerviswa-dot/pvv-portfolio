@@ -9,7 +9,7 @@ import { portfolioData } from '../../data/portfolioData';
 export const Contact = ({ opacity = 1, translateY = 0 }) => {
   return (
     <section
-      className="absolute inset-0 flex flex-col justify-between p-6 sm:p-12 lg:p-16 pt-24 sm:pt-28 max-w-[1600px] mx-auto w-full text-white transition-opacity duration-300"
+      className="absolute inset-0 flex flex-col justify-between gap-6 short:gap-2 px-5 pb-5 short:pb-2 sm:p-12 lg:p-16 pt-20 short:pt-[72px] sm:pt-28 max-w-[1600px] mx-auto w-full text-white transition-opacity duration-300 max-lg:overflow-y-auto"
       style={{
         opacity,
         transform: `translateY(${translateY}px)`,
@@ -17,7 +17,7 @@ export const Contact = ({ opacity = 1, translateY = 0 }) => {
       }}
     >
       {/* Top Header Tag */}
-      <div className="flex justify-between items-center text-[11px] sm:text-xs font-mono text-white/50 border-b border-white/10 pb-4">
+      <div className="flex flex-wrap justify-between items-center gap-x-4 gap-y-1 text-[11px] sm:text-xs font-mono text-white/50 border-b border-white/10 pb-4 short:pb-2">
         <span className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-lime"></span>
           <span>DESTINATION // CONTACT & COLLABORATION</span>
@@ -26,16 +26,16 @@ export const Contact = ({ opacity = 1, translateY = 0 }) => {
       </div>
 
       {/* Massive Editorial Headline & Communication Actions */}
-      <div className="space-y-6 sm:space-y-8 my-auto">
-        <h2 className="editorial-headline text-3xl sm:text-6xl lg:text-[5.5rem] font-extrabold uppercase tracking-tighter leading-none text-white">
+      <div className="space-y-6 short:space-y-2 sm:space-y-8 my-auto">
+        <h2 className="editorial-headline text-[clamp(2.25rem,11vw,3rem)] short:text-[2rem] sm:text-6xl lg:text-[5.5rem] font-extrabold uppercase tracking-tighter leading-none text-white">
           Let’s Talk<span className="text-lime">.</span>
         </h2>
 
-        <div className="space-y-3 pt-2">
+        <div className="space-y-3 short:space-y-0 pt-2 short:pt-0">
           {/* Direct Email Action */}
           <a
             href={`mailto:${portfolioData.personal.email}`}
-            className="editorial-headline text-xl sm:text-3xl lg:text-4xl font-bold text-white hover:text-lime transition-colors underline decoration-white/20 hover:decoration-lime underline-offset-8 block"
+            className="editorial-headline text-xl sm:text-3xl lg:text-4xl font-bold text-white hover:text-lime transition-colors underline decoration-white/20 hover:decoration-lime underline-offset-8 block break-words max-lg:py-3 short:py-2.5"
           >
             {portfolioData.personal.email}
           </a>
@@ -44,7 +44,7 @@ export const Contact = ({ opacity = 1, translateY = 0 }) => {
           <div className="flex flex-wrap items-center gap-4 text-white/70 font-mono text-sm sm:text-base pt-1">
             <a
               href={`tel:${portfolioData.personal.phone}`}
-              className="hover:text-lime transition-colors underline decoration-white/20 underline-offset-4"
+              className="hover:text-lime transition-colors underline decoration-white/20 underline-offset-4 max-lg:inline-block max-lg:py-3 short:py-2.5"
             >
               {portfolioData.personal.phone}
             </a>
@@ -54,11 +54,11 @@ export const Contact = ({ opacity = 1, translateY = 0 }) => {
         </div>
 
         {/* Primary Resume Download Button */}
-        <div className="pt-4 flex flex-wrap items-center gap-4">
+        <div className="pt-4 short:pt-1 flex flex-wrap items-center gap-4 short:gap-y-1">
           <a
             href={portfolioData.personal.resumePath}
             download="Pandi-Veer-Viswa-CV.pdf"
-            className="meta-tag inline-flex items-center gap-2.5 px-8 py-4 bg-lime text-ink hover:bg-white rounded-full transition-all duration-200 text-xs font-bold"
+            className="meta-tag inline-flex items-center justify-center gap-2.5 px-8 py-4 w-full sm:w-auto bg-lime text-ink hover:bg-white rounded-full transition-all duration-200 text-xs font-bold"
           >
             <span>DOWNLOAD RESUME (PDF)</span>
             <FileDown className="w-4 h-4 text-ink" />
@@ -70,14 +70,14 @@ export const Contact = ({ opacity = 1, translateY = 0 }) => {
       </div>
 
       {/* Bottom Footer Bar */}
-      <div className="flex flex-wrap justify-between items-center gap-4 text-[11px] sm:text-xs font-mono text-white/50 border-t border-white/10 pt-6">
+      <div className="flex flex-wrap justify-between items-center gap-4 text-[11px] sm:text-xs font-mono text-white/50 border-t border-white/10 pt-6 short:pt-1 short:gap-y-0">
         <div>PANDI VEER VISWA • DIGITAL MARKETING EXECUTIVE</div>
         <div className="flex items-center gap-6">
-          <a href={portfolioData.personal.linkedin} className="hover:text-lime transition-colors flex items-center gap-1">
+          <a href={portfolioData.personal.linkedin} className="hover:text-lime transition-colors flex items-center gap-1 min-h-[44px] lg:min-h-0">
             <span>LINKEDIN</span>
             <ArrowUpRight className="w-3 h-3" />
           </a>
-          <a href={portfolioData.personal.github} className="hover:text-lime transition-colors flex items-center gap-1">
+          <a href={portfolioData.personal.github} className="hover:text-lime transition-colors flex items-center gap-1 min-h-[44px] lg:min-h-0">
             <span>GITHUB</span>
             <ArrowUpRight className="w-3 h-3" />
           </a>

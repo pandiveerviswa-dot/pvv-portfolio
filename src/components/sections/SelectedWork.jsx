@@ -66,7 +66,7 @@ export const SelectedWork = ({
 
   return (
     <section
-      className="absolute inset-0 flex flex-col justify-center px-4 sm:px-8 lg:px-16 pt-20 sm:pt-24 pb-8 max-w-[1600px] mx-auto w-full text-white select-none transition-opacity duration-300"
+      className="absolute inset-0 flex flex-col justify-start lg:justify-center px-4 sm:px-8 lg:px-16 pt-20 sm:pt-24 pb-8 max-w-[1600px] mx-auto w-full text-white select-none transition-opacity duration-300 max-lg:overflow-y-auto"
       style={{
         opacity: finalOpacity,
         transform: `translateY(${translateY}px)`,
@@ -106,7 +106,7 @@ export const SelectedWork = ({
               role="button"
               tabIndex={0}
               onClick={() => handleSelectWorld('uiux')}
-              className={`group border border-white/15 hover:border-lime/60 bg-[#0a0b10] hover:bg-[#11131a] p-6 sm:p-8 lg:p-10 transition-all duration-300 flex flex-col justify-between relative overflow-hidden shadow-2xl ${
+              className={`group border border-white/15 hover:border-lime/60 bg-[#0a0b10] hover:bg-[#11131a] p-5 sm:p-8 lg:p-10 transition-all duration-300 flex flex-col justify-between relative overflow-hidden shadow-2xl ${
                 isDetailTransitioning ? 'pointer-events-none opacity-60' : 'cursor-pointer'
               }`}
             >
@@ -172,7 +172,7 @@ export const SelectedWork = ({
               role="button"
               tabIndex={0}
               onClick={() => handleSelectWorld('digital-marketing')}
-              className={`group border border-white/15 hover:border-lime bg-[#0a0b10] hover:bg-[#11131a] p-6 sm:p-8 lg:p-10 transition-all duration-300 flex flex-col justify-between relative overflow-hidden shadow-2xl ${
+              className={`group border border-white/15 hover:border-lime bg-[#0a0b10] hover:bg-[#11131a] p-5 sm:p-8 lg:p-10 transition-all duration-300 flex flex-col justify-between relative overflow-hidden shadow-2xl ${
                 isDetailTransitioning ? 'pointer-events-none opacity-60' : 'cursor-pointer'
               }`}
             >
@@ -291,7 +291,7 @@ export const SelectedWork = ({
 
           {/* Featured Project Stage */}
           {currentDmProject && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center bg-[#0a0b10] border border-white/15 p-6 sm:p-8 lg:p-10 shadow-2xl">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center bg-[#0a0b10] border border-white/15 p-5 sm:p-8 lg:p-10 shadow-2xl">
               {/* Left Column: Metadata & Details */}
               <div className="lg:col-span-6 space-y-4">
                 <div className="flex items-center gap-3">
@@ -335,7 +335,7 @@ export const SelectedWork = ({
                 </div>
 
                 {/* Case Study Trigger Button */}
-                <div className="pt-2 flex items-center gap-4">
+                <div className="pt-2 flex flex-wrap items-center gap-x-4 gap-y-2">
                   <button
                     onClick={() => !isDetailTransitioning && openCaseStudy(currentDmProject)}
                     disabled={isDetailTransitioning}
@@ -374,7 +374,7 @@ export const SelectedWork = ({
       {/* 3. WORLD 01: UI/UX DESIGN ARCHIVE (2 FLAGSHIP CASE STUDIES)          */}
       {/* ===================================================================== */}
       {activeWorld === 'uiux' && (
-        <div className="w-full my-auto space-y-5 animate-fadeIn max-h-[85vh] overflow-y-auto pr-1">
+        <div className="w-full my-auto space-y-5 animate-fadeIn lg:max-h-[85vh] lg:overflow-y-auto lg:pr-1">
           {/* Top Sub-Navigation Bar */}
           <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/15">
             <button
@@ -399,7 +399,7 @@ export const SelectedWork = ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto w-full">
             {/* CARD 01: EXPLAIN MY BANKING */}
             {bankingProject && (
-              <div className="bg-[#0a0b10] border border-white/15 hover:border-lime p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 group shadow-2xl relative overflow-hidden">
+              <div className="bg-[#0a0b10] border border-white/15 hover:border-lime p-5 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 group shadow-2xl relative overflow-hidden">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between pb-3 border-b border-white/10">
                     <span className="font-display text-3xl sm:text-4xl font-black text-lime">
@@ -464,7 +464,7 @@ export const SelectedWork = ({
 
             {/* CARD 02: OPSPILOT */}
             {opspilotProject && (
-              <div className="bg-[#0a0b10] border border-white/15 hover:border-lime p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 group shadow-2xl relative overflow-hidden">
+              <div className="bg-[#0a0b10] border border-white/15 hover:border-lime p-5 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 group shadow-2xl relative overflow-hidden">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between pb-3 border-b border-white/10">
                     <span className="font-display text-3xl sm:text-4xl font-black text-lime">

@@ -28,6 +28,12 @@ export const EARTH_RADIUS = 1.95;
 // Unit Vector pointing FROM Earth surface TOWARD the Sun (for surface & atmosphere shaders)
 const SUN_DIR = new THREE.Vector3().subVectors(SUN_POS, EARTH_POS).normalize();
 
+// Phones have 3x pixel ratios; a lower cap keeps the scene smooth without visible softness at that size
+const CANVAS_DPR =
+  typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches
+    ? [1, 1.5]
+    : [1, 1.75];
+
 /**
  * Distant Craggy Basalt Asteroid (Restrained, subtle depth silhouette)
  */
@@ -1455,7 +1461,7 @@ export const SolarSystem3D = ({ progress = 0 }) => {
       <Canvas
         style={{ pointerEvents: 'none' }}
         className="pointer-events-none"
-        dpr={[1, 1.75]}
+        dpr={CANVAS_DPR}
         camera={{ position: [0.05, 0.08, 5.8], fov: 45 }}
         gl={{
           antialias: true,

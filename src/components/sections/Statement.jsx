@@ -8,7 +8,7 @@ import { portfolioData } from '../../data/portfolioData';
 export const Statement = ({ opacity = 1, translateY = 0, progress = 0 }) => {
   return (
     <section
-      className="absolute inset-0 flex flex-col justify-center p-6 sm:p-12 lg:p-16 pt-24 sm:pt-28 max-w-[1600px] mx-auto w-full text-white transition-opacity duration-300 z-10"
+      className="absolute inset-0 flex flex-col justify-center px-5 pb-6 sm:p-12 lg:p-16 pt-20 sm:pt-28 max-w-[1600px] mx-auto w-full text-white transition-opacity duration-300 z-10 max-lg:overflow-y-auto"
       style={{
         opacity,
         transform: `translateY(${translateY}px)`,
@@ -33,8 +33,8 @@ export const Statement = ({ opacity = 1, translateY = 0, progress = 0 }) => {
           Digital Experiences<span className="text-lime">.</span>
         </h2>
 
-        <div className="pt-2 sm:pt-4 border-l-2 border-lime pl-6 sm:pl-8 max-w-3xl space-y-3">
-          <p className="text-xs sm:text-base lg:text-lg text-white font-medium leading-relaxed">
+        <div className="pt-2 sm:pt-4 border-l-2 border-lime pl-4 sm:pl-8 max-w-3xl space-y-3">
+          <p className="text-[16px] sm:text-base lg:text-lg text-white font-medium leading-relaxed">
             "{portfolioData.personal.headline}"
           </p>
           <p className="text-xs sm:text-sm text-white/70 font-mono leading-relaxed">

@@ -568,8 +568,8 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
       {/* 08 — EXTERNAL ACTIONS & SUMMARY                           */}
       {/* ========================================================= */}
       <section className="pt-6 border-t border-white/10 space-y-6">
-        <div className="p-6 sm:p-8 bg-gradient-to-r from-[#0d121c] to-[#121926] border border-lime/30 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="space-y-2 text-center md:text-left">
+        <div className="p-5 sm:p-8 bg-gradient-to-r from-[#0d121c] to-[#121926] border border-lime/30 flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="space-y-2 text-center lg:text-left">
             <span className="font-mono text-xs text-lime uppercase font-bold tracking-widest block">
               EXPLORE THE LIVE APPLICATION
             </span>
@@ -581,7 +581,7 @@ export const ExplainMyBankingCaseStudy = ({ project, onClose }) => {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 shrink-0">
+          <div className="flex flex-wrap items-center justify-center gap-3 lg:shrink-0">
             <a
               href={liveUrl}
               target="_blank"
