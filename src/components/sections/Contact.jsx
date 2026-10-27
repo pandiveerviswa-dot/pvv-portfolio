@@ -71,7 +71,7 @@ export const Contact = ({ opacity = 1, translateY = 0 }) => {
 
       {/* Bottom Footer Bar */}
       <div className="flex flex-wrap justify-between items-center gap-4 text-[11px] sm:text-xs font-mono text-white/50 border-t border-white/10 pt-6 short:pt-1 short:gap-y-0">
-        <div>PANDI VEER VISWA • DIGITAL MARKETING EXECUTIVE</div>
+        <div>PANDI VEER VISWA • UI/UX DESIGNER&nbsp;· ANALYTICS&nbsp;· DIGITAL EXPERIENCES</div>
         <div className="flex items-center gap-6">
           <a href={portfolioData.personal.linkedin} className="hover:text-lime transition-colors flex items-center gap-1 min-h-[44px] lg:min-h-0">
             <span>LINKEDIN</span>
